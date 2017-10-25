@@ -6,18 +6,10 @@
 //  Copyright © 2017 TestCompany. All rights reserved.
 //
 
-@protocol TappableLabelDelegate;
+#import "TappableLabelDelegate.h"
 
 @interface TappableLabel : UILabel
 
-@property(nonatomic, strong) id<TappableLabelDelegate> delegate;
-
-@end
-
-@protocol TappableLabelDelegate<NSObject>
-
-@optional
-
-- (void)didReceiveTouch;
+@property(weak, nonatomic) id<TappableLabelDelegate> delegate;
 
 @end

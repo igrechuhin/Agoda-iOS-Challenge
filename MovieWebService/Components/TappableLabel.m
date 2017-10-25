@@ -14,21 +14,16 @@
 {
   self = [super initWithFrame:frame];
   if (self)
-  {
     self.userInteractionEnabled = YES;
-  }
   return self;
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
-  CGPoint touchPoint = [[touches anyObject] locationInView:self];
-  BOOL selected = (CGRectContainsPoint(self.bounds, touchPoint));
-
+  CGPoint const touchPoint = [[touches anyObject] locationInView:self];
+  BOOL const selected = (CGRectContainsPoint(self.bounds, touchPoint));
   if (selected)
-  {
     [self.delegate didReceiveTouch];
-  }
 }
 
 @end
