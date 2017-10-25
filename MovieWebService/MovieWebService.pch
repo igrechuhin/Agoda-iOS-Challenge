@@ -1,0 +1,13 @@
+//
+//  MovieWebService.pch
+//  MovieWebService
+//
+//  Created by Ilya Grechuhin on 25.10.2017.
+//  Copyright © 2017 TestCompany. All rights reserved.
+//
+
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#endif
+

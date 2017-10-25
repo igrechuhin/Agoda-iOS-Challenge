@@ -6,8 +6,6 @@
 //  Copyright © 2017 Agoda Services Co. Ltd. All rights reserved.
 //
 
-import UIKit
-
 @objc class DetailsModuleBuilder: NSObject {
 
   @objc func build(with data: Any) -> UIViewController {

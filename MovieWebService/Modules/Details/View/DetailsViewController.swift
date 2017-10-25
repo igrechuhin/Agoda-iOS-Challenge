@@ -6,8 +6,6 @@
 //  Copyright © 2017 Agoda Services Co. Ltd. All rights reserved.
 //
 
-import UIKit
-
 class DetailsViewController: UIViewController, DetailsViewInput, TappableLabelDelegate {
 
   var output: DetailsViewOutput!

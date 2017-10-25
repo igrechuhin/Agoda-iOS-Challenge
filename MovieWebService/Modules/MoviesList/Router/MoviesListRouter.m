@@ -7,7 +7,6 @@
 //
 
 #import "MoviesListRouter.h"
-#import <UIKit/UIKit.h>
 
 @implementation MoviesListRouter
 

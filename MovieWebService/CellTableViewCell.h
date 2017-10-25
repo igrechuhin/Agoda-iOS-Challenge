@@ -6,8 +6,6 @@
 //  Copyright © 2017 TestCompany. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
 @interface CellTableViewCell : UITableViewCell
 @property(strong, nonatomic) IBOutlet UILabel * name;
 @property(strong, nonatomic) IBOutlet UILabel * date;

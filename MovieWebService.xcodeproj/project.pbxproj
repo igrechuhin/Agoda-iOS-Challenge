@@ -82,6 +82,7 @@
 		1CF463CEF7112C249D34D15F /* DetailsModuleBuilderTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DetailsModuleBuilderTests.swift; sourceTree = "<group>"; };
 		26433A0B06861EBAF23B96D3 /* DetailsViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DetailsViewInput.swift; sourceTree = "<group>"; };
 		3136C6286E9E6EB633A264C1 /* MoviesListViewControllerTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MoviesListViewControllerTests.m; sourceTree = "<group>"; };
+		348761421FA0C5020094E309 /* MovieWebService.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieWebService.pch; sourceTree = "<group>"; };
 		35CD0B96AAC58C1A4D7EC3CE /* MoviesListModuleInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MoviesListModuleInput.h; sourceTree = "<group>"; };
 		38787514E6726FA46093D3D3 /* MoviesListRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MoviesListRouter.h; sourceTree = "<group>"; };
 		43D5E7435EFF0197EE769D38 /* Pods_MovieWebService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieWebService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -334,6 +335,7 @@
 				578A72838BE61473B4DFA550 /* Modules */,
 				742C642F1E9C89E800B8E327 /* Cell */,
 				742C643C1E9C919F00B8E327 /* Model */,
+				348761421FA0C5020094E309 /* MovieWebService.pch */,
 			);
 			path = MovieWebService;
 			sourceTree = "<group>";
@@ -957,6 +959,8 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MovieWebService/MovieWebService.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1014,6 +1018,8 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MovieWebService/MovieWebService.pch;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_SHADOW = YES;

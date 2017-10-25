@@ -6,9 +6,6 @@
 //  Copyright © 2017 Agoda Services Co. Ltd. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
-
 @protocol MoviesListInteractorInput<NSObject>
 - (void)setViewForSetup:(UIView *)view;
 - (void)setData:(NSArray *)films;

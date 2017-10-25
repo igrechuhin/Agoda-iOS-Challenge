@@ -6,8 +6,6 @@
 //  Copyright © 2017 Agoda Services Co. Ltd. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
 @interface MoviesListBuilder : NSObject
 - (UIViewController *)build;
 

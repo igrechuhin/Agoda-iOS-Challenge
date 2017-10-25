@@ -6,7 +6,6 @@
 //  Copyright © 2017 TestCompany. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 @protocol TappableLabelDelegate;
 
 @interface TappableLabel : UILabel
