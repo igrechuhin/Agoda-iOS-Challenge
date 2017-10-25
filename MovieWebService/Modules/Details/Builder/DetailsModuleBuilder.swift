@@ -10,7 +10,7 @@ import UIKit
 
 @objc class DetailsModuleBuilder: NSObject {
 
-    func build(with data: Any) -> UIViewController {
+    @objc func build(with data: Any) -> UIViewController {
 
         let viewController = DetailsViewController()
 
