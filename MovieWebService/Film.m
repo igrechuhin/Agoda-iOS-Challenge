@@ -42,9 +42,4 @@
     }
 }
 
-- (void)setNominated:(BOOL)nominate;
-{
-    nominated = nominate;
-}
-
 @end
