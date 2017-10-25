@@ -10,9 +10,10 @@
 
 @implementation Director
 
-- (id)initWithData:(NSDictionary *)data {
-    self = [super init];
-    return self;
+- (id)initWithData:(NSDictionary *)data
+{
+  self = [super init];
+  return self;
 }
 
 @end

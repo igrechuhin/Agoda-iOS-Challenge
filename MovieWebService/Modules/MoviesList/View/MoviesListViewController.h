@@ -8,14 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-#import "MoviesListViewInput.h"
 #import "Film.h"
+#import "MoviesListViewInput.h"
 
 @protocol MoviesListViewOutput;
 
-@interface MoviesListViewController : UIViewController <MoviesListViewInput>
+@interface MoviesListViewController : UIViewController<MoviesListViewInput>
 
-@property (nonatomic, strong) id<MoviesListViewOutput> output;
+@property(nonatomic, strong) id<MoviesListViewOutput> output;
 @property(nonatomic) Film * film;
 
 @end

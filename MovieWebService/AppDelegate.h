@@ -9,12 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "Film.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder<UIApplicationDelegate>
 
-@property (nonatomic) UIWindow *window;
-@property (nonatomic) UINavigationController *navigationController;
+@property(nonatomic) UIWindow * window;
+@property(nonatomic) UINavigationController * navigationController;
 
-- (void)getFilmWithCallback:(void (^)(Film *film))callback;
+- (void)getFilmWithCallback:(void (^)(Film * film))callback;
 
 @end
-

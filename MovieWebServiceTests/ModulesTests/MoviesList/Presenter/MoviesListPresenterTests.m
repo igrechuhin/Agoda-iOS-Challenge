@@ -10,52 +10,52 @@
 
 #import "MoviesListPresenter.h"
 
-#import "MoviesListViewInput.h"
 #import "MoviesListInteractorInput.h"
 #import "MoviesListRouterInput.h"
+#import "MoviesListViewInput.h"
 
 @interface MoviesListPresenterTests : XCTestCase
 
-@property (nonatomic, strong) MoviesListPresenter *presenter;
+@property(nonatomic, strong) MoviesListPresenter * presenter;
 
-@property (nonatomic, strong) id mockInteractor;
-@property (nonatomic, strong) id mockRouter;
-@property (nonatomic, strong) id mockView;
+@property(nonatomic, strong) id mockInteractor;
+@property(nonatomic, strong) id mockRouter;
+@property(nonatomic, strong) id mockView;
 
 @end
 
 @implementation MoviesListPresenterTests
 
+- (void)setUp
+{
+  [super setUp];
 
-- (void)setUp {
-    [super setUp];
+  self.presenter = [[MoviesListPresenter alloc] init];
 
-    self.presenter = [[MoviesListPresenter alloc] init];
-
-    self.presenter.interactor = self.mockInteractor;
-    self.presenter.router = self.mockRouter;
-    self.presenter.view = self.mockView;
+  self.presenter.interactor = self.mockInteractor;
+  self.presenter.router = self.mockRouter;
+  self.presenter.view = self.mockView;
 }
 
-- (void)tearDown {
-    self.presenter = nil;
+- (void)tearDown
+{
+  self.presenter = nil;
 
-    self.mockView = nil;
-    self.mockRouter = nil;
-    self.mockInteractor = nil;
+  self.mockView = nil;
+  self.mockRouter = nil;
+  self.mockInteractor = nil;
 
-    [super tearDown];
+  [super tearDown];
 }
 
+- (void)testThatPresenterHandlesViewReadyEvent
+{
+  // given
 
-- (void)testThatPresenterHandlesViewReadyEvent {
-    // given
+  // when
+  [self.presenter didTriggerViewReadyEvent];
 
-
-    // when
-    [self.presenter didTriggerViewReadyEvent];
-
-    // then
+  // then
 }
 
 @end

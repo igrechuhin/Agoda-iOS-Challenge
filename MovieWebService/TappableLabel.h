@@ -11,11 +11,11 @@
 
 @interface TappableLabel : UILabel
 
-@property (nonatomic, strong) id<TappableLabelDelegate> delegate;
+@property(nonatomic, strong) id<TappableLabelDelegate> delegate;
 
 @end
 
-@protocol TappableLabelDelegate <NSObject>
+@protocol TappableLabelDelegate<NSObject>
 
 @optional
 

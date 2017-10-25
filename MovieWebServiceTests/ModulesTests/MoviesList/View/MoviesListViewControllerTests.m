@@ -14,37 +14,40 @@
 
 @interface MoviesListViewControllerTests : XCTestCase
 
-@property (nonatomic, strong) MoviesListViewController *controller;
+@property(nonatomic, strong) MoviesListViewController * controller;
 
-@property (nonatomic, strong) id mockOutput;
+@property(nonatomic, strong) id mockOutput;
 
 @end
 
 @implementation MoviesListViewControllerTests
 
-- (void)setUp {
-    [super setUp];
+- (void)setUp
+{
+  [super setUp];
 
-    self.controller = [[MoviesListViewController alloc] init];
+  self.controller = [[MoviesListViewController alloc] init];
 
-    self.controller.output = self.mockOutput;
+  self.controller.output = self.mockOutput;
 }
 
-- (void)tearDown {
-    self.controller = nil;
+- (void)tearDown
+{
+  self.controller = nil;
 
-    self.mockOutput = nil;
+  self.mockOutput = nil;
 
-    [super tearDown];
+  [super tearDown];
 }
 
-- (void)testThatControllerNotifiesPresenterOnDidLoad {
-	// given
+- (void)testThatControllerNotifiesPresenterOnDidLoad
+{
+  // given
 
-	// when
-	[self.controller viewDidLoad];
+  // when
+  [self.controller viewDidLoad];
 
-	// then
+  // then
 }
 
 #pragma mark - Тестирование методов интерфейса

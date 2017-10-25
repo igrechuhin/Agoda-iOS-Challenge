@@ -6,14 +6,15 @@
 //  Copyright © 2017 Agoda Services Co. Ltd. All rights reserved.
 //
 
-#import "MoviesListInteractorInput.h"
 #import "CellTableViewCell.h"
+#import "MoviesListInteractorInput.h"
 
 @protocol MoviesListInteractorOutput;
 
-@interface MoviesListInteractor : NSObject <MoviesListInteractorInput, UITableViewDataSource, UITableViewDelegate>
+@interface MoviesListInteractor
+  : NSObject<MoviesListInteractorInput, UITableViewDataSource, UITableViewDelegate>
 
-@property (nonatomic, weak) id<MoviesListInteractorOutput> output;
-@property (nonatomic, strong) IBOutlet CellTableViewCell *movieCell;
+@property(nonatomic, weak) id<MoviesListInteractorOutput> output;
+@property(nonatomic, strong) IBOutlet CellTableViewCell * movieCell;
 
 @end

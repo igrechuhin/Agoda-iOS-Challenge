@@ -8,32 +8,29 @@
 
 #import "MoviesListPresenter.h"
 
-#import "MoviesListViewInput.h"
 #import "MoviesListInteractorInput.h"
 #import "MoviesListRouterInput.h"
+#import "MoviesListViewInput.h"
 
-@implementation MoviesListPresenter {
-    NSArray *films;
+@implementation MoviesListPresenter
+{
+  NSArray * films;
 }
 
 #pragma mark - Методы MoviesListModuleInput
 
-- (void)configureModule {
- }
+- (void)configureModule {}
 
 #pragma mark - Методы MoviesListViewOutput
 
-- (void)didTriggerViewReadyEvent {
-	[self.view setupInitialState];
-}
+- (void)didTriggerViewReadyEvent { [self.view setupInitialState]; }
 
-- (void)setViewForSetup:(UIView *)view {
-    [self.interactor setViewForSetup:view];
-}
+- (void)setViewForSetup:(UIView *)view { [self.interactor setViewForSetup:view]; }
 
-- (void)setData:(Film *)film {
-    films = [NSArray arrayWithObject:film];
-    [self.interactor setData:films];
+- (void)setData:(Film *)film
+{
+  films = [NSArray arrayWithObject:film];
+  [self.interactor setData:films];
 }
 
 #pragma mark - Методы MoviesListInteractorOutput

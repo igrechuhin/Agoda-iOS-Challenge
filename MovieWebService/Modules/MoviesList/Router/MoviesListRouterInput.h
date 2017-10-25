@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol MoviesListRouterInput <NSObject>
+@protocol MoviesListRouterInput<NSObject>
 
 @end

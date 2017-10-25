@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@protocol MoviesListInteractorInput <NSObject>
+@protocol MoviesListInteractorInput<NSObject>
 - (void)setViewForSetup:(UIView *)view;
 - (void)setData:(NSArray *)films;
 @end

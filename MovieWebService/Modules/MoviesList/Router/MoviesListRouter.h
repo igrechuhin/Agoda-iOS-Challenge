@@ -10,8 +10,8 @@
 
 @class UIViewController;
 
-@interface MoviesListRouter : NSObject <MoviesListRouterInput>
+@interface MoviesListRouter : NSObject<MoviesListRouterInput>
 
-@property (nonatomic, weak) UIViewController *viewController;
+@property(nonatomic, weak) UIViewController * viewController;
 
 @end

@@ -12,22 +12,24 @@
 
 @interface MoviesListRouterTests : XCTestCase
 
-@property (nonatomic, strong) MoviesListRouter *router;
+@property(nonatomic, strong) MoviesListRouter * router;
 
 @end
 
 @implementation MoviesListRouterTests
 
-- (void)setUp {
-    [super setUp];
+- (void)setUp
+{
+  [super setUp];
 
-    self.router = [[MoviesListRouter alloc] init];
+  self.router = [[MoviesListRouter alloc] init];
 }
 
-- (void)tearDown {
-    self.router = nil;
+- (void)tearDown
+{
+  self.router = nil;
 
-    [super tearDown];
+  [super tearDown];
 }
 
 @end

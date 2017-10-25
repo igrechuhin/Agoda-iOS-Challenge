@@ -8,31 +8,30 @@
 
 #import "MoviesListBuilder.h"
 
-#import "MoviesListViewController.h"
 #import "MoviesListInteractor.h"
 #import "MoviesListPresenter.h"
 #import "MoviesListRouter.h"
+#import "MoviesListViewController.h"
 
 @implementation MoviesListBuilder
 
-- (UIViewController *)build {
-    
-    MoviesListViewController *viewController = [MoviesListViewController new];
+- (UIViewController *)build
+{
+  MoviesListViewController * viewController = [MoviesListViewController new];
 
-    MoviesListRouter *router = [MoviesListRouter new];
-    router.viewController = viewController;
+  MoviesListRouter * router = [MoviesListRouter new];
+  router.viewController = viewController;
 
-    MoviesListPresenter *presenter = [MoviesListPresenter new];
-    presenter.view = viewController;
-    presenter.router = router;
+  MoviesListPresenter * presenter = [MoviesListPresenter new];
+  presenter.view = viewController;
+  presenter.router = router;
 
-    MoviesListInteractor *interactor = [MoviesListInteractor new];
-    interactor.output = presenter;
-    presenter.interactor = interactor;
-    viewController.output = presenter;
-    
-    return viewController;
+  MoviesListInteractor * interactor = [MoviesListInteractor new];
+  interactor.output = presenter;
+  presenter.interactor = interactor;
+  viewController.output = presenter;
 
+  return viewController;
 }
 
 @end

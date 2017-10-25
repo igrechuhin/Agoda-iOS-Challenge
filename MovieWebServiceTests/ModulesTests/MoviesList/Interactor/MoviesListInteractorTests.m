@@ -14,28 +14,30 @@
 
 @interface MoviesListInteractorTests : XCTestCase
 
-@property (nonatomic, strong) MoviesListInteractor *interactor;
+@property(nonatomic, strong) MoviesListInteractor * interactor;
 
-@property (nonatomic, strong) id mockOutput;
+@property(nonatomic, strong) id mockOutput;
 
 @end
 
 @implementation MoviesListInteractorTests
 
-- (void)setUp {
-    [super setUp];
+- (void)setUp
+{
+  [super setUp];
 
-    self.interactor = [[MoviesListInteractor alloc] init];
+  self.interactor = [[MoviesListInteractor alloc] init];
 
-    self.interactor.output = self.mockOutput;
+  self.interactor.output = self.mockOutput;
 }
 
-- (void)tearDown {
-    self.interactor = nil;
+- (void)tearDown
+{
+  self.interactor = nil;
 
-    self.mockOutput = nil;
+  self.mockOutput = nil;
 
-    [super tearDown];
+  [super tearDown];
 }
 
 @end
