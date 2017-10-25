@@ -8,10 +8,7 @@
 
 class DetailsInteractor: DetailsInteractorInput {
 
-    weak var output: DetailsInteractorOutput!
+  weak var output: DetailsInteractorOutput!
 
-    // MARK: - DetailsInteractorInput
-    
-    
-    
+  // MARK: - DetailsInteractorInput
 }

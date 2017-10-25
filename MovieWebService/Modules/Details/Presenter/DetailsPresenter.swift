@@ -8,18 +8,14 @@
 
 class DetailsPresenter: DetailsModuleInput, DetailsViewOutput, DetailsInteractorOutput {
 
-    weak var view: DetailsViewInput!
-    var interactor: DetailsInteractorInput!
-    var router: DetailsRouterInput!
+  weak var view: DetailsViewInput!
+  var interactor: DetailsInteractorInput!
+  var router: DetailsRouterInput!
 
-    // MARK: - DetailsViewOutput
-    
-    func viewIsReady() {
+  // MARK: - DetailsViewOutput
 
-    }
-    
-    // MARK: - DetailsInteractorOutput
-    
-    
-    
+  func viewIsReady() {
+  }
+
+  // MARK: - DetailsInteractorOutput
 }

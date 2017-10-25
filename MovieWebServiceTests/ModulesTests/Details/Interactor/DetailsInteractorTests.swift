@@ -13,29 +13,27 @@ import MovieWebService
 
 class DetailsInteractorTests: XCTestCase {
 
-    var interactor: DetailsInteractor!
-    var output: MockOutput!
-	
-    override func setUp() {
-        super.setUp()
-		
-        output = MockOutput()
-       
-        interactor = DetailsInteractor()
-        interactor.output = output
-    }
+  var interactor: DetailsInteractor!
+  var output: MockOutput!
 
-    override func tearDown() {
-        output = nil
-        interactor = nil
-	
-        super.tearDown()
-    }
+  override func setUp() {
+    super.setUp()
 
-    // MARK: - Mock
+    output = MockOutput()
 
-    class MockOutput: DetailsInteractorOutput {
+    interactor = DetailsInteractor()
+    interactor.output = output
+  }
 
-    }
+  override func tearDown() {
+    output = nil
+    interactor = nil
 
+    super.tearDown()
+  }
+
+  // MARK: - Mock
+
+  class MockOutput: DetailsInteractorOutput {
+  }
 }

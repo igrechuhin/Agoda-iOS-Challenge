@@ -13,29 +13,27 @@ import MovieWebService
 
 class DetailsRouterTests: XCTestCase {
 
-    var router: DetailsRouter!
-    var viewController: MockViewController!
+  var router: DetailsRouter!
+  var viewController: MockViewController!
 
-    override func setUp() {
-        super.setUp()
-		
-        viewController = MockViewController()
-		
-        router = DetailsRouter()
-        router.viewController = viewController
-    }
+  override func setUp() {
+    super.setUp()
 
-    override func tearDown() {
-        viewController = nil
-        router = nil
+    viewController = MockViewController()
 
-        super.tearDown()
-    }
-	
-    // MARK: - Mock
-	
-    class MockViewController: DetailsViewController {
-	
-    } 
-	
+    router = DetailsRouter()
+    router.viewController = viewController
+  }
+
+  override func tearDown() {
+    viewController = nil
+    router = nil
+
+    super.tearDown()
+  }
+
+  // MARK: - Mock
+
+  class MockViewController: DetailsViewController {
+  }
 }

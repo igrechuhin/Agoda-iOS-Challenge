@@ -7,5 +7,4 @@
 //
 
 protocol DetailsInteractorOutput: class {
-
 }
