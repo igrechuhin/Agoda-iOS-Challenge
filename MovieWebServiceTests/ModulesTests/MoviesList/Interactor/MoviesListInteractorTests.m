@@ -7,7 +7,6 @@
 //
 
 #import <XCTest/XCTest.h>
-#import <OCMock/OCMock.h>
 
 #import "MoviesListInteractor.h"
 
@@ -27,8 +26,6 @@
     [super setUp];
 
     self.interactor = [[MoviesListInteractor alloc] init];
-
-    self.mockOutput = OCMProtocolMock(@protocol(MoviesListInteractorOutput));
 
     self.interactor.output = self.mockOutput;
 }

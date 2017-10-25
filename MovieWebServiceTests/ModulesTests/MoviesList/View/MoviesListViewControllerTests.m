@@ -7,7 +7,6 @@
 //
 
 #import <XCTest/XCTest.h>
-#import <OCMock/OCMock.h>
 
 #import "MoviesListViewController.h"
 
@@ -28,8 +27,6 @@
 
     self.controller = [[MoviesListViewController alloc] init];
 
-    self.mockOutput = OCMProtocolMock(@protocol(MoviesListViewOutput));
-
     self.controller.output = self.mockOutput;
 }
 
@@ -48,7 +45,6 @@
 	[self.controller viewDidLoad];
 
 	// then
-	OCMVerify([self.mockOutput didTriggerViewReadyEvent]);
 }
 
 #pragma mark - Тестирование методов интерфейса

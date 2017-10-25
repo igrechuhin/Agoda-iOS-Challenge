@@ -7,7 +7,6 @@
 //
 
 #import <XCTest/XCTest.h>
-#import <OCMock/OCMock.h>
 
 #import "MoviesListPresenter.h"
 
@@ -33,10 +32,6 @@
 
     self.presenter = [[MoviesListPresenter alloc] init];
 
-    self.mockInteractor = OCMProtocolMock(@protocol(MoviesListInteractorInput));
-    self.mockRouter = OCMProtocolMock(@protocol(MoviesListRouterInput));
-    self.mockView = OCMProtocolMock(@protocol(MoviesListViewInput));
-
     self.presenter.interactor = self.mockInteractor;
     self.presenter.router = self.mockRouter;
     self.presenter.view = self.mockView;
@@ -61,7 +56,6 @@
     [self.presenter didTriggerViewReadyEvent];
 
     // then
-    OCMVerify([self.mockView setupInitialState]);
 }
 
 @end
