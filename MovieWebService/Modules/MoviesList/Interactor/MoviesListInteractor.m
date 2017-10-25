@@ -81,10 +81,10 @@
   NSString * filmRatingText;
   switch (film.filmRating)
   {
-  case G: filmRatingText = @"G";
-  case PG: filmRatingText = @"PG";
-  case PG13: filmRatingText = @"PG13";
-  case R: filmRatingText = @"R";
+  case G: filmRatingText = @"G"; break;
+  case PG: filmRatingText = @"PG"; break;
+  case PG13: filmRatingText = @"PG13"; break;
+  case R: filmRatingText = @"R"; break;
   default: break;
   }
   cell.filmRating.text = filmRatingText;

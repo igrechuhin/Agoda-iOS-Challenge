@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (id)initWithData:(NSDictionary *)data;
 
-@property(nonatomic, strong) NSString * name;
+@property(copy, nonatomic) NSString * name;
 @property(nonatomic) double rating;
 @property(nonatomic, strong) Director * director;
 

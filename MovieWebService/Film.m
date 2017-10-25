@@ -39,12 +39,4 @@
   return self;
 }
 
-- (void)setName:(NSString *)name
-{
-  if (name != _name)
-  {
-    name = _name;
-  }
-}
-
 @end
