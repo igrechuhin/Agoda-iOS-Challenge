@@ -14,36 +14,41 @@
 #import "AppDelegate.h"
 #import "MovieWebService-Swift.h"
 
+@interface MoviesListInteractor()
+
+@property (nonatomic) UITableView *tableView;
+@property (nonatomic) NSArray *films;
+@property (nonatomic) UIView *view;
+
+@end
+
 @implementation MoviesListInteractor {
-    UITableView *tableView;
-    NSArray *films;
-    UIView *view;
 }
 
 - (void)setViewForSetup:(UIView *)view1 {
-    view = view1;
-    tableView = [UITableView new];
-    [view addSubview:tableView];
-    tableView.delegate = self;
-    tableView.dataSource = self;
+    self.view = view1;
+    self.tableView = [UITableView new];
+    [self.view addSubview:self.tableView];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
 }
 
 #pragma mark - MoviesListInteractorInput
 
 - (void)setData:(NSArray *)films1 {
-    films = films1;
-    [tableView mas_remakeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(view);
-        make.right.mas_equalTo(view);
-        make.top.mas_equalTo(view);
-        make.bottom.mas_equalTo(view);
+    self.films = films1;
+    [self.tableView mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(self.view);
+        make.right.mas_equalTo(self.view);
+        make.top.mas_equalTo(self.view);
+        make.bottom.mas_equalTo(self.view);
     }];
 
-    [tableView reloadData];
+    [self.tableView reloadData];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return films.count;
+    return self.films.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -54,7 +59,7 @@
         //cell = self.movieCell;
         //self.movieCell = nil;
     }
-    Film *film = [films objectAtIndex:indexPath.row];
+    Film *film = [self.films objectAtIndex:indexPath.row];
     cell.name.text = film.name;
 
     NSCalendar* cal = [NSCalendar new];
@@ -87,7 +92,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
-    Film *film = [films objectAtIndex:indexPath.row];
+    Film *film = [self.films objectAtIndex:indexPath.row];
     DetailsModuleBuilder *builder = [DetailsModuleBuilder new];
     [appDelegate.navigationController pushViewController:[builder buildWith:film] animated:YES];
 }
