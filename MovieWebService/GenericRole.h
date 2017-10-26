@@ -6,7 +6,7 @@
 //  Copyright © 2017 TestCompany. All rights reserved.
 //
 
-@class Film;
+@class MWSFilm;
 
 @interface GenericRole : NSObject
 
@@ -15,7 +15,7 @@
 @property(nonatomic, strong) NSDate * dateOfBirth;
 @property(nonatomic) BOOL nominated;
 
-@property(atomic, strong) Film * film;
+@property(nonatomic) MWSFilm * film;
 
 - (id)initWithData:(NSDictionary *)data;
 

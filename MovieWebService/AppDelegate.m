@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "Film.h"
+#import "MWSFilm.h"
 #import "MoviesListBuilder.h"
 
 @interface AppDelegate ()
@@ -29,15 +29,15 @@
   return YES;
 }
 
-- (void)getFilmWithCallback:(void (^)(Film * film))callback
+- (void)getFilmWithCallback:(void (^)(MWSFilm * film))callback
 {
   dispatch_async(dispatch_get_global_queue(QOS_CLASS_UTILITY, 0), ^{
     NSDictionary * data = @{
-      @"filmRating": @3,
+      @"mpaa": @3,
       @"languages": @[@"English", @"Thai"],
       @"nominated": @YES,
       @"releaseDate": @1350000000,
-      @"cast": @[@{
+      @"actors": @[@{
         @"dateOfBirth": @-436147200,
         @"nominated": @YES,
         @"name": @"Bryan Cranston",
@@ -46,7 +46,7 @@
             @"Bryan Lee Cranston is an American actor, voice actor, writer and director."
       }],
       @"name": @"Argo",
-      @"rating": @7.8,
+      @"imdbRating": @7.8,
       @"director": @{
         @"dateOfBirth": @82684800,
         @"nominated": @YES,
@@ -56,7 +56,7 @@
       }
     };
 
-    Film * film = [[Film alloc] initWithData:data];
+    MWSFilm * film = [[MWSFilm alloc] initWithData:data];
 
     data = nil;
     callback(film);

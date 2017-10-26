@@ -9,7 +9,7 @@
 #import "MoviesListViewController.h"
 
 #import "AppDelegate.h"
-#import "Film.h"
+#import "MWSFilm.h"
 #import "MoviesListViewOutput.h"
 
 @implementation MoviesListViewController
@@ -28,7 +28,7 @@
 {
   [super viewWillAppear:animated];
   AppDelegate * appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-  [appDelegate getFilmWithCallback:^(Film * film) {
+  [appDelegate getFilmWithCallback:^(MWSFilm * film) {
     [self.output setData:film];
   }];
 }

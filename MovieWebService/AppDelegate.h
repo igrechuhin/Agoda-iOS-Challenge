@@ -6,13 +6,13 @@
 //  Copyright © 2017 TestCompany. All rights reserved.
 //
 
-#import "Film.h"
+@class MWSFilm;
 
 @interface AppDelegate : UIResponder<UIApplicationDelegate>
 
 @property(nonatomic) UIWindow * window;
 @property(nonatomic) UINavigationController * navigationController;
 
-- (void)getFilmWithCallback:(void (^)(Film * film))callback;
+- (void)getFilmWithCallback:(void (^)(MWSFilm * film))callback;
 
 @end

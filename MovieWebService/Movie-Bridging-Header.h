@@ -2,5 +2,5 @@
 
 #import "Actor.h"
 #import "Director.h"
-#import "Film.h"
+#import "MWSFilm.h"
 #import "TappableLabel.h"

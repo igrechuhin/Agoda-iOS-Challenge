@@ -27,7 +27,7 @@
 
 - (void)setViewForSetup:(UIView *)view { [self.interactor setViewForSetup:view]; }
 
-- (void)setData:(Film *)film
+- (void)setData:(MWSFilm *)film
 {
   films = [NSArray arrayWithObject:film];
   [self.interactor setData:films];

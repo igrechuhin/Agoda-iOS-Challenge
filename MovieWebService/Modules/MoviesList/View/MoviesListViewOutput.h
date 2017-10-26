@@ -6,12 +6,12 @@
 //  Copyright © 2017 Agoda Services Co. Ltd. All rights reserved.
 //
 
-#import "Film.h"
+@class MWSFilm;
 
 @protocol MoviesListViewOutput<NSObject>
 
 - (void)didTriggerViewReadyEvent;
 - (void)setViewForSetup:(UIView *)view;
-- (void)setData:(Film *)film;
+- (void)setData:(MWSFilm *)film;
 
 @end

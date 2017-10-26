@@ -9,7 +9,7 @@
 #import "MoviesListInteractor.h"
 
 #import "AppDelegate.h"
-#import "Film.h"
+#import "MWSFilm.h"
 #import "Masonry.h"
 #import "MovieWebService-Swift.h"
 #import "MoviesListInteractorOutput.h"
@@ -67,7 +67,7 @@
     // cell = self.movieCell;
     // self.movieCell = nil;
   }
-  Film * film = [self.films objectAtIndex:indexPath.row];
+  MWSFilm * film = [self.films objectAtIndex:indexPath.row];
   cell.name.text = film.name;
 
   NSCalendar * cal = [NSCalendar new];
@@ -79,16 +79,17 @@
   cell.date.text = dateText;
 
   NSString * filmRatingText;
-  switch (film.filmRating)
+  switch (film.mpaa)
   {
-  case G: filmRatingText = @"G"; break;
-  case PG: filmRatingText = @"PG"; break;
-  case PG13: filmRatingText = @"PG13"; break;
-  case R: filmRatingText = @"R"; break;
+  case MWSMpaaG: filmRatingText = @"G"; break;
+  case MWSMpaaPG: filmRatingText = @"PG"; break;
+  case MWSMpaaPG13: filmRatingText = @"PG13"; break;
+  case MWSMpaaR: filmRatingText = @"R"; break;
+  case MWSMpaaNC17: filmRatingText = @"NC17"; break;
   default: break;
   }
   cell.filmRating.text = filmRatingText;
-  cell.rating.text = [[NSNumber numberWithInteger:film.rating] stringValue];
+  cell.rating.text = [[NSNumber numberWithFloat:film.imdbRating] stringValue];
 
   return cell;
 }
@@ -97,7 +98,7 @@
 {
   [tableView deselectRowAtIndexPath:indexPath animated:YES];
   AppDelegate * appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-  Film * film = [self.films objectAtIndex:indexPath.row];
+  MWSFilm * film = [self.films objectAtIndex:indexPath.row];
   DetailsModuleBuilder * builder = [DetailsModuleBuilder new];
   [appDelegate.navigationController pushViewController:[builder buildWith:film] animated:YES];
 }

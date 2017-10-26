@@ -51,7 +51,7 @@ class DetailsViewController: UIViewController, DetailsViewInput, TappableLabelDe
     actorName.isHidden = true
     actorScreenName.isHidden = true
 
-    let actor: Actor = director.film.cast?[0] as! Actor
+    let actor = director.film.actors.first!
     actorName.text = director.name
     actorScreenName.text = actor.screenName
   }
