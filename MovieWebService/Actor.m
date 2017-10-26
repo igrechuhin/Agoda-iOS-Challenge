@@ -10,9 +10,9 @@
 
 @implementation Actor
 
-- (id)initWithData:(NSDictionary *)data
+- (instancetype)initWithData:(NSDictionary *)data film:(MWSFilm *)film
 {
-  self = [super init];
+  self = [super initWithData:data film:film];
   if (self)
   {
     self.screenName = [data objectForKey:@"screenName"];

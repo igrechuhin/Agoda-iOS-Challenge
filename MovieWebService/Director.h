@@ -6,9 +6,9 @@
 //  Copyright © 2017 TestCompany. All rights reserved.
 //
 
-#import "GenericRole.h"
+#import "MWSGenericRole.h"
 
-@interface Director : GenericRole
+@interface Director : MWSGenericRole
 
 - (id)initWithData:(NSDictionary *)data;
 

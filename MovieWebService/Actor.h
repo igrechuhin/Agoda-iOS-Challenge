@@ -6,12 +6,12 @@
 //  Copyright © 2017 TestCompany. All rights reserved.
 //
 
-#import "GenericRole.h"
+#import "MWSGenericRole.h"
 
-@interface Actor : GenericRole
+@interface Actor : MWSGenericRole
 
 @property(nonatomic, strong) NSString * screenName;
 
-- (id)initWithData:(NSDictionary *)data;
+- (instancetype)initWithData:(NSDictionary *)data film:(MWSFilm *)film;
 
 @end

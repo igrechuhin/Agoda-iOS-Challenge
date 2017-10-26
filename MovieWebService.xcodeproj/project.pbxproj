@@ -33,7 +33,7 @@
 		742C642E1E9C89E000B8E327 /* CellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 742C642C1E9C89E000B8E327 /* CellTableViewCell.xib */; };
 		742C64321E9C901A00B8E327 /* MWSFilm.m in Sources */ = {isa = PBXBuildFile; fileRef = 742C64311E9C901A00B8E327 /* MWSFilm.m */; };
 		742C64351E9C90F100B8E327 /* Actor.m in Sources */ = {isa = PBXBuildFile; fileRef = 742C64341E9C90F100B8E327 /* Actor.m */; };
-		742C64381E9C913200B8E327 /* GenericRole.m in Sources */ = {isa = PBXBuildFile; fileRef = 742C64371E9C913200B8E327 /* GenericRole.m */; };
+		742C64381E9C913200B8E327 /* MWSGenericRole.m in Sources */ = {isa = PBXBuildFile; fileRef = 742C64371E9C913200B8E327 /* MWSGenericRole.m */; };
 		742C643B1E9C917B00B8E327 /* Director.m in Sources */ = {isa = PBXBuildFile; fileRef = 742C643A1E9C917B00B8E327 /* Director.m */; };
 		90DA19CFA1BC8F9001F66546 /* DetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6A3D5C79D0DBE63886184F /* DetailsRouter.swift */; };
 		9719FBB21151E7A3416388B9 /* Pods_MovieWebServiceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9CE2FAEE24F90800F730771 /* Pods_MovieWebServiceUITests.framework */; };
@@ -121,8 +121,8 @@
 		742C64311E9C901A00B8E327 /* MWSFilm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWSFilm.m; sourceTree = "<group>"; };
 		742C64331E9C90F100B8E327 /* Actor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Actor.h; sourceTree = "<group>"; };
 		742C64341E9C90F100B8E327 /* Actor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Actor.m; sourceTree = "<group>"; };
-		742C64361E9C913200B8E327 /* GenericRole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenericRole.h; sourceTree = "<group>"; };
-		742C64371E9C913200B8E327 /* GenericRole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenericRole.m; sourceTree = "<group>"; };
+		742C64361E9C913200B8E327 /* MWSGenericRole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWSGenericRole.h; sourceTree = "<group>"; };
+		742C64371E9C913200B8E327 /* MWSGenericRole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWSGenericRole.m; sourceTree = "<group>"; };
 		742C64391E9C917B00B8E327 /* Director.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Director.h; sourceTree = "<group>"; };
 		742C643A1E9C917B00B8E327 /* Director.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Director.m; sourceTree = "<group>"; };
 		742C64401E9CD2BC00B8E327 /* Movie-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Movie-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -407,8 +407,8 @@
 				742C64311E9C901A00B8E327 /* MWSFilm.m */,
 				742C64331E9C90F100B8E327 /* Actor.h */,
 				742C64341E9C90F100B8E327 /* Actor.m */,
-				742C64361E9C913200B8E327 /* GenericRole.h */,
-				742C64371E9C913200B8E327 /* GenericRole.m */,
+				742C64361E9C913200B8E327 /* MWSGenericRole.h */,
+				742C64371E9C913200B8E327 /* MWSGenericRole.m */,
 				742C64391E9C917B00B8E327 /* Director.h */,
 				742C643A1E9C917B00B8E327 /* Director.m */,
 				348526B61FA21D2D00BE5477 /* MWSMpaa.h */,
@@ -849,7 +849,7 @@
 				742C63ED1E9C750600B8E327 /* AppDelegate.m in Sources */,
 				742C643B1E9C917B00B8E327 /* Director.m in Sources */,
 				742C64351E9C90F100B8E327 /* Actor.m in Sources */,
-				742C64381E9C913200B8E327 /* GenericRole.m in Sources */,
+				742C64381E9C913200B8E327 /* MWSGenericRole.m in Sources */,
 				742C642D1E9C89E000B8E327 /* CellTableViewCell.m in Sources */,
 				742C63EA1E9C750600B8E327 /* main.m in Sources */,
 				742C64321E9C901A00B8E327 /* MWSFilm.m in Sources */,

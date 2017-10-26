@@ -53,8 +53,7 @@
     for (NSDictionary * actorData in actorsData)
     {
       NSAssert([actorData isKindOfClass:[NSDictionary class]], @"Invalid actor data type");
-      Actor * actor = [[Actor alloc] initWithData:actorData];
-      actor.film = self;
+      Actor * actor = [[Actor alloc] initWithData:actorData film:self];
       [actors addObject:actor];
     }
   }
