@@ -34,7 +34,7 @@
 		742C64321E9C901A00B8E327 /* MWSFilm.m in Sources */ = {isa = PBXBuildFile; fileRef = 742C64311E9C901A00B8E327 /* MWSFilm.m */; };
 		742C64351E9C90F100B8E327 /* MWSActor.m in Sources */ = {isa = PBXBuildFile; fileRef = 742C64341E9C90F100B8E327 /* MWSActor.m */; };
 		742C64381E9C913200B8E327 /* MWSGenericRole.m in Sources */ = {isa = PBXBuildFile; fileRef = 742C64371E9C913200B8E327 /* MWSGenericRole.m */; };
-		742C643B1E9C917B00B8E327 /* Director.m in Sources */ = {isa = PBXBuildFile; fileRef = 742C643A1E9C917B00B8E327 /* Director.m */; };
+		742C643B1E9C917B00B8E327 /* MWSDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = 742C643A1E9C917B00B8E327 /* MWSDirector.m */; };
 		90DA19CFA1BC8F9001F66546 /* DetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6A3D5C79D0DBE63886184F /* DetailsRouter.swift */; };
 		9719FBB21151E7A3416388B9 /* Pods_MovieWebServiceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9CE2FAEE24F90800F730771 /* Pods_MovieWebServiceUITests.framework */; };
 		98DCD8E1A77375C8D2741246 /* Pods_MovieWebServiceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 570604DAB816B8F590CE6A19 /* Pods_MovieWebServiceTests.framework */; };
@@ -123,8 +123,8 @@
 		742C64341E9C90F100B8E327 /* MWSActor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWSActor.m; sourceTree = "<group>"; };
 		742C64361E9C913200B8E327 /* MWSGenericRole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWSGenericRole.h; sourceTree = "<group>"; };
 		742C64371E9C913200B8E327 /* MWSGenericRole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWSGenericRole.m; sourceTree = "<group>"; };
-		742C64391E9C917B00B8E327 /* Director.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Director.h; sourceTree = "<group>"; };
-		742C643A1E9C917B00B8E327 /* Director.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Director.m; sourceTree = "<group>"; };
+		742C64391E9C917B00B8E327 /* MWSDirector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWSDirector.h; sourceTree = "<group>"; };
+		742C643A1E9C917B00B8E327 /* MWSDirector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWSDirector.m; sourceTree = "<group>"; };
 		742C64401E9CD2BC00B8E327 /* Movie-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Movie-Bridging-Header.h"; sourceTree = "<group>"; };
 		78533EB522E1CAA78E1268C9 /* Pods-MovieWebService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieWebService.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieWebService/Pods-MovieWebService.debug.xcconfig"; sourceTree = "<group>"; };
 		7A2853701712C15EEF299728 /* Pods-MovieWebServiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieWebServiceTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MovieWebServiceTests/Pods-MovieWebServiceTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -409,8 +409,8 @@
 				742C64341E9C90F100B8E327 /* MWSActor.m */,
 				742C64361E9C913200B8E327 /* MWSGenericRole.h */,
 				742C64371E9C913200B8E327 /* MWSGenericRole.m */,
-				742C64391E9C917B00B8E327 /* Director.h */,
-				742C643A1E9C917B00B8E327 /* Director.m */,
+				742C64391E9C917B00B8E327 /* MWSDirector.h */,
+				742C643A1E9C917B00B8E327 /* MWSDirector.m */,
 				348526B61FA21D2D00BE5477 /* MWSMpaa.h */,
 			);
 			name = Model;
@@ -847,7 +847,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				742C63ED1E9C750600B8E327 /* AppDelegate.m in Sources */,
-				742C643B1E9C917B00B8E327 /* Director.m in Sources */,
+				742C643B1E9C917B00B8E327 /* MWSDirector.m in Sources */,
 				742C64351E9C90F100B8E327 /* MWSActor.m in Sources */,
 				742C64381E9C913200B8E327 /* MWSGenericRole.m in Sources */,
 				742C642D1E9C89E000B8E327 /* CellTableViewCell.m in Sources */,

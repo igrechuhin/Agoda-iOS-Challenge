@@ -1,5 +1,5 @@
 //
-//  Director.h
+//  MWSDirector.h
 //  MovieWebService
 //
 //  Created by testDev on 4/11/17.
@@ -8,8 +8,6 @@
 
 #import "MWSGenericRole.h"
 
-@interface Director : MWSGenericRole
-
-- (id)initWithData:(NSDictionary *)data;
+@interface MWSDirector : MWSGenericRole
 
 @end

@@ -9,7 +9,7 @@
 class DetailsViewController: UIViewController, DetailsViewInput, TappableLabelDelegate {
 
   var output: DetailsViewOutput!
-  public var director: Director!
+  public var director: MWSDirector!
 
   var directorName: UILabel!
   var directorNameValue: UILabel!

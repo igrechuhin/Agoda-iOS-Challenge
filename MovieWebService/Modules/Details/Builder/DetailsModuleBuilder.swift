@@ -24,7 +24,7 @@
 
     presenter.interactor = interactor
     viewController.output = presenter
-    viewController.director = data as? Director
+    viewController.director = data as? MWSDirector
 
     return viewController
   }

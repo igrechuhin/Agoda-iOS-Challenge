@@ -8,7 +8,7 @@
 
 #import "MWSMpaa.h"
 
-@class Director;
+@class MWSDirector;
 @class MWSActor;
 
 @interface MWSFilm : NSObject
@@ -17,7 +17,7 @@
 @property(copy, nonatomic, readonly) NSArray<NSString *> * languages;
 @property(copy, nonatomic, readonly) NSString * name;
 @property(nonatomic, readonly) BOOL nominated;
-@property(nonatomic, readonly) Director * director;
+@property(nonatomic, readonly) MWSDirector * director;
 @property(nonatomic, readonly) MWSMpaa mpaa;
 @property(nonatomic, readonly) NSDate * releaseDate;
 @property(nonatomic, readonly) float imdbRating;

@@ -7,8 +7,8 @@
 //
 
 #import "MWSActor.h"
+#import "MWSDirector.h"
 #import "MWSFilm.h"
-#import "Director.h"
 
 @interface MWSFilm()
 
@@ -16,7 +16,7 @@
 @property(copy, nonatomic, readwrite) NSArray<NSString *> * languages;
 @property(copy, nonatomic, readwrite) NSString * name;
 @property(nonatomic, readwrite) BOOL nominated;
-@property(nonatomic, readwrite) Director * director;
+@property(nonatomic, readwrite) MWSDirector * director;
 @property(nonatomic, readwrite) MWSMpaa mpaa;
 @property(nonatomic, readwrite) NSDate * releaseDate;
 @property(nonatomic, readwrite) float imdbRating;
@@ -98,7 +98,7 @@
   NSAssert(director != nil, @"Director data is missing");
   NSAssert([director isKindOfClass:[NSDictionary class]], @"Invalid director data type");
   if (director)
-    self.director = [[Director alloc] initWithData:director];
+    self.director = [[MWSDirector alloc] initWithData:director film:self];
 }
 
 - (void)parseMPAA:(NSDictionary *)data
