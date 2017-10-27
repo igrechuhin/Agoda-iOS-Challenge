@@ -6,13 +6,13 @@
 //  Copyright © 2017 TestCompany. All rights reserved.
 //
 
+#import "MWSActor.h"
 #import "MWSFilm.h"
-#import "Actor.h"
 #import "Director.h"
 
 @interface MWSFilm()
 
-@property(copy, nonatomic, readwrite) NSArray<Actor *> * actors;
+@property(copy, nonatomic, readwrite) NSArray<MWSActor *> * actors;
 @property(copy, nonatomic, readwrite) NSArray<NSString *> * languages;
 @property(copy, nonatomic, readwrite) NSString * name;
 @property(nonatomic, readwrite) BOOL nominated;
@@ -53,7 +53,7 @@
     for (NSDictionary * actorData in actorsData)
     {
       NSAssert([actorData isKindOfClass:[NSDictionary class]], @"Invalid actor data type");
-      Actor * actor = [[Actor alloc] initWithData:actorData film:self];
+      MWSActor * actor = [[MWSActor alloc] initWithData:actorData film:self];
       [actors addObject:actor];
     }
   }

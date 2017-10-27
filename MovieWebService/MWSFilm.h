@@ -9,11 +9,11 @@
 #import "MWSMpaa.h"
 
 @class Director;
-@class Actor;
+@class MWSActor;
 
 @interface MWSFilm : NSObject
 
-@property(copy, nonatomic, readonly) NSArray<Actor *> * actors;
+@property(copy, nonatomic, readonly) NSArray<MWSActor *> * actors;
 @property(copy, nonatomic, readonly) NSArray<NSString *> * languages;
 @property(copy, nonatomic, readonly) NSString * name;
 @property(nonatomic, readonly) BOOL nominated;
