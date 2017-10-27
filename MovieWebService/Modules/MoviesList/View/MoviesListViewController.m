@@ -7,8 +7,7 @@
 //
 
 #import "MoviesListViewController.h"
-
-#import "AppDelegate.h"
+#import "MWSDefaultFilmsProvider.h"
 #import "MWSFilm.h"
 #import "MoviesListViewOutput.h"
 
@@ -19,18 +18,12 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
+  [MWSDefaultFilmsProvider getFilm:0 withCallback:^(MWSFilm * film) {
+    [self.output setData:film];
+  }];
 
   [self.output didTriggerViewReadyEvent];
   [self.output setViewForSetup:self.view];
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
-  [super viewWillAppear:animated];
-  AppDelegate * appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-  [appDelegate getFilmWithCallback:^(MWSFilm * film) {
-    [self.output setData:film];
-  }];
 }
 
 #pragma mark - MoviesListViewInput
