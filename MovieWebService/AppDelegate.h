@@ -9,6 +9,6 @@
 @interface AppDelegate : UIResponder<UIApplicationDelegate>
 
 @property(nonatomic) UIWindow * window;
-@property(nonatomic) UINavigationController * navigationController;
+@property(nonatomic, readonly) UINavigationController * rootNavigationController;
 
 @end
