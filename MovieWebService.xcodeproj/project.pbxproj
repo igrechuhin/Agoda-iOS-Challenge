@@ -199,11 +199,11 @@
 		234438248B3AC7425AAD32D6 /* Details */ = {
 			isa = PBXGroup;
 			children = (
-				5475C6ACFA132C75A7477A37 /* View */,
-				A69823734C78E397924DE813 /* Presenter */,
-				C4E72A41393C48161C5717A2 /* Interactor */,
-				4BC6E8DDA5EBAA72523ACD53 /* Router */,
 				1D2951D9464323E635EA8F8F /* Builder */,
+				C4E72A41393C48161C5717A2 /* Interactor */,
+				A69823734C78E397924DE813 /* Presenter */,
+				4BC6E8DDA5EBAA72523ACD53 /* Router */,
+				5475C6ACFA132C75A7477A37 /* View */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -211,10 +211,10 @@
 		2DBEC26E097B7C1B55CD31D2 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				67F84FB8D7ECA82C8CB0611A /* MoviesListInteractorInput.h */,
-				D3E495E73D8E0AC15D5596F4 /* MoviesListInteractorOutput.h */,
 				6AEA4F937573C25C75CE2E0A /* MoviesListInteractor.h */,
 				F04B81BB8E069391AC58935D /* MoviesListInteractor.m */,
+				67F84FB8D7ECA82C8CB0611A /* MoviesListInteractorInput.h */,
+				D3E495E73D8E0AC15D5596F4 /* MoviesListInteractorOutput.h */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -240,14 +240,14 @@
 		3484ABFB1FA3323C00AB3B67 /* Instances */ = {
 			isa = PBXGroup;
 			children = (
+				3484ABFF1FA3323C00AB3B67 /* MWSActor.h */,
+				3484AC031FA3323C00AB3B67 /* MWSActor.m */,
+				3484AC011FA3323C00AB3B67 /* MWSDirector.h */,
 				3484ABFC1FA3323C00AB3B67 /* MWSDirector.m */,
 				3484ABFD1FA3323C00AB3B67 /* MWSFilm.h */,
-				3484ABFE1FA3323C00AB3B67 /* MWSGenericRole.h */,
-				3484ABFF1FA3323C00AB3B67 /* MWSActor.h */,
 				3484AC001FA3323C00AB3B67 /* MWSFilm.m */,
-				3484AC011FA3323C00AB3B67 /* MWSDirector.h */,
+				3484ABFE1FA3323C00AB3B67 /* MWSGenericRole.h */,
 				3484AC021FA3323C00AB3B67 /* MWSGenericRole.m */,
-				3484AC031FA3323C00AB3B67 /* MWSActor.m */,
 			);
 			path = Instances;
 			sourceTree = "<group>";
@@ -266,8 +266,8 @@
 			isa = PBXGroup;
 			children = (
 				3484AC161FA3565B00AB3B67 /* Assets.xcassets */,
-				3484AC171FA3565B00AB3B67 /* LaunchScreen.storyboard */,
 				3484AC191FA3565B00AB3B67 /* Info.plist */,
+				3484AC171FA3565B00AB3B67 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -306,8 +306,8 @@
 			isa = PBXGroup;
 			children = (
 				34FC3E821FA35AF200A7F596 /* CellTableViewCell.h */,
-				34FC3E831FA35AF200A7F596 /* CellTableViewCell.xib */,
 				34FC3E841FA35AF200A7F596 /* CellTableViewCell.m */,
+				34FC3E831FA35AF200A7F596 /* CellTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -332,8 +332,8 @@
 		4BC6E8DDA5EBAA72523ACD53 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				0B106271B4B6191EDF801976 /* DetailsRouterInput.swift */,
 				AA6A3D5C79D0DBE63886184F /* DetailsRouter.swift */,
+				0B106271B4B6191EDF801976 /* DetailsRouterInput.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -341,9 +341,9 @@
 		5475C6ACFA132C75A7477A37 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D39CE7C8FB3C38D6D501CE54 /* DetailsViewController.swift */,
 				26433A0B06861EBAF23B96D3 /* DetailsViewInput.swift */,
 				96D852298DA083746EF65D02 /* DetailsViewOutput.swift */,
-				D39CE7C8FB3C38D6D501CE54 /* DetailsViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -351,9 +351,9 @@
 		552D62753A46F56511C927DF /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				AE97EE66EF21E50BD94AF4F3 /* MoviesListRouterInput.h */,
 				38787514E6726FA46093D3D3 /* MoviesListRouter.h */,
 				C9D8F91432561B228237B2CE /* MoviesListRouter.m */,
+				AE97EE66EF21E50BD94AF4F3 /* MoviesListRouterInput.h */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -361,8 +361,8 @@
 		578A72838BE61473B4DFA550 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				7CC08BD7D2E111BC41031D83 /* MoviesList */,
 				234438248B3AC7425AAD32D6 /* Details */,
+				7CC08BD7D2E111BC41031D83 /* MoviesList */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -381,9 +381,9 @@
 				742C63E71E9C750600B8E327 /* MovieWebService */,
 				742C64011E9C750700B8E327 /* MovieWebServiceTests */,
 				742C640C1E9C750700B8E327 /* MovieWebServiceUITests */,
-				742C63E61E9C750600B8E327 /* Products */,
-				ACD6056051612501C5E03425 /* Pods */,
 				87C92900E3A5247180F01ADC /* Frameworks */,
+				ACD6056051612501C5E03425 /* Pods */,
+				742C63E61E9C750600B8E327 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -453,10 +453,10 @@
 			isa = PBXGroup;
 			children = (
 				742C64231E9C7A3900B8E327 /* Builder */,
-				DFED55E88469F67815074C84 /* View */,
-				C572FD75E962291053D81A9C /* Presenter */,
 				2DBEC26E097B7C1B55CD31D2 /* Interactor */,
+				C572FD75E962291053D81A9C /* Presenter */,
 				552D62753A46F56511C927DF /* Router */,
+				DFED55E88469F67815074C84 /* View */,
 			);
 			path = MoviesList;
 			sourceTree = "<group>";
@@ -520,9 +520,9 @@
 		C4E72A41393C48161C5717A2 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				0FB9110561F8A83DB1F6046A /* DetailsInteractor.swift */,
 				D0694EA765A10A05BD4473FE /* DetailsInteractorInput.swift */,
 				4436005FAD9733036C793E76 /* DetailsInteractorOutput.swift */,
-				0FB9110561F8A83DB1F6046A /* DetailsInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -549,10 +549,10 @@
 			isa = PBXGroup;
 			children = (
 				34FC3E811FA35AF200A7F596 /* Cells */,
-				05A4B1832935E3B822D3EBA2 /* MoviesListViewInput.h */,
-				AB1C005B9ECA1191CC422287 /* MoviesListViewOutput.h */,
 				F604268277E96743D1053B4E /* MoviesListViewController.h */,
 				4921FCC65F429A0DF58F70D4 /* MoviesListViewController.m */,
+				05A4B1832935E3B822D3EBA2 /* MoviesListViewInput.h */,
+				AB1C005B9ECA1191CC422287 /* MoviesListViewOutput.h */,
 			);
 			path = View;
 			sourceTree = "<group>";
