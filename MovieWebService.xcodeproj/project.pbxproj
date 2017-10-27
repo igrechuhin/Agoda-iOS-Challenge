@@ -16,7 +16,9 @@
 		3484AC061FA3323C00AB3B67 /* MWSGenericRole.m in Sources */ = {isa = PBXBuildFile; fileRef = 3484AC021FA3323C00AB3B67 /* MWSGenericRole.m */; };
 		3484AC071FA3323C00AB3B67 /* MWSActor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3484AC031FA3323C00AB3B67 /* MWSActor.m */; };
 		3484AC0F1FA33BF000AB3B67 /* MWSDefaultFilmsProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3484AC0E1FA33BF000AB3B67 /* MWSDefaultFilmsProvider.m */; };
+		3484AC1A1FA3565B00AB3B67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3484AC161FA3565B00AB3B67 /* Assets.xcassets */; };
 		34B8DDD91FA0D3420073842E /* TappableLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B8DDD71FA0D3420073842E /* TappableLabel.m */; };
+		34FC3E881FA35B9200A7F596 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3484AC171FA3565B00AB3B67 /* LaunchScreen.storyboard */; };
 		3A1E161A2EB88942BBCBC76E /* DetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB0BE1422967EB71C2F2F0F /* DetailsPresenter.swift */; };
 		3E428908FB520AB4DF020ACC /* DetailsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26433A0B06861EBAF23B96D3 /* DetailsViewInput.swift */; };
 		3E5F7753DD2B76D8AB385033 /* DetailsInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0694EA765A10A05BD4473FE /* DetailsInteractorInput.swift */; };
@@ -28,8 +30,6 @@
 		73275175EC7D920DC9231FA4 /* DetailsModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9295F7F0E6B0707E7F8DECE8 /* DetailsModuleBuilder.swift */; };
 		742C63EA1E9C750600B8E327 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 742C63E91E9C750600B8E327 /* main.m */; };
 		742C63ED1E9C750600B8E327 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 742C63EC1E9C750600B8E327 /* AppDelegate.m */; };
-		742C63F51E9C750600B8E327 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 742C63F41E9C750600B8E327 /* Assets.xcassets */; };
-		742C63F81E9C750600B8E327 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 742C63F61E9C750600B8E327 /* LaunchScreen.storyboard */; };
 		742C64031E9C750700B8E327 /* MovieWebServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 742C64021E9C750700B8E327 /* MovieWebServiceTests.m */; };
 		742C640E1E9C750700B8E327 /* MovieWebServiceUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 742C640D1E9C750700B8E327 /* MovieWebServiceUITests.m */; };
 		742C64261E9C7A3900B8E327 /* MoviesListBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 742C64251E9C7A3900B8E327 /* MoviesListBuilder.m */; };
@@ -95,6 +95,9 @@
 		3484AC0D1FA33BF000AB3B67 /* MWSDefaultFilmsProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWSDefaultFilmsProvider.h; sourceTree = "<group>"; };
 		3484AC0E1FA33BF000AB3B67 /* MWSDefaultFilmsProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MWSDefaultFilmsProvider.m; sourceTree = "<group>"; };
 		348761421FA0C5020094E309 /* MovieWebService.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieWebService.pch; sourceTree = "<group>"; };
+		3484AC161FA3565B00AB3B67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3484AC181FA3565B00AB3B67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3484AC191FA3565B00AB3B67 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34B8DDD61FA0D3420073842E /* TappableLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TappableLabel.h; sourceTree = "<group>"; };
 		34B8DDD71FA0D3420073842E /* TappableLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TappableLabel.m; sourceTree = "<group>"; };
 		34B8DDD81FA0D3420073842E /* TappableLabelDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TappableLabelDelegate.h; sourceTree = "<group>"; };
@@ -113,9 +116,6 @@
 		742C63E91E9C750600B8E327 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		742C63EB1E9C750600B8E327 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		742C63EC1E9C750600B8E327 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		742C63F41E9C750600B8E327 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		742C63F71E9C750600B8E327 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		742C63F91E9C750600B8E327 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		742C63FE1E9C750700B8E327 /* MovieWebServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieWebServiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		742C64021E9C750700B8E327 /* MovieWebServiceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieWebServiceTests.m; sourceTree = "<group>"; };
 		742C64041E9C750700B8E327 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -275,6 +275,16 @@
 			path = Providers;
 			sourceTree = "<group>";
 		};
+		3484AC151FA3565B00AB3B67 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3484AC161FA3565B00AB3B67 /* Assets.xcassets */,
+				3484AC171FA3565B00AB3B67 /* LaunchScreen.storyboard */,
+				3484AC191FA3565B00AB3B67 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		34B8DDD51FA0D3420073842E /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -386,13 +396,11 @@
 				076375151EBB0F27006E280B /* Screenshots */,
 				742C63EB1E9C750600B8E327 /* AppDelegate.h */,
 				742C63EC1E9C750600B8E327 /* AppDelegate.m */,
-				742C63F41E9C750600B8E327 /* Assets.xcassets */,
-				742C63F61E9C750600B8E327 /* LaunchScreen.storyboard */,
-				742C63F91E9C750600B8E327 /* Info.plist */,
 				742C63E81E9C750600B8E327 /* Supporting Files */,
 				578A72838BE61473B4DFA550 /* Modules */,
 				742C642F1E9C89E800B8E327 /* Cell */,
 				348761421FA0C5020094E309 /* MovieWebService.pch */,
+				3484AC151FA3565B00AB3B67 /* Resources */,
 			);
 			path = MovieWebService;
 			sourceTree = "<group>";
@@ -696,9 +704,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				742C63F81E9C750600B8E327 /* LaunchScreen.storyboard in Resources */,
 				742C642E1E9C89E000B8E327 /* CellTableViewCell.xib in Resources */,
-				742C63F51E9C750600B8E327 /* Assets.xcassets in Resources */,
+				34FC3E881FA35B9200A7F596 /* LaunchScreen.storyboard in Resources */,
+				3484AC1A1FA3565B00AB3B67 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -942,10 +950,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		742C63F61E9C750600B8E327 /* LaunchScreen.storyboard */ = {
+		3484AC171FA3565B00AB3B67 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				742C63F71E9C750600B8E327 /* Base */,
+				3484AC181FA3565B00AB3B67 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -1071,7 +1079,7 @@
 			baseConfigurationReference = 78533EB522E1CAA78E1268C9 /* Pods-MovieWebService.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = MovieWebService/Info.plist;
+				INFOPLIST_FILE = MovieWebService/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = agodatest.MovieWebService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1085,7 +1093,7 @@
 			baseConfigurationReference = 611BAE68F7CDC543F4FEBA97 /* Pods-MovieWebService.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = MovieWebService/Info.plist;
+				INFOPLIST_FILE = MovieWebService/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = agodatest.MovieWebService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
