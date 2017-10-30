@@ -1,5 +1,5 @@
 //
-//  MoviesListViewController.m
+//  MWSMoviesListView.m
 //  MovieWebService
 //
 //  Created by testDev on 11/04/2017.
@@ -13,13 +13,13 @@
 #import "Masonry.h"
 #import "MovieWebService-Swift.h"
 
-@interface MoviesListViewController ()<UITableViewDataSource, UITableViewDelegate>
+@interface MWSMoviesListView ()<UITableViewDataSource, UITableViewDelegate>
 
 @property(nonatomic) UITableView * tableView;
 
 @end
 
-@implementation MoviesListViewController
+@implementation MWSMoviesListView
 
 #pragma mark - Life cycle
 

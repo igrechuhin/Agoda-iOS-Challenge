@@ -1,5 +1,5 @@
 //
-//  MoviesListViewControllerTests.m
+//  MWSMoviesListViewTests.m
 //  MovieWebService
 //
 //  Created by testDev on 11/04/2017.
@@ -8,25 +8,25 @@
 
 #import <XCTest/XCTest.h>
 
-#import "MoviesListViewController.h"
+#import "MWSMoviesListView.h"
 
 #import "MoviesListViewOutput.h"
 
-@interface MoviesListViewControllerTests : XCTestCase
+@interface MWSMoviesListViewTests : XCTestCase
 
-@property(nonatomic, strong) MoviesListViewController * controller;
+@property(nonatomic, strong) MWSMoviesListView * controller;
 
 @property(nonatomic, strong) id mockOutput;
 
 @end
 
-@implementation MoviesListViewControllerTests
+@implementation MWSMoviesListViewTests
 
 - (void)setUp
 {
   [super setUp];
 
-  self.controller = [[MoviesListViewController alloc] init];
+  self.controller = [[MWSMoviesListView alloc] init];
 
   self.controller.output = self.mockOutput;
 }

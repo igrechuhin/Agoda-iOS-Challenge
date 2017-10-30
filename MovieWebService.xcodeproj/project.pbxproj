@@ -10,7 +10,7 @@
 		0BE549F9BEDE75E7D36554D2 /* DetailsRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DA9669AAB22074E9003250 /* DetailsRouterTests.swift */; };
 		0F821A4287C29BEC9B54E253 /* MWSMoviesListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4921FCC65F429A0DF58F70D4 /* MWSMoviesListView.m */; };
 		1DA435E4F744A94268F376F0 /* MoviesListInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA26CDD2A9575B6EADF4E75 /* MoviesListInteractorTests.m */; };
-		2D83F1C19B23D02737F9607E /* MoviesListViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3136C6286E9E6EB633A264C1 /* MoviesListViewControllerTests.m */; };
+		2D83F1C19B23D02737F9607E /* MoviesListViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3136C6286E9E6EB633A264C1 /* MoviesListViewTests.m */; };
 		343916791FA72C680062748D /* MWSMoviesListDisplayData.m in Sources */ = {isa = PBXBuildFile; fileRef = 343916781FA72C680062748D /* MWSMoviesListDisplayData.m */; };
 		3439167D1FA745780062748D /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3439167C1FA745780062748D /* Common.swift */; };
 		343916801FA745A90062748D /* UITableView+Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3439167F1FA745A90062748D /* UITableView+Cells.swift */; };
@@ -86,7 +86,7 @@
 		19DA9669AAB22074E9003250 /* DetailsRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DetailsRouterTests.swift; sourceTree = "<group>"; };
 		1CF463CEF7112C249D34D15F /* DetailsModuleBuilderTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DetailsModuleBuilderTests.swift; sourceTree = "<group>"; };
 		26433A0B06861EBAF23B96D3 /* DetailsViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DetailsViewInput.swift; sourceTree = "<group>"; };
-		3136C6286E9E6EB633A264C1 /* MoviesListViewControllerTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MoviesListViewControllerTests.m; sourceTree = "<group>"; };
+		3136C6286E9E6EB633A264C1 /* MoviesListViewTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MoviesListViewTests.m; sourceTree = "<group>"; };
 		343916771FA72C680062748D /* MWSMoviesListDisplayData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWSMoviesListDisplayData.h; sourceTree = "<group>"; };
 		343916781FA72C680062748D /* MWSMoviesListDisplayData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MWSMoviesListDisplayData.m; sourceTree = "<group>"; };
 		3439167A1FA7372D0062748D /* MWSMoviesListApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWSMoviesListApi.h; sourceTree = "<group>"; };
@@ -556,7 +556,7 @@
 		A2784FEB2219C1BD4876305D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3136C6286E9E6EB633A264C1 /* MoviesListViewControllerTests.m */,
+				3136C6286E9E6EB633A264C1 /* MoviesListViewTests.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -972,7 +972,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				742C64031E9C750700B8E327 /* MovieWebServiceTests.m in Sources */,
-				2D83F1C19B23D02737F9607E /* MoviesListViewControllerTests.m in Sources */,
+				2D83F1C19B23D02737F9607E /* MoviesListViewTests.m in Sources */,
 				B1ECDB0D319AC25FF7CDE7A3 /* MoviesListPresenterTests.m in Sources */,
 				1DA435E4F744A94268F376F0 /* MoviesListInteractorTests.m in Sources */,
 				EC2947B31729FA900482C447 /* MoviesListRouterTests.m in Sources */,

@@ -1,5 +1,5 @@
 //
-//  MoviesListViewController.h
+//  MWSMoviesListView.h
 //  MovieWebService
 //
 //  Created by testDev on 11/04/2017.
@@ -9,6 +9,6 @@
 #import "MWSMoviesListApi.h"
 #import "MWSView.h"
 
-@interface MoviesListViewController : MWSView<MWSMoviesListViewApi>
+@interface MWSMoviesListView : MWSView<MWSMoviesListViewApi>
 
 @end

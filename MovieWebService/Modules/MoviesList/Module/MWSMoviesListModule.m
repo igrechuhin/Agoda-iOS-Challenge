@@ -17,7 +17,7 @@
 
 + (MWSModule *)build
 {
-  return [self buildWithView:[[MoviesListViewController alloc] init]
+  return [self buildWithView:[[MWSMoviesListView alloc] init]
                   interactor:[[MoviesListInteractor alloc] init]
                    presenter:[[MoviesListPresenter alloc] init]
                       router:[[MoviesListRouter alloc] init]
