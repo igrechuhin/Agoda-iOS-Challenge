@@ -6,12 +6,12 @@
 //  Copyright © 2017 TestCompany. All rights reserved.
 //
 
-#import "MWSViewProtocol.h"
+#import "MWSDisplayDataProtocol.h"
+#import "MWSFilm.h"
 #import "MWSInteractorProtocol.h"
 #import "MWSPresenterProtocol.h"
 #import "MWSRouterProtocol.h"
-#import "MWSDisplayDataProtocol.h"
-#import "MWSFilm.h"
+#import "MWSViewProtocol.h"
 
 typedef void (^MWSFetchMoviesCallback)(NSArray<MWSFilm *> *);
 
@@ -46,4 +46,3 @@ typedef void (^MWSFetchMoviesCallback)(NSArray<MWSFilm *> *);
 @property(nonatomic, readonly) UIColor * backgroundColor;
 
 @end
-

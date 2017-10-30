@@ -7,11 +7,11 @@
 //
 
 #import "MWSMoviesListModule.h"
-#import "MWSMoviesListView.h"
+#import "MWSMoviesListDisplayData.h"
 #import "MWSMoviesListInteractor.h"
 #import "MWSMoviesListPresenter.h"
 #import "MWSMoviesListRouter.h"
-#import "MWSMoviesListDisplayData.h"
+#import "MWSMoviesListView.h"
 
 @implementation MWSMoviesListModule
 

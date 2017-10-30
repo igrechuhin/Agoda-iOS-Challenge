@@ -8,7 +8,7 @@
 
 #import "MWSActor.h"
 
-@interface MWSActor()
+@interface MWSActor ()
 
 @property(copy, nonatomic, readwrite) NSString * screenName;
 

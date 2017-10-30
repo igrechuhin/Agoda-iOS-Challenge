@@ -8,7 +8,7 @@
 
 #import "MWSInteractorProtocol.h"
 
-@interface MWSInteractor : NSObject <MWSInteractorProtocol>
+@interface MWSInteractor : NSObject<MWSInteractorProtocol>
 
 @property(weak, nonatomic) MWSPresenter * presenter;
 

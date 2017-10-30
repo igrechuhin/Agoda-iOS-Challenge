@@ -7,13 +7,13 @@
 //
 
 #import "MWSModule.h"
-#import "MWSView.h"
+#import "MWSDisplayDataProtocol.h"
 #import "MWSInteractor.h"
 #import "MWSPresenter.h"
 #import "MWSRouter.h"
-#import "MWSDisplayDataProtocol.h"
+#import "MWSView.h"
 
-@interface MWSModule()
+@interface MWSModule ()
 
 @property(nonatomic, readwrite) MWSView * view;
 @property(nonatomic, readwrite) MWSInteractor * interactor;

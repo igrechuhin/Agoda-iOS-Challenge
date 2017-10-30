@@ -8,9 +8,8 @@
 
 @class MWSPresenter;
 
-@protocol MWSInteractorProtocol <NSObject>
+@protocol MWSInteractorProtocol<NSObject>
 
 @property(weak, nonatomic) MWSPresenter * presenter;
 
 @end
-

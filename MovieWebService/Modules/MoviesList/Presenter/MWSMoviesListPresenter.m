@@ -7,11 +7,11 @@
 //
 
 #import "MWSMoviesListPresenter.h"
-#import "MWSView.h"
-#import "MWSMoviesListInteractor.h"
 #import "MWSFilm.h"
+#import "MWSMoviesListInteractor.h"
+#import "MWSView.h"
 
-@interface MoviesListPresenter()
+@interface MoviesListPresenter ()
 
 @property(copy, nonatomic) NSArray<MWSFilm *> * movies;
 
@@ -40,10 +40,7 @@
 
 #pragma mark - MWSMoviesListPresenterApi
 
-- (NSInteger)moviesCount
-{
-  return [self.movies count];
-}
+- (NSInteger)moviesCount { return [self.movies count]; }
 
 - (MWSFilm *)getMovieAtIndex:(NSInteger)index
 {
@@ -73,7 +70,8 @@
 - (MWSInteractor<MWSMoviesListInteractorApi> *)moviesListInteractor
 {
   MWSInteractor * interactor = super.interactor;
-  NSAssert([interactor conformsToProtocol:@protocol(MWSMoviesListInteractorApi)], @"Invalid interactor type");
+  NSAssert([interactor conformsToProtocol:@protocol(MWSMoviesListInteractorApi)],
+           @"Invalid interactor type");
   return (MWSInteractor<MWSMoviesListInteractorApi> *)(interactor);
 }
 

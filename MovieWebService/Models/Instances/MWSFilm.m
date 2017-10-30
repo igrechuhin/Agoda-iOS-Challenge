@@ -6,11 +6,11 @@
 //  Copyright © 2017 TestCompany. All rights reserved.
 //
 
+#import "MWSFilm.h"
 #import "MWSActor.h"
 #import "MWSDirector.h"
-#import "MWSFilm.h"
 
-@interface MWSFilm()
+@interface MWSFilm ()
 
 @property(copy, nonatomic, readwrite) NSArray<MWSActor *> * actors;
 @property(copy, nonatomic, readwrite) NSArray<NSString *> * languages;
@@ -113,9 +113,7 @@
   case MWSMpaaPG:
   case MWSMpaaPG13:
   case MWSMpaaR:
-  case MWSMpaaNC17:
-    self.mpaa = mpaaValue;
-    break;
+  case MWSMpaaNC17: self.mpaa = mpaaValue; break;
   default:
     NSAssert(false, @"Invalid MPAA value");
     self.mpaa = MWSMpaaG;

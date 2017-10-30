@@ -8,7 +8,7 @@
 
 #import "MWSGenericRole.h"
 
-@interface MWSGenericRole()
+@interface MWSGenericRole ()
 
 @property(copy, nonatomic, readwrite) NSString * biography;
 @property(copy, nonatomic, readwrite) NSString * name;

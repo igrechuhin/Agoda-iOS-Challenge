@@ -6,8 +6,8 @@
 //  Copyright © 2017 Agoda Services Co. Ltd. All rights reserved.
 //
 
-#import "MWSView.h"
 #import "MWSMoviesListApi.h"
+#import "MWSView.h"
 
 @interface MoviesListViewController : MWSView<MWSMoviesListViewApi>
 

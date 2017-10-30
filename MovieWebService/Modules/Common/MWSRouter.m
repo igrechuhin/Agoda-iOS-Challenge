@@ -12,9 +12,12 @@
 
 @implementation MWSRouter
 
-- (void)showInWindow:(UIWindow *)window embedInNavController:(BOOL)embedInNavController makeKeyAndVisible:(BOOL)makeKeyAndVisible
+- (void)showInWindow:(UIWindow *)window
+    embedInNavController:(BOOL)embedInNavController
+       makeKeyAndVisible:(BOOL)makeKeyAndVisible
 {
-  UIViewController * view = embedInNavController ? [self embedInNavigationController] : self.presenter.view;
+  UIViewController * view =
+      embedInNavController ? [self embedInNavigationController] : self.presenter.view;
   window.rootViewController = view;
   if (makeKeyAndVisible)
     [window makeKeyAndVisible];
@@ -22,7 +25,8 @@
 
 - (void)showFrom:(UIViewController *)from embedInNavController:(BOOL)embedInNavController
 {
-  UIViewController * view = embedInNavController ? [self embedInNavigationController] : self.presenter.view;
+  UIViewController * view =
+      embedInNavController ? [self embedInNavigationController] : self.presenter.view;
   [from showViewController:view sender:nil];
 }
 

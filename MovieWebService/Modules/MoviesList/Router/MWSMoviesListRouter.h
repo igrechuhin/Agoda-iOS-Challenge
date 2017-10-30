@@ -6,8 +6,8 @@
 //  Copyright © 2017 Agoda Services Co. Ltd. All rights reserved.
 //
 
-#import "MWSRouter.h"
 #import "MWSMoviesListApi.h"
+#import "MWSRouter.h"
 
 @interface MoviesListRouter : MWSRouter<MWSMoviesListRouterApi>
 

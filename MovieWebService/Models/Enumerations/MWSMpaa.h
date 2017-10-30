@@ -6,10 +6,4 @@
 //  Copyright © 2017 TestCompany. All rights reserved.
 //
 
-typedef NS_ENUM(NSInteger, MWSMpaa) {
-  MWSMpaaG,
-  MWSMpaaPG,
-  MWSMpaaPG13,
-  MWSMpaaR,
-  MWSMpaaNC17
-};
+typedef NS_ENUM(NSInteger, MWSMpaa) { MWSMpaaG, MWSMpaaPG, MWSMpaaPG13, MWSMpaaR, MWSMpaaNC17 };

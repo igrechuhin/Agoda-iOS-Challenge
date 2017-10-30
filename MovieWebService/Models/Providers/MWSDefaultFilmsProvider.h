@@ -8,6 +8,6 @@
 
 #import "MWSFilmsProvider.h"
 
-@interface MWSDefaultFilmsProvider : NSObject <MWSFilmsProvider>
+@interface MWSDefaultFilmsProvider : NSObject<MWSFilmsProvider>
 
 @end

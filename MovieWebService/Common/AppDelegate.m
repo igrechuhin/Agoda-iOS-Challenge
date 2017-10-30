@@ -10,7 +10,7 @@
 #import "MWSMoviesListModule.h"
 #import "MWSRouter.h"
 
-@interface AppDelegate()
+@interface AppDelegate ()
 
 @property(nonatomic, readwrite) UINavigationController * rootNavigationController;
 

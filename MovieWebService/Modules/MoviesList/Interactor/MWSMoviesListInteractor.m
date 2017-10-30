@@ -13,10 +13,11 @@
 
 - (void)getMoviesWithCallback:(MWSFetchMoviesCallback)callback
 {
-  [MWSDefaultFilmsProvider getFilm:0 withCallback:^(MWSFilm * film) {
-    NSArray<MWSFilm *> * movies = @[film];
-    callback(movies);
-  }];
+  [MWSDefaultFilmsProvider getFilm:0
+                      withCallback:^(MWSFilm * film) {
+                        NSArray<MWSFilm *> * movies = @[film];
+                        callback(movies);
+                      }];
 }
 
 @end

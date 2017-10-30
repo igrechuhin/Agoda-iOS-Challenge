@@ -10,14 +10,8 @@
 
 @implementation MWSMoviesListDisplayData
 
-- (NSString *)title
-{
-  return @"RootViewController";
-}
+- (NSString *)title { return @"RootViewController"; }
 
-- (UIColor *)backgroundColor
-{
-  return [UIColor whiteColor];
-}
+- (UIColor *)backgroundColor { return [UIColor whiteColor]; }
 
 @end

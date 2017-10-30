@@ -10,11 +10,13 @@
 
 @protocol MWSPresenterProtocol;
 
-@protocol MWSRouterProtocol <NSObject>
+@protocol MWSRouterProtocol<NSObject>
 
 @property(weak, nonatomic) MWSPresenter * presenter;
 
-- (void)showInWindow:(UIWindow *)window embedInNavController:(BOOL)embedInNavController makeKeyAndVisible:(BOOL)makeKeyAndVisible;
+- (void)showInWindow:(UIWindow *)window
+    embedInNavController:(BOOL)embedInNavController
+       makeKeyAndVisible:(BOOL)makeKeyAndVisible;
 - (void)showFrom:(UIViewController *)from embedInNavController:(BOOL)embedInNavController;
 
 @end

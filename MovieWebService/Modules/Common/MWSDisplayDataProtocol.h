@@ -6,6 +6,6 @@
 //  Copyright © 2017 TestCompany. All rights reserved.
 //
 
-@protocol MWSDisplayDataProtocol <NSObject>
+@protocol MWSDisplayDataProtocol<NSObject>
 
 @end

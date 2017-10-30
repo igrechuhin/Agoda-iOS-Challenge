@@ -10,7 +10,7 @@
 
 typedef void (^MWSFilmCallback)(MWSFilm *);
 
-@protocol MWSFilmsProvider <NSObject>
+@protocol MWSFilmsProvider<NSObject>
 
 + (void)getFilm:(NSInteger)filmID withCallback:(MWSFilmCallback)callback;
 

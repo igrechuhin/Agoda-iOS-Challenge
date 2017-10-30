@@ -8,7 +8,7 @@
 
 #import "MWSRouterProtocol.h"
 
-@interface MWSRouter : NSObject <MWSRouterProtocol>
+@interface MWSRouter : NSObject<MWSRouterProtocol>
 
 @property(weak, nonatomic) MWSPresenter * presenter;
 

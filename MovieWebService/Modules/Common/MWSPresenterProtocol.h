@@ -10,7 +10,7 @@
 @class MWSInteractor;
 @class MWSRouter;
 
-@protocol MWSPresenterProtocol <NSObject>
+@protocol MWSPresenterProtocol<NSObject>
 
 @property(weak, nonatomic) MWSView * view;
 @property(nonatomic) MWSInteractor * interactor;

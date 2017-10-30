@@ -49,7 +49,7 @@
   // given
 
   // when
-//  [self.presenter didTriggerViewReadyEvent];
+  //  [self.presenter didTriggerViewReadyEvent];
 
   // then
 }

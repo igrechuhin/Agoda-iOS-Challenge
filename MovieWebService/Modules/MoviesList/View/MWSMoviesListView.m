@@ -7,13 +7,13 @@
 //
 
 #import "MWSMoviesListView.h"
-#import "Masonry.h"
-#import "MovieWebService-Swift.h"
+#import "AppDelegate.h"
 #import "CellTableViewCell.h"
 #import "MWSPresenter.h"
-#import "AppDelegate.h"
+#import "Masonry.h"
+#import "MovieWebService-Swift.h"
 
-@interface MoviesListViewController()<UITableViewDataSource, UITableViewDelegate>
+@interface MoviesListViewController ()<UITableViewDataSource, UITableViewDelegate>
 
 @property(nonatomic) UITableView * tableView;
 
@@ -36,7 +36,8 @@
 
 - (void)createTableView
 {
-  UITableView * tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+  UITableView * tableView =
+      [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
   tableView.dataSource = self;
   tableView.delegate = self;
   self.tableView = tableView;
@@ -76,11 +77,14 @@
 
 #pragma mark - UITableViewDataSource
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
   MWSPresenter<MWSMoviesListPresenterApi> * presenter = self.moviesListPresenter;
   MWSFilm * film = [presenter getMovieAtIndex:indexPath.row];
-  CellTableViewCell * cell = (CellTableViewCell *)[tableView dequeueReusableCellWithCellClass:[CellTableViewCell class] indexPath:indexPath];
+  CellTableViewCell * cell =
+      (CellTableViewCell *)[tableView dequeueReusableCellWithCellClass:[CellTableViewCell class]
+                                                             indexPath:indexPath];
 
   cell.name.text = film.name;
 
@@ -95,12 +99,12 @@
   NSString * filmRatingText;
   switch (film.mpaa)
   {
-    case MWSMpaaG: filmRatingText = @"G"; break;
-    case MWSMpaaPG: filmRatingText = @"PG"; break;
-    case MWSMpaaPG13: filmRatingText = @"PG13"; break;
-    case MWSMpaaR: filmRatingText = @"R"; break;
-    case MWSMpaaNC17: filmRatingText = @"NC17"; break;
-    default: break;
+  case MWSMpaaG: filmRatingText = @"G"; break;
+  case MWSMpaaPG: filmRatingText = @"PG"; break;
+  case MWSMpaaPG13: filmRatingText = @"PG13"; break;
+  case MWSMpaaR: filmRatingText = @"R"; break;
+  case MWSMpaaNC17: filmRatingText = @"NC17"; break;
+  default: break;
   }
   cell.filmRating.text = filmRatingText;
   cell.rating.text = [[NSNumber numberWithFloat:film.imdbRating] stringValue];
@@ -135,14 +139,16 @@
 - (MWSPresenter<MWSMoviesListPresenterApi> *)moviesListPresenter
 {
   MWSPresenter * presenter = super.presenter;
-  NSAssert([presenter conformsToProtocol:@protocol(MWSMoviesListPresenterApi)], @"Invalid presenter type");
+  NSAssert([presenter conformsToProtocol:@protocol(MWSMoviesListPresenterApi)],
+           @"Invalid presenter type");
   return (MWSPresenter<MWSMoviesListPresenterApi> *)(presenter);
 }
 
 - (id<MWSMoviesListDisplayDataApi>)moviesListDisplayData
 {
   id<MWSDisplayDataProtocol> displayData = super.displayData;
-  NSAssert([displayData conformsToProtocol:@protocol(MWSMoviesListDisplayDataApi)], @"Invalid display data type");
+  NSAssert([displayData conformsToProtocol:@protocol(MWSMoviesListDisplayDataApi)],
+           @"Invalid display data type");
   return (id<MWSMoviesListDisplayDataApi>)(displayData);
 }
 

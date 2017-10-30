@@ -6,8 +6,8 @@
 //  Copyright © 2017 Agoda Services Co. Ltd. All rights reserved.
 //
 
-#import "MWSPresenter.h"
 #import "MWSMoviesListApi.h"
+#import "MWSPresenter.h"
 
 @interface MoviesListPresenter : MWSPresenter<MWSMoviesListPresenterApi>
 
