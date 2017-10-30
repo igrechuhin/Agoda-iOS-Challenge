@@ -7,10 +7,7 @@
 //
 
 #import "MWSMoviesListView.h"
-#import "MWSDefaultFilmsProvider.h"
-#import "MWSFilm.h"
 #import "Masonry.h"
-#import "MWSMoviesListDisplayData.h"
 #import "MovieWebService-Swift.h"
 #import "CellTableViewCell.h"
 #import "MWSPresenter.h"

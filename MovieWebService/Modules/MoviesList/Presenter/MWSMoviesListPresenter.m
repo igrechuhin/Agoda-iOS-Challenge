@@ -9,6 +9,7 @@
 #import "MWSMoviesListPresenter.h"
 #import "MWSView.h"
 #import "MWSMoviesListInteractor.h"
+#import "MWSFilm.h"
 
 @interface MoviesListPresenter()
 
