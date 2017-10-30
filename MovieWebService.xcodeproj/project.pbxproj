@@ -12,6 +12,7 @@
 		1DA435E4F744A94268F376F0 /* MoviesListInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA26CDD2A9575B6EADF4E75 /* MoviesListInteractorTests.m */; };
 		2D83F1C19B23D02737F9607E /* MoviesListViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3136C6286E9E6EB633A264C1 /* MoviesListViewControllerTests.m */; };
 		3439167D1FA745780062748D /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3439167C1FA745780062748D /* Common.swift */; };
+		343916821FA745CB0062748D /* UINib+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343916811FA745CB0062748D /* UINib+Init.swift */; };
 		3484AC041FA3323C00AB3B67 /* MWSDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = 3484ABFC1FA3323C00AB3B67 /* MWSDirector.m */; };
 		3484AC051FA3323C00AB3B67 /* MWSFilm.m in Sources */ = {isa = PBXBuildFile; fileRef = 3484AC001FA3323C00AB3B67 /* MWSFilm.m */; };
 		3484AC061FA3323C00AB3B67 /* MWSGenericRole.m in Sources */ = {isa = PBXBuildFile; fileRef = 3484AC021FA3323C00AB3B67 /* MWSGenericRole.m */; };
@@ -81,6 +82,7 @@
 		26433A0B06861EBAF23B96D3 /* DetailsViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DetailsViewInput.swift; sourceTree = "<group>"; };
 		3136C6286E9E6EB633A264C1 /* MoviesListViewControllerTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MoviesListViewControllerTests.m; sourceTree = "<group>"; };
 		3439167C1FA745780062748D /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		343916811FA745CB0062748D /* UINib+Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINib+Init.swift"; sourceTree = "<group>"; };
 		3484ABFA1FA3323C00AB3B67 /* MWSMpaa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWSMpaa.h; sourceTree = "<group>"; };
 		3484ABFC1FA3323C00AB3B67 /* MWSDirector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWSDirector.m; sourceTree = "<group>"; };
 		3484ABFD1FA3323C00AB3B67 /* MWSFilm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWSFilm.h; sourceTree = "<group>"; };
@@ -219,6 +221,14 @@
 				D3E495E73D8E0AC15D5596F4 /* MoviesListInteractorOutput.h */,
 			);
 			path = Interactor;
+			sourceTree = "<group>";
+		};
+		3439167E1FA7459B0062748D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				343916811FA745CB0062748D /* UINib+Init.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		3484ABF81FA3323C00AB3B67 /* Models */ = {
@@ -403,6 +413,7 @@
 		742C63E71E9C750600B8E327 /* MovieWebService */ = {
 			isa = PBXGroup;
 			children = (
+				3439167E1FA7459B0062748D /* Extensions */,
 				34FC3E791FA3593F00A7F596 /* Common */,
 				34B8DDD51FA0D3420073842E /* Components */,
 				3484ABF81FA3323C00AB3B67 /* Models */,
@@ -878,6 +889,7 @@
 				3484AC061FA3323C00AB3B67 /* MWSGenericRole.m in Sources */,
 				742C64261E9C7A3900B8E327 /* MoviesListBuilder.m in Sources */,
 				3E428908FB520AB4DF020ACC /* DetailsViewInput.swift in Sources */,
+				343916821FA745CB0062748D /* UINib+Init.swift in Sources */,
 				C7DB85D5B1453F3151459F19 /* DetailsViewOutput.swift in Sources */,
 				3484AC0F1FA33BF000AB3B67 /* MWSDefaultFilmsProvider.m in Sources */,
 				ECF6ADAC4D6A9543F0896D1F /* DetailsViewController.swift in Sources */,
