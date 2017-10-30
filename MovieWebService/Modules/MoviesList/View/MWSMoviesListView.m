@@ -6,7 +6,7 @@
 //  Copyright © 2017 Agoda Services Co. Ltd. All rights reserved.
 //
 
-#import "MoviesListViewController.h"
+#import "MWSMoviesListView.h"
 #import "MWSDefaultFilmsProvider.h"
 #import "MWSFilm.h"
 #import "Masonry.h"

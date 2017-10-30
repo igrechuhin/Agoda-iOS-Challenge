@@ -6,7 +6,7 @@
 //  Copyright © 2017 Agoda Services Co. Ltd. All rights reserved.
 //
 
-#import "MoviesListRouter.h"
+#import "MWSMoviesListRouter.h"
 
 @implementation MoviesListRouter
 

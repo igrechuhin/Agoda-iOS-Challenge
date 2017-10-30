@@ -1,5 +1,5 @@
 //
-//  MoviesListAssembly.h
+//  MWSMoviesListModule.h
 //  MovieWebService
 //
 //  Created by testDev on 11/04/2017.
@@ -8,7 +8,7 @@
 
 #import "MWSModule.h"
 
-@interface MoviesListBuilder : MWSModule
+@interface MWSMoviesListModule : MWSModule
 
 + (MWSModule *)build;
 

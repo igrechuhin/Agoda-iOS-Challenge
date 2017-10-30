@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "MoviesListBuilder.h"
+#import "MWSMoviesListModule.h"
 #import "MWSRouter.h"
 
 @interface AppDelegate()
@@ -27,7 +27,7 @@
 
 - (void)showMainWindow
 {
-  MWSModule * moviesList = [MoviesListBuilder build];
+  MWSModule * moviesList = [MWSMoviesListModule build];
   UIWindow * window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
   [moviesList.router showInWindow:window embedInNavController:YES makeKeyAndVisible:YES];
   self.window = window;

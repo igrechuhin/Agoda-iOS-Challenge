@@ -6,7 +6,7 @@
 //  Copyright © 2017 Agoda Services Co. Ltd. All rights reserved.
 //
 
-#import "MoviesListInteractor.h"
+#import "MWSMoviesListInteractor.h"
 #import "MWSDefaultFilmsProvider.h"
 
 @implementation MoviesListInteractor
