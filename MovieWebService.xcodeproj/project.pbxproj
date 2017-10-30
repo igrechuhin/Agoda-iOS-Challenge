@@ -12,6 +12,7 @@
 		1DA435E4F744A94268F376F0 /* MoviesListInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA26CDD2A9575B6EADF4E75 /* MoviesListInteractorTests.m */; };
 		2D83F1C19B23D02737F9607E /* MoviesListViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3136C6286E9E6EB633A264C1 /* MoviesListViewControllerTests.m */; };
 		3439167D1FA745780062748D /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3439167C1FA745780062748D /* Common.swift */; };
+		343916801FA745A90062748D /* UITableView+Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3439167F1FA745A90062748D /* UITableView+Cells.swift */; };
 		343916821FA745CB0062748D /* UINib+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343916811FA745CB0062748D /* UINib+Init.swift */; };
 		3484AC041FA3323C00AB3B67 /* MWSDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = 3484ABFC1FA3323C00AB3B67 /* MWSDirector.m */; };
 		3484AC051FA3323C00AB3B67 /* MWSFilm.m in Sources */ = {isa = PBXBuildFile; fileRef = 3484AC001FA3323C00AB3B67 /* MWSFilm.m */; };
@@ -82,6 +83,7 @@
 		26433A0B06861EBAF23B96D3 /* DetailsViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DetailsViewInput.swift; sourceTree = "<group>"; };
 		3136C6286E9E6EB633A264C1 /* MoviesListViewControllerTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MoviesListViewControllerTests.m; sourceTree = "<group>"; };
 		3439167C1FA745780062748D /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		3439167F1FA745A90062748D /* UITableView+Cells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Cells.swift"; sourceTree = "<group>"; };
 		343916811FA745CB0062748D /* UINib+Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINib+Init.swift"; sourceTree = "<group>"; };
 		3484ABFA1FA3323C00AB3B67 /* MWSMpaa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWSMpaa.h; sourceTree = "<group>"; };
 		3484ABFC1FA3323C00AB3B67 /* MWSDirector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWSDirector.m; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				343916811FA745CB0062748D /* UINib+Init.swift */,
+				3439167F1FA745A90062748D /* UITableView+Cells.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -897,6 +900,7 @@
 				9E91D35C4F9A99DA2DA1B5BD /* DetailsModuleInput.swift in Sources */,
 				3A1E161A2EB88942BBCBC76E /* DetailsPresenter.swift in Sources */,
 				3439167D1FA745780062748D /* Common.swift in Sources */,
+				343916801FA745A90062748D /* UITableView+Cells.swift in Sources */,
 				3484AC041FA3323C00AB3B67 /* MWSDirector.m in Sources */,
 				3E5F7753DD2B76D8AB385033 /* DetailsInteractorInput.swift in Sources */,
 				6597A49AD7CFA04B7C3014CF /* DetailsInteractorOutput.swift in Sources */,
