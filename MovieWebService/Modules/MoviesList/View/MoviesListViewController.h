@@ -6,15 +6,9 @@
 //  Copyright © 2017 Agoda Services Co. Ltd. All rights reserved.
 //
 
-#import "MoviesListViewInput.h"
+#import "MWSView.h"
+#import "MWSMoviesListApi.h"
 
-@class MWSFilm;
-
-@protocol MoviesListViewOutput;
-
-@interface MoviesListViewController : UIViewController<MoviesListViewInput>
-
-@property(nonatomic, strong) id<MoviesListViewOutput> output;
-@property(nonatomic) MWSFilm * film;
+@interface MoviesListViewController : MWSView<MWSMoviesListViewApi>
 
 @end

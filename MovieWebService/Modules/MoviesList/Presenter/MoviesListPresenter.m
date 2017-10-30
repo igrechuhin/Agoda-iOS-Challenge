@@ -7,32 +7,73 @@
 //
 
 #import "MoviesListPresenter.h"
+#import "MWSView.h"
+#import "MoviesListInteractor.h"
 
-#import "MoviesListInteractorInput.h"
-#import "MoviesListRouterInput.h"
-#import "MoviesListViewInput.h"
+@interface MoviesListPresenter()
+
+@property(copy, nonatomic) NSArray<MWSFilm *> * movies;
+
+@end
 
 @implementation MoviesListPresenter
+
+#pragma mark - Helpers
+
+- (void)fetchMovies
 {
-  NSArray * films;
+  MWSInteractor<MWSMoviesListInteractorApi> * interactor = self.moviesListInteractor;
+  __weak typeof(self) wSelf = self;
+  [interactor getMoviesWithCallback:^(NSArray<MWSFilm *> * movies) {
+    dispatch_async(dispatch_get_main_queue(), ^{
+      __strong typeof(wSelf) sSelf = wSelf;
+      if (!sSelf)
+        return;
+      sSelf.movies = movies;
+
+      MWSView<MWSMoviesListViewApi> * view = sSelf.moviesListView;
+      [view dataUpdated];
+    });
+  }];
 }
 
-#pragma mark - Методы MoviesListModuleInput
+#pragma mark - MWSMoviesListPresenterApi
 
-- (void)configureModule {}
-
-#pragma mark - Методы MoviesListViewOutput
-
-- (void)didTriggerViewReadyEvent { [self.view setupInitialState]; }
-
-- (void)setViewForSetup:(UIView *)view { [self.interactor setViewForSetup:view]; }
-
-- (void)setData:(MWSFilm *)film
+- (NSInteger)moviesCount
 {
-  films = [NSArray arrayWithObject:film];
-  [self.interactor setData:films];
+  return [self.movies count];
 }
 
-#pragma mark - Методы MoviesListInteractorOutput
+- (MWSFilm *)getMovieAtIndex:(NSInteger)index
+{
+  NSArray<MWSFilm *> * movies = self.movies;
+  NSAssert(index >= 0 && index < movies.count, @"Invalid movie index");
+  return movies[index];
+}
+
+#pragma mark - MWSPresenterProtocol
+
+- (void)viewHasLoaded
+{
+  MWSView<MWSMoviesListViewApi> * view = self.moviesListView;
+  [view setup];
+  [self fetchMovies];
+}
+
+#pragma mark - Properties
+
+- (MWSView<MWSMoviesListViewApi> *)moviesListView
+{
+  MWSView * view = super.view;
+  NSAssert([view conformsToProtocol:@protocol(MWSMoviesListViewApi)], @"Invalid view type");
+  return (MWSView<MWSMoviesListViewApi> *)(view);
+}
+
+- (MWSInteractor<MWSMoviesListInteractorApi> *)moviesListInteractor
+{
+  MWSInteractor * interactor = super.interactor;
+  NSAssert([interactor conformsToProtocol:@protocol(MWSMoviesListInteractorApi)], @"Invalid interactor type");
+  return (MWSInteractor<MWSMoviesListInteractorApi> *)(interactor);
+}
 
 @end

@@ -11,6 +11,7 @@
 		0F821A4287C29BEC9B54E253 /* MoviesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4921FCC65F429A0DF58F70D4 /* MoviesListViewController.m */; };
 		1DA435E4F744A94268F376F0 /* MoviesListInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA26CDD2A9575B6EADF4E75 /* MoviesListInteractorTests.m */; };
 		2D83F1C19B23D02737F9607E /* MoviesListViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3136C6286E9E6EB633A264C1 /* MoviesListViewControllerTests.m */; };
+		343916791FA72C680062748D /* MWSMoviesListDisplayData.m in Sources */ = {isa = PBXBuildFile; fileRef = 343916781FA72C680062748D /* MWSMoviesListDisplayData.m */; };
 		3439167D1FA745780062748D /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3439167C1FA745780062748D /* Common.swift */; };
 		343916801FA745A90062748D /* UITableView+Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3439167F1FA745A90062748D /* UITableView+Cells.swift */; };
 		343916821FA745CB0062748D /* UINib+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343916811FA745CB0062748D /* UINib+Init.swift */; };
@@ -78,7 +79,6 @@
 
 /* Begin PBXFileReference section */
 		026F64ADDEE1970845506D2F /* DetailsInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DetailsInteractorTests.swift; sourceTree = "<group>"; };
-		05A4B1832935E3B822D3EBA2 /* MoviesListViewInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MoviesListViewInput.h; sourceTree = "<group>"; };
 		0B106271B4B6191EDF801976 /* DetailsRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DetailsRouterInput.swift; sourceTree = "<group>"; };
 		0FB9110561F8A83DB1F6046A /* DetailsInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DetailsInteractor.swift; sourceTree = "<group>"; };
 		148E8494DB90097392C92E80 /* DetailsModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DetailsModuleInput.swift; sourceTree = "<group>"; };
@@ -87,6 +87,9 @@
 		1CF463CEF7112C249D34D15F /* DetailsModuleBuilderTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DetailsModuleBuilderTests.swift; sourceTree = "<group>"; };
 		26433A0B06861EBAF23B96D3 /* DetailsViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DetailsViewInput.swift; sourceTree = "<group>"; };
 		3136C6286E9E6EB633A264C1 /* MoviesListViewControllerTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MoviesListViewControllerTests.m; sourceTree = "<group>"; };
+		343916771FA72C680062748D /* MWSMoviesListDisplayData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWSMoviesListDisplayData.h; sourceTree = "<group>"; };
+		343916781FA72C680062748D /* MWSMoviesListDisplayData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MWSMoviesListDisplayData.m; sourceTree = "<group>"; };
+		3439167A1FA7372D0062748D /* MWSMoviesListApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWSMoviesListApi.h; sourceTree = "<group>"; };
 		3439167C1FA745780062748D /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		3439167F1FA745A90062748D /* UITableView+Cells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Cells.swift"; sourceTree = "<group>"; };
 		343916811FA745CB0062748D /* UINib+Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINib+Init.swift"; sourceTree = "<group>"; };
@@ -116,7 +119,6 @@
 		34FC3E821FA35AF200A7F596 /* CellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellTableViewCell.h; sourceTree = "<group>"; };
 		34FC3E831FA35AF200A7F596 /* CellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellTableViewCell.xib; sourceTree = "<group>"; };
 		34FC3E841FA35AF200A7F596 /* CellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellTableViewCell.m; sourceTree = "<group>"; };
-		35CD0B96AAC58C1A4D7EC3CE /* MoviesListModuleInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MoviesListModuleInput.h; sourceTree = "<group>"; };
 		34FC3E971FA377E200A7F596 /* MWSDisplayDataProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWSDisplayDataProtocol.h; sourceTree = "<group>"; };
 		34FC3E9A1FA3780400A7F596 /* MWSInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWSInteractor.h; sourceTree = "<group>"; };
 		34FC3E9B1FA3780400A7F596 /* MWSInteractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MWSInteractor.m; sourceTree = "<group>"; };
@@ -139,7 +141,6 @@
 		570604DAB816B8F590CE6A19 /* Pods_MovieWebServiceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieWebServiceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		611BAE68F7CDC543F4FEBA97 /* Pods-MovieWebService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieWebService.release.xcconfig"; path = "Pods/Target Support Files/Pods-MovieWebService/Pods-MovieWebService.release.xcconfig"; sourceTree = "<group>"; };
 		64F90893C5DA4E92ACCFF053 /* MoviesListPresenterTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MoviesListPresenterTests.m; sourceTree = "<group>"; };
-		67F84FB8D7ECA82C8CB0611A /* MoviesListInteractorInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MoviesListInteractorInput.h; sourceTree = "<group>"; };
 		6AEA4F937573C25C75CE2E0A /* MoviesListInteractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MoviesListInteractor.h; sourceTree = "<group>"; };
 		6DA26CDD2A9575B6EADF4E75 /* MoviesListInteractorTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MoviesListInteractorTests.m; sourceTree = "<group>"; };
 		742C63E51E9C750600B8E327 /* MovieWebService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieWebService.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,14 +159,11 @@
 		A04472FFCF6FDE683F18F480 /* Pods-MovieWebServiceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieWebServiceTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieWebServiceTests/Pods-MovieWebServiceTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A9CE2FAEE24F90800F730771 /* Pods_MovieWebServiceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieWebServiceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA6A3D5C79D0DBE63886184F /* DetailsRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DetailsRouter.swift; sourceTree = "<group>"; };
-		AB1C005B9ECA1191CC422287 /* MoviesListViewOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MoviesListViewOutput.h; sourceTree = "<group>"; };
-		AE97EE66EF21E50BD94AF4F3 /* MoviesListRouterInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MoviesListRouterInput.h; sourceTree = "<group>"; };
 		B3557D257DDF9A08CB978484 /* Pods-MovieWebServiceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieWebServiceUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieWebServiceUITests/Pods-MovieWebServiceUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B69330EE0906E0C552986611 /* Pods-MovieWebServiceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieWebServiceUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MovieWebServiceUITests/Pods-MovieWebServiceUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C9D8F91432561B228237B2CE /* MoviesListRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MoviesListRouter.m; sourceTree = "<group>"; };
 		D0694EA765A10A05BD4473FE /* DetailsInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DetailsInteractorInput.swift; sourceTree = "<group>"; };
 		D39CE7C8FB3C38D6D501CE54 /* DetailsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
-		D3E495E73D8E0AC15D5596F4 /* MoviesListInteractorOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MoviesListInteractorOutput.h; sourceTree = "<group>"; };
 		DF2595CF7BC69741655A3A5D /* MoviesListPresenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MoviesListPresenter.m; sourceTree = "<group>"; };
 		EE9B955A840DCAA8F533B7A8 /* DetailsViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DetailsViewTests.swift; sourceTree = "<group>"; };
 		EFB0BE1422967EB71C2F2F0F /* DetailsPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DetailsPresenter.swift; sourceTree = "<group>"; };
@@ -239,10 +237,17 @@
 			children = (
 				6AEA4F937573C25C75CE2E0A /* MoviesListInteractor.h */,
 				F04B81BB8E069391AC58935D /* MoviesListInteractor.m */,
-				67F84FB8D7ECA82C8CB0611A /* MoviesListInteractorInput.h */,
-				D3E495E73D8E0AC15D5596F4 /* MoviesListInteractorOutput.h */,
 			);
 			path = Interactor;
+			sourceTree = "<group>";
+		};
+		343916761FA72C2F0062748D /* DisplayData */ = {
+			isa = PBXGroup;
+			children = (
+				343916771FA72C680062748D /* MWSMoviesListDisplayData.h */,
+				343916781FA72C680062748D /* MWSMoviesListDisplayData.m */,
+			);
+			path = DisplayData;
 			sourceTree = "<group>";
 		};
 		3439167E1FA7459B0062748D /* Extensions */ = {
@@ -411,7 +416,6 @@
 			children = (
 				38787514E6726FA46093D3D3 /* MoviesListRouter.h */,
 				C9D8F91432561B228237B2CE /* MoviesListRouter.m */,
-				AE97EE66EF21E50BD94AF4F3 /* MoviesListRouterInput.h */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -419,6 +423,7 @@
 		578A72838BE61473B4DFA550 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				34FC3E891FA362B500A7F596 /* Common */,
 				234438248B3AC7425AAD32D6 /* Details */,
 				7CC08BD7D2E111BC41031D83 /* MoviesList */,
 			);
@@ -512,10 +517,12 @@
 			isa = PBXGroup;
 			children = (
 				742C64231E9C7A3900B8E327 /* Builder */,
+				343916761FA72C2F0062748D /* DisplayData */,
 				2DBEC26E097B7C1B55CD31D2 /* Interactor */,
 				C572FD75E962291053D81A9C /* Presenter */,
 				552D62753A46F56511C927DF /* Router */,
 				DFED55E88469F67815074C84 /* View */,
+				3439167A1FA7372D0062748D /* MWSMoviesListApi.h */,
 			);
 			path = MoviesList;
 			sourceTree = "<group>";
@@ -589,7 +596,6 @@
 		C572FD75E962291053D81A9C /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				35CD0B96AAC58C1A4D7EC3CE /* MoviesListModuleInput.h */,
 				15A77123BE1C7D757A21CCDA /* MoviesListPresenter.h */,
 				DF2595CF7BC69741655A3A5D /* MoviesListPresenter.m */,
 			);
@@ -610,8 +616,6 @@
 				34FC3E811FA35AF200A7F596 /* Cells */,
 				F604268277E96743D1053B4E /* MoviesListViewController.h */,
 				4921FCC65F429A0DF58F70D4 /* MoviesListViewController.m */,
-				05A4B1832935E3B822D3EBA2 /* MoviesListViewInput.h */,
-				AB1C005B9ECA1191CC422287 /* MoviesListViewOutput.h */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -938,6 +942,7 @@
 				343916821FA745CB0062748D /* UINib+Init.swift in Sources */,
 				C7DB85D5B1453F3151459F19 /* DetailsViewOutput.swift in Sources */,
 				3484AC0F1FA33BF000AB3B67 /* MWSDefaultFilmsProvider.m in Sources */,
+				343916791FA72C680062748D /* MWSMoviesListDisplayData.m in Sources */,
 				ECF6ADAC4D6A9543F0896D1F /* DetailsViewController.swift in Sources */,
 				3484AC071FA3323C00AB3B67 /* MWSActor.m in Sources */,
 				9E91D35C4F9A99DA2DA1B5BD /* DetailsModuleInput.swift in Sources */,

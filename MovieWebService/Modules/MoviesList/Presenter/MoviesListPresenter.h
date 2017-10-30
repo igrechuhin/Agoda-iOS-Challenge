@@ -6,19 +6,9 @@
 //  Copyright © 2017 Agoda Services Co. Ltd. All rights reserved.
 //
 
-#import "MoviesListInteractorOutput.h"
-#import "MoviesListModuleInput.h"
-#import "MoviesListViewOutput.h"
+#import "MWSPresenter.h"
+#import "MWSMoviesListApi.h"
 
-@protocol MoviesListViewInput;
-@protocol MoviesListInteractorInput;
-@protocol MoviesListRouterInput;
-
-@interface MoviesListPresenter
-  : NSObject<MoviesListModuleInput, MoviesListViewOutput, MoviesListInteractorOutput>
-
-@property(nonatomic, strong) id<MoviesListViewInput> view;
-@property(nonatomic, strong) id<MoviesListInteractorInput> interactor;
-@property(nonatomic, strong) id<MoviesListRouterInput> router;
+@interface MoviesListPresenter : MWSPresenter<MWSMoviesListPresenterApi>
 
 @end

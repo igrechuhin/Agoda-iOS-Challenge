@@ -6,15 +6,9 @@
 //  Copyright © 2017 Agoda Services Co. Ltd. All rights reserved.
 //
 
-#import "CellTableViewCell.h"
-#import "MoviesListInteractorInput.h"
+#import "MWSInteractor.h"
+#import "MWSMoviesListApi.h"
 
-@protocol MoviesListInteractorOutput;
-
-@interface MoviesListInteractor
-  : NSObject<MoviesListInteractorInput, UITableViewDataSource, UITableViewDelegate>
-
-@property(nonatomic, weak) id<MoviesListInteractorOutput> output;
-@property(nonatomic, strong) IBOutlet CellTableViewCell * movieCell;
+@interface MoviesListInteractor : MWSInteractor<MWSMoviesListInteractorApi>
 
 @end

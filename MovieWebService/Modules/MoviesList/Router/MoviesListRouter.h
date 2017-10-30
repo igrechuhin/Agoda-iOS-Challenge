@@ -6,12 +6,9 @@
 //  Copyright © 2017 Agoda Services Co. Ltd. All rights reserved.
 //
 
-#import "MoviesListRouterInput.h"
+#import "MWSRouter.h"
+#import "MWSMoviesListApi.h"
 
-@class UIViewController;
-
-@interface MoviesListRouter : NSObject<MoviesListRouterInput>
-
-@property(nonatomic, weak) UIViewController * viewController;
+@interface MoviesListRouter : MWSRouter<MWSMoviesListRouterApi>
 
 @end

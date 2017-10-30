@@ -10,10 +10,6 @@
 
 #import "MoviesListPresenter.h"
 
-#import "MoviesListInteractorInput.h"
-#import "MoviesListRouterInput.h"
-#import "MoviesListViewInput.h"
-
 @interface MoviesListPresenterTests : XCTestCase
 
 @property(nonatomic, strong) MoviesListPresenter * presenter;
@@ -53,7 +49,7 @@
   // given
 
   // when
-  [self.presenter didTriggerViewReadyEvent];
+//  [self.presenter didTriggerViewReadyEvent];
 
   // then
 }

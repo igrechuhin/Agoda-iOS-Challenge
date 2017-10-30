@@ -6,7 +6,10 @@
 //  Copyright © 2017 Agoda Services Co. Ltd. All rights reserved.
 //
 
-@interface MoviesListBuilder : NSObject
-- (UIViewController *)build;
+#import "MWSModule.h"
+
+@interface MoviesListBuilder : MWSModule
+
++ (MWSModule *)build;
 
 @end
