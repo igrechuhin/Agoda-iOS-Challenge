@@ -71,8 +71,8 @@
   AppDelegate * appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
   MWSPresenter<MWSMoviesListPresenterApi> * presenter = self.moviesListPresenter;
   MWSFilm * film = [presenter getMovieAtIndex:indexPath.row];
-  DetailsModuleBuilder * builder = [DetailsModuleBuilder new];
-  [appDelegate.rootNavigationController pushViewController:[builder buildWith:film] animated:YES];
+  DetailsModule * details = [DetailsModule new];
+  [appDelegate.rootNavigationController pushViewController:[details buildWith:film] animated:YES];
 }
 
 #pragma mark - UITableViewDataSource

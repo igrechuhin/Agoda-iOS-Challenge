@@ -1,12 +1,12 @@
 //
-//  DetailsModuleBuilder.swift
+//  DetailsModule.swift
 //  MovieWebService
 //
 //  Created by testDev on 11/04/2017.
 //  Copyright © 2017 Agoda Services Co. Ltd. All rights reserved.
 //
 
-@objc class DetailsModuleBuilder: NSObject {
+@objc class DetailsModule: NSObject {
 
   @objc func build(with data: Any) -> UIViewController {
 
