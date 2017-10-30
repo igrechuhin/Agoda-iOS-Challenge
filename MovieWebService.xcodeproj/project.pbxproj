@@ -26,6 +26,11 @@
 		34FC3E851FA35AF200A7F596 /* CellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34FC3E831FA35AF200A7F596 /* CellTableViewCell.xib */; };
 		34FC3E861FA35AF200A7F596 /* CellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FC3E841FA35AF200A7F596 /* CellTableViewCell.m */; };
 		34FC3E881FA35B9200A7F596 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3484AC171FA3565B00AB3B67 /* LaunchScreen.storyboard */; };
+		34FC3E9C1FA3780400A7F596 /* MWSInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FC3E9B1FA3780400A7F596 /* MWSInteractor.m */; };
+		34FC3E9F1FA3787C00A7F596 /* MWSPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FC3E9E1FA3787C00A7F596 /* MWSPresenter.m */; };
+		34FC3EA51FA37B5300A7F596 /* MWSView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FC3EA41FA37B5300A7F596 /* MWSView.m */; };
+		34FC3EA91FA37EEE00A7F596 /* MWSRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FC3EA81FA37EEE00A7F596 /* MWSRouter.m */; };
+		34FC3EAC1FA384EA00A7F596 /* MWSModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FC3EAB1FA384EA00A7F596 /* MWSModule.m */; };
 		3A1E161A2EB88942BBCBC76E /* DetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB0BE1422967EB71C2F2F0F /* DetailsPresenter.swift */; };
 		3E428908FB520AB4DF020ACC /* DetailsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26433A0B06861EBAF23B96D3 /* DetailsViewInput.swift */; };
 		3E5F7753DD2B76D8AB385033 /* DetailsInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0694EA765A10A05BD4473FE /* DetailsInteractorInput.swift */; };
@@ -112,6 +117,21 @@
 		34FC3E831FA35AF200A7F596 /* CellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellTableViewCell.xib; sourceTree = "<group>"; };
 		34FC3E841FA35AF200A7F596 /* CellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellTableViewCell.m; sourceTree = "<group>"; };
 		35CD0B96AAC58C1A4D7EC3CE /* MoviesListModuleInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MoviesListModuleInput.h; sourceTree = "<group>"; };
+		34FC3E971FA377E200A7F596 /* MWSDisplayDataProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWSDisplayDataProtocol.h; sourceTree = "<group>"; };
+		34FC3E9A1FA3780400A7F596 /* MWSInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWSInteractor.h; sourceTree = "<group>"; };
+		34FC3E9B1FA3780400A7F596 /* MWSInteractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MWSInteractor.m; sourceTree = "<group>"; };
+		34FC3E9D1FA3787C00A7F596 /* MWSPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWSPresenter.h; sourceTree = "<group>"; };
+		34FC3E9E1FA3787C00A7F596 /* MWSPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MWSPresenter.m; sourceTree = "<group>"; };
+		34FC3EA01FA3789100A7F596 /* MWSInteractorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWSInteractorProtocol.h; sourceTree = "<group>"; };
+		34FC3EA11FA378BA00A7F596 /* MWSPresenterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWSPresenterProtocol.h; sourceTree = "<group>"; };
+		34FC3EA21FA37A4F00A7F596 /* MWSViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWSViewProtocol.h; sourceTree = "<group>"; };
+		34FC3EA31FA37B5300A7F596 /* MWSView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWSView.h; sourceTree = "<group>"; };
+		34FC3EA41FA37B5300A7F596 /* MWSView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MWSView.m; sourceTree = "<group>"; };
+		34FC3EA61FA37CCE00A7F596 /* MWSRouterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWSRouterProtocol.h; sourceTree = "<group>"; };
+		34FC3EA71FA37EEE00A7F596 /* MWSRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWSRouter.h; sourceTree = "<group>"; };
+		34FC3EA81FA37EEE00A7F596 /* MWSRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MWSRouter.m; sourceTree = "<group>"; };
+		34FC3EAA1FA384EA00A7F596 /* MWSModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWSModule.h; sourceTree = "<group>"; };
+		34FC3EAB1FA384EA00A7F596 /* MWSModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MWSModule.m; sourceTree = "<group>"; };
 		38787514E6726FA46093D3D3 /* MoviesListRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MoviesListRouter.h; sourceTree = "<group>"; };
 		43D5E7435EFF0197EE769D38 /* Pods_MovieWebService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieWebService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4436005FAD9733036C793E76 /* DetailsInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DetailsInteractorOutput.swift; sourceTree = "<group>"; };
@@ -326,6 +346,28 @@
 				34FC3E831FA35AF200A7F596 /* CellTableViewCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		34FC3E891FA362B500A7F596 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				34FC3E971FA377E200A7F596 /* MWSDisplayDataProtocol.h */,
+				34FC3E9A1FA3780400A7F596 /* MWSInteractor.h */,
+				34FC3E9B1FA3780400A7F596 /* MWSInteractor.m */,
+				34FC3EA01FA3789100A7F596 /* MWSInteractorProtocol.h */,
+				34FC3EAA1FA384EA00A7F596 /* MWSModule.h */,
+				34FC3EAB1FA384EA00A7F596 /* MWSModule.m */,
+				34FC3E9D1FA3787C00A7F596 /* MWSPresenter.h */,
+				34FC3E9E1FA3787C00A7F596 /* MWSPresenter.m */,
+				34FC3EA11FA378BA00A7F596 /* MWSPresenterProtocol.h */,
+				34FC3EA71FA37EEE00A7F596 /* MWSRouter.h */,
+				34FC3EA81FA37EEE00A7F596 /* MWSRouter.m */,
+				34FC3EA61FA37CCE00A7F596 /* MWSRouterProtocol.h */,
+				34FC3EA31FA37B5300A7F596 /* MWSView.h */,
+				34FC3EA41FA37B5300A7F596 /* MWSView.m */,
+				34FC3EA21FA37A4F00A7F596 /* MWSViewProtocol.h */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		3AD4387689456E863A555DEF /* ModulesTests */ = {
@@ -887,6 +929,7 @@
 				0F821A4287C29BEC9B54E253 /* MoviesListViewController.m in Sources */,
 				638D8069B664F59F50DFA783 /* MoviesListPresenter.m in Sources */,
 				BC4A6E017108906463B7D6EF /* MoviesListInteractor.m in Sources */,
+				34FC3EAC1FA384EA00A7F596 /* MWSModule.m in Sources */,
 				34B8DDD91FA0D3420073842E /* TappableLabel.m in Sources */,
 				F431DAFBD7C87A621115DB69 /* MoviesListRouter.m in Sources */,
 				3484AC061FA3323C00AB3B67 /* MWSGenericRole.m in Sources */,
@@ -906,11 +949,15 @@
 				6597A49AD7CFA04B7C3014CF /* DetailsInteractorOutput.swift in Sources */,
 				5E41E215546810CF5B8975DB /* DetailsInteractor.swift in Sources */,
 				34FC3E801FA3593F00A7F596 /* AppDelegate.m in Sources */,
+				34FC3EA51FA37B5300A7F596 /* MWSView.m in Sources */,
+				34FC3E9F1FA3787C00A7F596 /* MWSPresenter.m in Sources */,
 				F40497951147EF1D67070FBE /* DetailsRouterInput.swift in Sources */,
 				3484AC051FA3323C00AB3B67 /* MWSFilm.m in Sources */,
 				90DA19CFA1BC8F9001F66546 /* DetailsRouter.swift in Sources */,
 				34FC3E7F1FA3593F00A7F596 /* main.m in Sources */,
+				34FC3E9C1FA3780400A7F596 /* MWSInteractor.m in Sources */,
 				73275175EC7D920DC9231FA4 /* DetailsModuleBuilder.swift in Sources */,
+				34FC3EA91FA37EEE00A7F596 /* MWSRouter.m in Sources */,
 				34FC3E861FA35AF200A7F596 /* CellTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
