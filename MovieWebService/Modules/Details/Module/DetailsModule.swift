@@ -10,7 +10,7 @@
 
   @objc func build(with data: Any) -> UIViewController {
 
-    let viewController = DetailsViewController()
+    let viewController = DetailsView()
 
     let router = DetailsRouter()
     router.viewController = viewController

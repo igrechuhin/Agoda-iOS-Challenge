@@ -19,7 +19,7 @@ class DetailsModuleBuilderTests: XCTestCase {
     let builder = DetailsModuleBuilder()
 
     // when
-    let viewController = builder.build(with: Film()) as! DetailsViewController
+    let viewController = builder.build(with: Film()) as! DetailsView
 
     // then
     XCTAssertNotNil(viewController.output)

@@ -34,6 +34,6 @@ class DetailsRouterTests: XCTestCase {
 
   // MARK: - Mock
 
-  class MockViewController: DetailsViewController {
+  class MockViewController: DetailsView {
   }
 }

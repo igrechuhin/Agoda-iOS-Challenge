@@ -8,7 +8,7 @@
 
 class DetailsRouter: DetailsRouterInput {
 
-  weak var viewController: DetailsViewController!
+  weak var viewController: DetailsView!
 
   // MARK: - DetailsRouterInput
 }

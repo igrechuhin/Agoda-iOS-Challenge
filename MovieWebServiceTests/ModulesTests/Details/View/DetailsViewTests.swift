@@ -14,14 +14,14 @@ import MovieWebService
 class DetailsViewTests: XCTestCase {
 
   var output: MockOutput!
-  var viewController: DetailsViewController!
+  var viewController: DetailsView!
 
   override func setUp() {
     super.setUp()
 
     output = MockOutput()
 
-    viewController = DetailsViewController()
+    viewController = DetailsView()
     viewController.output = output
   }
 
