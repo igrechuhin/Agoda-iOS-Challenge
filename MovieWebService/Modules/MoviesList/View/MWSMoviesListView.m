@@ -29,12 +29,6 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
-//  [MWSDefaultFilmsProvider getFilm:0 withCallback:^(MWSFilm * film) {
-//    [self.output setData:film];
-//  }];
-//
-//  [self.output didTriggerViewReadyEvent];
-//  [self.output setViewForSetup:self.view];
 
   [self createTableView];
   [self registerCells];
