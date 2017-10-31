@@ -6,9 +6,8 @@
 //  Copyright © 2017 Agoda Services Co. Ltd. All rights reserved.
 //
 
-class DetailsView: UIViewController, DetailsViewInput, TappableLabelDelegate {
+class DetailsView: MWSView, DetailsViewApi, TappableLabelDelegate {
 
-  var output: DetailsViewOutput!
   public var director: MWSDirector!
 
   var directorName: UILabel!
@@ -21,7 +20,6 @@ class DetailsView: UIViewController, DetailsViewInput, TappableLabelDelegate {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    output.viewIsReady()
     view = UIView()
     view.backgroundColor = .white
 

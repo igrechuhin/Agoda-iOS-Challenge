@@ -6,26 +6,12 @@
 //  Copyright © 2017 Agoda Services Co. Ltd. All rights reserved.
 //
 
-@objc class DetailsModule: NSObject {
-
-  @objc func build(with data: Any) -> UIViewController {
-
-    let viewController = DetailsView()
-
-    let router = DetailsRouter()
-    router.viewController = viewController
-
-    let presenter = DetailsPresenter()
-    presenter.view = viewController
-    presenter.router = router
-
-    let interactor = DetailsInteractor()
-    interactor.output = presenter
-
-    presenter.interactor = interactor
-    viewController.output = presenter
-    viewController.director = data as? MWSDirector
-
-    return viewController
+@objc class DetailsModule: MWSModule {
+  @objc static func build(movie: MWSFilm) -> MWSModule {
+    return build(with: DetailsView(),
+                 interactor: DetailsInteractor(movie: movie),
+                 presenter: DetailsPresenter(),
+                 router: DetailsRouter(),
+                 displayData: nil)
   }
 }

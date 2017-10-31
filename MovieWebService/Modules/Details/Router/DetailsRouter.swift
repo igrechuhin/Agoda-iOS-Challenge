@@ -6,9 +6,5 @@
 //  Copyright © 2017 Agoda Services Co. Ltd. All rights reserved.
 //
 
-class DetailsRouter: DetailsRouterInput {
-
-  weak var viewController: DetailsView!
-
-  // MARK: - DetailsRouterInput
+final class DetailsRouter: MWSRouter, DetailsRouterApi {
 }

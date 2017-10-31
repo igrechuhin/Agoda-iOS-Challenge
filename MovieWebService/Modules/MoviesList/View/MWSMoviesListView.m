@@ -68,11 +68,10 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
   [tableView deselectRowAtIndexPath:indexPath animated:YES];
-  AppDelegate * appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
   MWSPresenter<MWSMoviesListPresenterApi> * presenter = self.moviesListPresenter;
   MWSFilm * film = [presenter getMovieAtIndex:indexPath.row];
-  DetailsModule * details = [DetailsModule new];
-  [appDelegate.rootNavigationController pushViewController:[details buildWith:film] animated:YES];
+  MWSModule * details = [DetailsModule buildWithMovie:film];
+  [details.router showFrom:self embedInNavController:NO];
 }
 
 #pragma mark - UITableViewDataSource

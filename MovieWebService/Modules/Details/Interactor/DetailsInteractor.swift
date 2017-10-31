@@ -6,9 +6,11 @@
 //  Copyright © 2017 Agoda Services Co. Ltd. All rights reserved.
 //
 
-class DetailsInteractor: DetailsInteractorInput {
+final class DetailsInteractor: MWSInteractor, DetailsInteractorApi {
+  private let movie: MWSFilm
 
-  weak var output: DetailsInteractorOutput!
-
-  // MARK: - DetailsInteractorInput
+  init(movie: MWSFilm) {
+    self.movie = movie
+    super.init()
+  }
 }
