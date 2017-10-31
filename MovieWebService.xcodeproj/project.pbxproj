@@ -16,6 +16,7 @@
 		34349A0D1FA86DA0006A3377 /* DetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34349A081FA86DA0006A3377 /* DetailsInteractor.swift */; };
 		34349A0E1FA86DA0006A3377 /* DetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34349A091FA86DA0006A3377 /* DetailsPresenter.swift */; };
 		34349A0F1FA86DA0006A3377 /* DetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34349A0A1FA86DA0006A3377 /* DetailsRouter.swift */; };
+		34349A111FA86DFA006A3377 /* DetailsDisplayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34349A101FA86DFA006A3377 /* DetailsDisplayData.swift */; };
 		343916791FA72C680062748D /* MWSMoviesListDisplayData.m in Sources */ = {isa = PBXBuildFile; fileRef = 343916781FA72C680062748D /* MWSMoviesListDisplayData.m */; };
 		3439167D1FA745780062748D /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3439167C1FA745780062748D /* Common.swift */; };
 		343916801FA745A90062748D /* UITableView+Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3439167F1FA745A90062748D /* UITableView+Cells.swift */; };
@@ -83,6 +84,7 @@
 		34349A081FA86DA0006A3377 /* DetailsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsInteractor.swift; sourceTree = "<group>"; };
 		34349A091FA86DA0006A3377 /* DetailsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsPresenter.swift; sourceTree = "<group>"; };
 		34349A0A1FA86DA0006A3377 /* DetailsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsRouter.swift; sourceTree = "<group>"; };
+		34349A101FA86DFA006A3377 /* DetailsDisplayData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsDisplayData.swift; sourceTree = "<group>"; };
 		343916771FA72C680062748D /* MWSMoviesListDisplayData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWSMoviesListDisplayData.h; sourceTree = "<group>"; };
 		343916781FA72C680062748D /* MWSMoviesListDisplayData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MWSMoviesListDisplayData.m; sourceTree = "<group>"; };
 		3439167A1FA7372D0062748D /* MWSMoviesListApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWSMoviesListApi.h; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				346CCBDB1FA77916000447D8 /* DetailsApi.swift */,
+				34349A101FA86DFA006A3377 /* DetailsDisplayData.swift */,
 				34349A081FA86DA0006A3377 /* DetailsInteractor.swift */,
 				34349A071FA86DA0006A3377 /* DetailsModule.swift */,
 				34349A091FA86DA0006A3377 /* DetailsPresenter.swift */,
@@ -898,6 +901,7 @@
 				34FC3E801FA3593F00A7F596 /* AppDelegate.m in Sources */,
 				34FC3EA51FA37B5300A7F596 /* MWSView.m in Sources */,
 				34FC3E9F1FA3787C00A7F596 /* MWSPresenter.m in Sources */,
+				34349A111FA86DFA006A3377 /* DetailsDisplayData.swift in Sources */,
 				34349A0B1FA86DA0006A3377 /* DetailsViewController.swift in Sources */,
 				3484AC051FA3323C00AB3B67 /* MWSFilm.m in Sources */,
 				34FC3E7F1FA3593F00A7F596 /* main.m in Sources */,

@@ -7,51 +7,48 @@
 //
 
 class DetailsView: MWSView, DetailsViewApi, TappableLabelDelegate {
-
   public var director: MWSDirector!
 
-  var directorName: UILabel!
-  var directorNameValue: UILabel!
-  var tapToShowMore: TappableLabel!
-  var actorName: UILabel!
-  var actorScreenName: UILabel!
+  private let directorName = UILabel(frame: CGRect(x: 20, y: 100, width: 200, height: 30))
+  private let directorNameValue = UILabel(frame: CGRect(x: 20, y: 150, width: 200, height: 30))
+  private lazy var tapToShowMore: TappableLabel = {
+    let label = TappableLabel(frame: CGRect(x: 20, y: 200, width: 200, height: 30))
+    label.delegate = self
+    return label
+  }()
+  private let actorName = UILabel(frame: CGRect(x: 20, y: 240, width: 200, height: 30))
+  private let actorScreenName = UILabel(frame: CGRect(x: 20, y: 270, width: 200, height: 30))
+
+  private var detailsDisplayData: DetailsDisplayDataApi {
+    return displayData as! DetailsDisplayDataApi
+  }
 
   // MARK: Life cycle
 
   override func viewDidLoad() {
     super.viewDidLoad()
     view = UIView()
-    view.backgroundColor = .white
 
-    directorName = UILabel()
+    let displayData = detailsDisplayData
+    view.backgroundColor = displayData.backgroundColor
+
+    directorName.text = displayData.directorNameTitle
     view.addSubview(directorName)
-    directorName.frame = CGRect(x: 20, y: 100, width: 200, height: 30)
-    directorName.text = "Director Name"
 
-    directorNameValue = UILabel()
-    view.addSubview(directorNameValue)
-    directorNameValue.frame = CGRect(x: 20, y: 150, width: 200, height: 30)
     directorNameValue.text = director.name
+    view.addSubview(directorNameValue)
 
-    tapToShowMore = TappableLabel()
+    tapToShowMore.text = displayData.showMoreActionTitle
     view.addSubview(tapToShowMore)
-    tapToShowMore.frame = CGRect(x: 20, y: 200, width: 200, height: 30)
-    tapToShowMore.text = "Tap here to show more"
-    tapToShowMore.delegate = self
-
-    actorName = UILabel()
-    view.addSubview(actorName)
-    actorName.frame = CGRect(x: 20, y: 240, width: 200, height: 30)
-
-    actorScreenName = UILabel()
-    view.addSubview(actorScreenName)
-    actorScreenName.frame = CGRect(x: 20, y: 270, width: 200, height: 30)
-    actorName.isHidden = true
-    actorScreenName.isHidden = true
 
     let actor = director.film.actors.first!
-    actorName.text = director.name
+    actorName.text = actor.name
+    actorName.isHidden = true
+    view.addSubview(actorName)
+
     actorScreenName.text = actor.screenName
+    actorScreenName.isHidden = true
+    view.addSubview(actorScreenName)
   }
 
   // MARK: DetailsViewInput

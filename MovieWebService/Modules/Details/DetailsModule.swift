@@ -12,6 +12,6 @@
                  interactor: DetailsInteractor(movie: movie),
                  presenter: DetailsPresenter(),
                  router: DetailsRouter(),
-                 displayData: nil)
+                 displayData: DetailsDisplayData())
   }
 }
