@@ -87,13 +87,10 @@
 
   cell.name.text = film.name;
 
-  NSCalendar * cal = [NSCalendar new];
-  NSString * dateText;
-  NSDateFormatter * f = [[NSDateFormatter alloc] init];
-  [f setCalendar:cal];
-  dateText = [f stringFromDate:film.releaseDate];
-
-  cell.date.text = dateText;
+  NSDateFormatter * dateFormatter = [[NSDateFormatter alloc] init];
+  dateFormatter.dateStyle = NSDateFormatterMediumStyle;
+  dateFormatter.timeStyle = NSDateFormatterNoStyle;
+  cell.date.text = [dateFormatter stringFromDate:film.releaseDate];
 
   NSString * filmRatingText;
   switch (film.mpaa)
