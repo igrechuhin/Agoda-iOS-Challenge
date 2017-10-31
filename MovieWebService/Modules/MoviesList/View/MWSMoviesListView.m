@@ -40,6 +40,8 @@
       [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
   tableView.dataSource = self;
   tableView.delegate = self;
+  tableView.estimatedRowHeight = 66;
+  tableView.rowHeight = UITableViewAutomaticDimension;
   self.tableView = tableView;
 }
 
