@@ -7,16 +7,38 @@
 //
 
 final class DetailsView: MWSView, DetailsViewApi, TappableLabelDelegate {
-  private let directorName = UILabel(frame: CGRect(x: 20, y: 100, width: 200, height: 30))
-  private let directorNameValue = UILabel(frame: CGRect(x: 20, y: 150, width: 200, height: 30))
+  enum Config {
+    static let xOffset = CGFloat(20)
+    static let boxSize = CGSize(width: 200, height: 30)
+    static let reducedFontSize = CGFloat(14)
+  }
+
+  private let directorTitle = UILabel(frame: CGRect(origin: CGPoint(x: Config.xOffset, y: 80), size: Config.boxSize))
+  private let directorName: UILabel = {
+    let label = UILabel(frame: CGRect(origin: CGPoint(x: Config.xOffset, y: 120), size: Config.boxSize))
+    label.font = label.font.withSize(Config.reducedFontSize)
+    return label
+  }()
+
   private lazy var tapToShowMore: TappableLabel = {
-    let label = TappableLabel(frame: CGRect(x: 20, y: 200, width: 200, height: 30))
+    let label = TappableLabel(frame: CGRect(origin: CGPoint(x: Config.xOffset, y: 180), size: Config.boxSize))
     label.delegate = self
     return label
   }()
 
-  private let actorName = UILabel(frame: CGRect(x: 20, y: 240, width: 200, height: 30))
-  private let actorScreenName = UILabel(frame: CGRect(x: 20, y: 270, width: 200, height: 30))
+  private let actorNameTitle = UILabel(frame: CGRect(origin: CGPoint(x: Config.xOffset, y: 220), size: Config.boxSize))
+  private let actorName: UILabel = {
+    let label = UILabel(frame: CGRect(origin: CGPoint(x: Config.xOffset, y: 260), size: Config.boxSize))
+    label.font = label.font.withSize(Config.reducedFontSize)
+    return label
+  }()
+
+  private let actorScreenNameTitle = UILabel(frame: CGRect(origin: CGPoint(x: Config.xOffset, y: 300), size: Config.boxSize))
+  private let actorScreenName: UILabel = {
+    let label = UILabel(frame: CGRect(origin: CGPoint(x: Config.xOffset, y: 340), size: Config.boxSize))
+    label.font = label.font.withSize(Config.reducedFontSize)
+    return label
+  }()
 
   private var detailsDisplayData: DetailsDisplayDataApi {
     return displayData as! DetailsDisplayDataApi
@@ -24,7 +46,9 @@ final class DetailsView: MWSView, DetailsViewApi, TappableLabelDelegate {
 
   private var actorExpanded = false {
     didSet {
+      actorNameTitle.isHidden = !actorExpanded
       actorName.isHidden = !actorExpanded
+      actorScreenNameTitle.isHidden = !actorExpanded
       actorScreenName.isHidden = !actorExpanded
 
       let displayData = detailsDisplayData
@@ -41,10 +65,12 @@ final class DetailsView: MWSView, DetailsViewApi, TappableLabelDelegate {
   }
 
   private func addSubviews() {
+    view.addSubview(directorTitle)
     view.addSubview(directorName)
-    view.addSubview(directorNameValue)
     view.addSubview(tapToShowMore)
+    view.addSubview(actorNameTitle)
     view.addSubview(actorName)
+    view.addSubview(actorScreenNameTitle)
     view.addSubview(actorScreenName)
   }
 
@@ -54,13 +80,15 @@ final class DetailsView: MWSView, DetailsViewApi, TappableLabelDelegate {
     let displayData = detailsDisplayData
 
     view.backgroundColor = displayData.backgroundColor
-    directorName.text = displayData.directorNameTitle
+    directorTitle.text = displayData.directorNameTitle
+    actorNameTitle.text = displayData.actorNameTitle
+    actorScreenNameTitle.text = displayData.actorScreenNameTitle
 
     actorExpanded = false
   }
 
   func dataUpdated(model: DetailsViewModel) {
-    directorNameValue.text = model.directorName
+    directorName.text = model.directorName
     actorName.text = model.actorName
     actorScreenName.text = model.actorScreenName
   }

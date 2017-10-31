@@ -9,6 +9,8 @@
 final class DetailsDisplayData: NSObject, DetailsDisplayDataApi {
   let backgroundColor = UIColor.white
   let directorNameTitle = "Director Name"
+  let actorNameTitle = "Actor Name"
+  let actorScreenNameTitle = "Actor Screen Name"
   let showMoreActionTitle = "Tap here to show more"
   let showLessActionTitle = "Tap here to show less"
 }
