@@ -29,7 +29,7 @@
 		3484AC071FA3323C00AB3B67 /* MWSActor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3484AC031FA3323C00AB3B67 /* MWSActor.m */; };
 		3484AC0F1FA33BF000AB3B67 /* MWSDefaultFilmsProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3484AC0E1FA33BF000AB3B67 /* MWSDefaultFilmsProvider.m */; };
 		3484AC1A1FA3565B00AB3B67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3484AC161FA3565B00AB3B67 /* Assets.xcassets */; };
-		34B8DDD91FA0D3420073842E /* TappableLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B8DDD71FA0D3420073842E /* TappableLabel.m */; };
+		34B8DDD91FA0D3420073842E /* MWSTappableLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B8DDD71FA0D3420073842E /* MWSTappableLabel.m */; };
 		34FC3E7F1FA3593F00A7F596 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FC3E7C1FA3593F00A7F596 /* main.m */; };
 		34FC3E801FA3593F00A7F596 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FC3E7D1FA3593F00A7F596 /* AppDelegate.m */; };
 		34FC3E851FA35AF200A7F596 /* MWSMoviesListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34FC3E831FA35AF200A7F596 /* MWSMoviesListCell.xib */; };
@@ -110,9 +110,9 @@
 		3484AC161FA3565B00AB3B67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3484AC181FA3565B00AB3B67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3484AC191FA3565B00AB3B67 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		34B8DDD61FA0D3420073842E /* TappableLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TappableLabel.h; sourceTree = "<group>"; };
-		34B8DDD71FA0D3420073842E /* TappableLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TappableLabel.m; sourceTree = "<group>"; };
-		34B8DDD81FA0D3420073842E /* TappableLabelDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TappableLabelDelegate.h; sourceTree = "<group>"; };
+		34B8DDD61FA0D3420073842E /* MWSTappableLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWSTappableLabel.h; sourceTree = "<group>"; };
+		34B8DDD71FA0D3420073842E /* MWSTappableLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWSTappableLabel.m; sourceTree = "<group>"; };
+		34B8DDD81FA0D3420073842E /* MWSTappableLabelDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWSTappableLabelDelegate.h; sourceTree = "<group>"; };
 		34FC3E7A1FA3593F00A7F596 /* MovieWebService.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieWebService.pch; sourceTree = "<group>"; };
 		34FC3E7B1FA3593F00A7F596 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		34FC3E7C1FA3593F00A7F596 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -304,9 +304,9 @@
 		34B8DDD51FA0D3420073842E /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				34B8DDD61FA0D3420073842E /* TappableLabel.h */,
-				34B8DDD71FA0D3420073842E /* TappableLabel.m */,
-				34B8DDD81FA0D3420073842E /* TappableLabelDelegate.h */,
+				34B8DDD61FA0D3420073842E /* MWSTappableLabel.h */,
+				34B8DDD71FA0D3420073842E /* MWSTappableLabel.m */,
+				34B8DDD81FA0D3420073842E /* MWSTappableLabelDelegate.h */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -890,7 +890,7 @@
 				34349A0C1FA86DA0006A3377 /* DetailsModule.swift in Sources */,
 				BC4A6E017108906463B7D6EF /* MWSMoviesListInteractor.m in Sources */,
 				34FC3EAC1FA384EA00A7F596 /* MWSModule.m in Sources */,
-				34B8DDD91FA0D3420073842E /* TappableLabel.m in Sources */,
+				34B8DDD91FA0D3420073842E /* MWSTappableLabel.m in Sources */,
 				F431DAFBD7C87A621115DB69 /* MWSMoviesListRouter.m in Sources */,
 				3484AC061FA3323C00AB3B67 /* MWSGenericRole.m in Sources */,
 				742C64261E9C7A3900B8E327 /* MWSMoviesListModule.m in Sources */,

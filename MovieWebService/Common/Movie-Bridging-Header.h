@@ -8,5 +8,5 @@
 #import "MWSModule.h"
 #import "MWSPresenter.h"
 #import "MWSRouter.h"
+#import "MWSTappableLabel.h"
 #import "MWSView.h"
-#import "TappableLabel.h"

@@ -1,14 +1,14 @@
 //
-//  TappableLabel.m
+//  MWSTappableLabel.m
 //  MovieWebService
 //
 //  Created by testDev on 4/11/17.
 //  Copyright © 2017 TestCompany. All rights reserved.
 //
 
-#import "TappableLabel.h"
+#import "MWSTappableLabel.h"
 
-@implementation TappableLabel
+@implementation MWSTappableLabel
 
 - (instancetype)initWithFrame:(CGRect)frame
 {

@@ -6,7 +6,7 @@
 //  Copyright © 2017 Agoda Services Co. Ltd. All rights reserved.
 //
 
-final class DetailsView: MWSView, DetailsViewApi, TappableLabelDelegate {
+final class DetailsView: MWSView, DetailsViewApi, MWSTappableLabelDelegate {
   enum Config {
     static let xOffset = CGFloat(20)
     static let boxSize = CGSize(width: 200, height: 30)
@@ -20,8 +20,8 @@ final class DetailsView: MWSView, DetailsViewApi, TappableLabelDelegate {
     return label
   }()
 
-  private lazy var tapToShowMore: TappableLabel = {
-    let label = TappableLabel(frame: CGRect(origin: CGPoint(x: Config.xOffset, y: 180), size: Config.boxSize))
+  private lazy var tapToShowMore: MWSTappableLabel = {
+    let label = MWSTappableLabel(frame: CGRect(origin: CGPoint(x: Config.xOffset, y: 180), size: Config.boxSize))
     label.delegate = self
     return label
   }()
