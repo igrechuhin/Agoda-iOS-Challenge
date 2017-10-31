@@ -23,6 +23,16 @@ class DetailsView: MWSView, DetailsViewApi, TappableLabelDelegate {
     return displayData as! DetailsDisplayDataApi
   }
 
+  private var actorExpanded = false {
+    didSet {
+      actorName.isHidden = !actorExpanded
+      actorScreenName.isHidden = !actorExpanded
+
+      let displayData = detailsDisplayData
+      tapToShowMore.text = actorExpanded ? displayData.showLessActionTitle : displayData.showMoreActionTitle
+    }
+  }
+
   // MARK: Life cycle
 
   override func viewDidLoad() {
@@ -41,19 +51,17 @@ class DetailsView: MWSView, DetailsViewApi, TappableLabelDelegate {
     view.backgroundColor = displayData.backgroundColor
     directorName.text = displayData.directorNameTitle
     directorNameValue.text = director.name
-    tapToShowMore.text = displayData.showMoreActionTitle
 
     let actor = director.film.actors.first!
     actorName.text = actor.name
-    actorName.isHidden = true
     actorScreenName.text = actor.screenName
-    actorScreenName.isHidden = true
+
+    actorExpanded = false
   }
 
   // MARK: DetailsViewInput
 
   func didReceiveTouch() {
-    actorName.isHidden = false
-    actorScreenName.isHidden = false
+    actorExpanded = !actorExpanded
   }
 }
