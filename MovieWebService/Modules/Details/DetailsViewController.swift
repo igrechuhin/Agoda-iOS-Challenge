@@ -27,7 +27,6 @@ class DetailsView: MWSView, DetailsViewApi, TappableLabelDelegate {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    view = UIView()
 
     let displayData = detailsDisplayData
     view.backgroundColor = displayData.backgroundColor
