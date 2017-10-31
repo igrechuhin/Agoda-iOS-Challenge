@@ -8,7 +8,7 @@
 
 #import "MWSMoviesListView.h"
 #import "AppDelegate.h"
-#import "CellTableViewCell.h"
+#import "MWSMoviesListCell.h"
 #import "MWSPresenter.h"
 #import "Masonry.h"
 #import "MovieWebService-Swift.h"
@@ -46,7 +46,7 @@
 - (void)registerCells
 {
   UITableView * tableView = self.tableView;
-  [tableView registerWithCellClass:[CellTableViewCell class]];
+  [tableView registerWithCellClass:[MWSMoviesListCell class]];
 }
 
 - (void)addTableViewToView
@@ -81,8 +81,8 @@
 {
   MWSPresenter<MWSMoviesListPresenterApi> * presenter = self.moviesListPresenter;
   MWSFilm * film = [presenter getMovieAtIndex:indexPath.row];
-  CellTableViewCell * cell =
-      (CellTableViewCell *)[tableView dequeueReusableCellWithCellClass:[CellTableViewCell class]
+  MWSMoviesListCell * cell =
+      (MWSMoviesListCell *)[tableView dequeueReusableCellWithCellClass:[MWSMoviesListCell class]
                                                              indexPath:indexPath];
 
   cell.name.text = film.name;
