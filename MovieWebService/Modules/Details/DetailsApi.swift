@@ -7,6 +7,7 @@
 //
 
 protocol DetailsViewApi: MWSViewProtocol {
+  func setup()
 }
 
 protocol DetailsInteractorApi: MWSInteractorProtocol {

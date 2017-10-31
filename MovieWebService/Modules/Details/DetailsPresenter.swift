@@ -7,4 +7,14 @@
 //
 
 final class DetailsPresenter: MWSPresenter, DetailsPresenterApi {
+  private var detailsView: DetailsViewApi {
+    return view as! DetailsViewApi
+  }
+
+//MARK: - MWSPresenterProtocol
+  override func viewHasLoaded() {
+    super.viewHasLoaded()
+    let view = detailsView
+    view.setup()
+  }
 }

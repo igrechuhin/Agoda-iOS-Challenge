@@ -28,26 +28,26 @@ class DetailsView: MWSView, DetailsViewApi, TappableLabelDelegate {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    let displayData = detailsDisplayData
-    view.backgroundColor = displayData.backgroundColor
-
-    directorName.text = displayData.directorNameTitle
     view.addSubview(directorName)
-
-    directorNameValue.text = director.name
     view.addSubview(directorNameValue)
-
-    tapToShowMore.text = displayData.showMoreActionTitle
     view.addSubview(tapToShowMore)
+    view.addSubview(actorName)
+    view.addSubview(actorScreenName)
+  }
+
+  func setup() {
+    let displayData = detailsDisplayData
+
+    view.backgroundColor = displayData.backgroundColor
+    directorName.text = displayData.directorNameTitle
+    directorNameValue.text = director.name
+    tapToShowMore.text = displayData.showMoreActionTitle
 
     let actor = director.film.actors.first!
     actorName.text = actor.name
     actorName.isHidden = true
-    view.addSubview(actorName)
-
     actorScreenName.text = actor.screenName
     actorScreenName.isHidden = true
-    view.addSubview(actorScreenName)
   }
 
   // MARK: DetailsViewInput
