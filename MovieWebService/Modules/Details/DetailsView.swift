@@ -38,6 +38,10 @@ class DetailsView: MWSView, DetailsViewApi, TappableLabelDelegate {
   override func viewDidLoad() {
     super.viewDidLoad()
 
+    addSubviews()
+  }
+
+  private func addSubviews() {
     view.addSubview(directorName)
     view.addSubview(directorNameValue)
     view.addSubview(tapToShowMore)
