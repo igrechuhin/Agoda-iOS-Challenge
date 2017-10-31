@@ -248,14 +248,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		3484ABF81FA3323C00AB3B67 /* Models */ = {
+		3484ABF81FA3323C00AB3B67 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
 				3484ABF91FA3323C00AB3B67 /* Enumerations */,
 				3484ABFB1FA3323C00AB3B67 /* Instances */,
 				3484AC081FA3337E00AB3B67 /* Providers */,
 			);
-			path = Models;
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		3484ABF91FA3323C00AB3B67 /* Enumerations */ = {
@@ -436,7 +436,7 @@
 				3439167E1FA7459B0062748D /* Extensions */,
 				34FC3E791FA3593F00A7F596 /* Common */,
 				34B8DDD51FA0D3420073842E /* Components */,
-				3484ABF81FA3323C00AB3B67 /* Models */,
+				3484ABF81FA3323C00AB3B67 /* Entities */,
 				578A72838BE61473B4DFA550 /* Modules */,
 				3484AC151FA3565B00AB3B67 /* Resources */,
 			);
