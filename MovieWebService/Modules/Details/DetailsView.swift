@@ -14,6 +14,7 @@ final class DetailsView: MWSView, DetailsViewApi, TappableLabelDelegate {
     label.delegate = self
     return label
   }()
+
   private let actorName = UILabel(frame: CGRect(x: 20, y: 240, width: 200, height: 30))
   private let actorScreenName = UILabel(frame: CGRect(x: 20, y: 270, width: 200, height: 30))
 

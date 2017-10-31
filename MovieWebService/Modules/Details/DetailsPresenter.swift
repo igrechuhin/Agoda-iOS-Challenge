@@ -22,7 +22,7 @@ final class DetailsPresenter: MWSPresenter, DetailsPresenterApi {
 
     interactor.getMovie { [weak self] movie in
       guard let director = movie.director,
-            let actor = movie.actors.first else { return }
+        let actor = movie.actors.first else { return }
       let model = DetailsViewModel(directorName: director.name, actorName: actor.name, actorScreenName: actor.screenName)
 
       DispatchQueue.main.async {
