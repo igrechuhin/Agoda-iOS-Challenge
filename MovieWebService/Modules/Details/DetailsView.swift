@@ -6,7 +6,7 @@
 //  Copyright © 2017 Agoda Services Co. Ltd. All rights reserved.
 //
 
-final class DetailsView: MWSView, DetailsViewApi, MWSTappableLabelDelegate {
+final class DetailsView: MWSView, DetailsViewApi {
   enum Config {
     static let xOffset = CGFloat(20)
     static let boxSize = CGSize(width: 200, height: 30)
@@ -56,13 +56,7 @@ final class DetailsView: MWSView, DetailsViewApi, MWSTappableLabelDelegate {
     }
   }
 
-  // MARK: - Life cycle
-
-  override func viewDidLoad() {
-    super.viewDidLoad()
-
-    addSubviews()
-  }
+  // MARK: - Helpers
 
   private func addSubviews() {
     view.addSubview(directorTitle)
@@ -72,6 +66,14 @@ final class DetailsView: MWSView, DetailsViewApi, MWSTappableLabelDelegate {
     view.addSubview(actorName)
     view.addSubview(actorScreenNameTitle)
     view.addSubview(actorScreenName)
+  }
+
+  // MARK: - Life cycle
+
+  override func viewDidLoad() {
+    super.viewDidLoad()
+
+    addSubviews()
   }
 
   // MARK: - DetailsViewApi
@@ -92,9 +94,9 @@ final class DetailsView: MWSView, DetailsViewApi, MWSTappableLabelDelegate {
     actorName.text = model.actorName
     actorScreenName.text = model.actorScreenName
   }
+}
 
-  // MARK: - DetailsViewInput
-
+extension DetailsView: MWSTappableLabelDelegate {
   func didReceiveTouch() {
     actorExpanded = !actorExpanded
   }

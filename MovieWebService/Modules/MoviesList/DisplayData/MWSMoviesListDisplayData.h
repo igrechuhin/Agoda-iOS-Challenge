@@ -6,8 +6,8 @@
 //  Copyright © 2017 TestCompany. All rights reserved.
 //
 
-#import "MWSMoviesListApi.h"
 #import "MWSDisplayData.h"
+#import "MWSMoviesListApi.h"
 
 @interface MWSMoviesListDisplayData : MWSDisplayData<MWSMoviesListDisplayDataApi>
 

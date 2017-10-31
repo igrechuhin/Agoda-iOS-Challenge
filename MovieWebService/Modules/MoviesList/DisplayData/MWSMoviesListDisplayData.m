@@ -12,6 +12,6 @@
 
 - (NSString *)title { return @"Root View Controller"; }
 
-- (UIColor *)backgroundColor { return [UIColor whiteColor]; }
+- (UIColor *)backgroundColor { return UIColor.whiteColor; }
 
 @end
