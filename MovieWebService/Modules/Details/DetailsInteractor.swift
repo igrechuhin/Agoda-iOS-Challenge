@@ -13,4 +13,12 @@ final class DetailsInteractor: MWSInteractor, DetailsInteractorApi {
     self.movie = movie
     super.init()
   }
+
+  // MARK: - DetailsInteractorApi
+
+  func getMovie(callback: @escaping FetchMovieCallback) {
+    DispatchQueue.global(qos: .userInteractive).async {
+      callback(self.movie)
+    }
+  }
 }

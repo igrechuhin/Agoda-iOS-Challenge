@@ -6,11 +6,21 @@
 //  Copyright © 2017 TestCompany. All rights reserved.
 //
 
+struct DetailsViewModel {
+  let directorName: String
+  let actorName: String
+  let actorScreenName: String
+}
+
+typealias FetchMovieCallback = ((MWSFilm) -> Void)
+
 protocol DetailsViewApi: MWSViewProtocol {
   func setup()
+  func dataUpdated(model: DetailsViewModel)
 }
 
 protocol DetailsInteractorApi: MWSInteractorProtocol {
+  func getMovie(callback: @escaping FetchMovieCallback)
 }
 
 protocol DetailsPresenterApi: MWSPresenterProtocol {

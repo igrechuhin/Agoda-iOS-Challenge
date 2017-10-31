@@ -6,9 +6,7 @@
 //  Copyright © 2017 Agoda Services Co. Ltd. All rights reserved.
 //
 
-class DetailsView: MWSView, DetailsViewApi, TappableLabelDelegate {
-  public var director: MWSDirector!
-
+final class DetailsView: MWSView, DetailsViewApi, TappableLabelDelegate {
   private let directorName = UILabel(frame: CGRect(x: 20, y: 100, width: 200, height: 30))
   private let directorNameValue = UILabel(frame: CGRect(x: 20, y: 150, width: 200, height: 30))
   private lazy var tapToShowMore: TappableLabel = {
@@ -33,7 +31,7 @@ class DetailsView: MWSView, DetailsViewApi, TappableLabelDelegate {
     }
   }
 
-  // MARK: Life cycle
+  // MARK: - Life cycle
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -49,21 +47,24 @@ class DetailsView: MWSView, DetailsViewApi, TappableLabelDelegate {
     view.addSubview(actorScreenName)
   }
 
+  // MARK: - DetailsViewApi
+
   func setup() {
     let displayData = detailsDisplayData
 
     view.backgroundColor = displayData.backgroundColor
     directorName.text = displayData.directorNameTitle
-    directorNameValue.text = director.name
-
-    let actor = director.film.actors.first!
-    actorName.text = actor.name
-    actorScreenName.text = actor.screenName
 
     actorExpanded = false
   }
 
-  // MARK: DetailsViewInput
+  func dataUpdated(model: DetailsViewModel) {
+    directorNameValue.text = model.directorName
+    actorName.text = model.actorName
+    actorScreenName.text = model.actorScreenName
+  }
+
+  // MARK: - DetailsViewInput
 
   func didReceiveTouch() {
     actorExpanded = !actorExpanded
