@@ -58,7 +58,7 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="date" destination="2WX-a5-SEx" id="t73-KF-DIL"/>
-                <outlet property="filmRating" destination="OV4-Qc-A3H" id="dFn-nG-wwr"/>
+                <outlet property="mpaaRating" destination="OV4-Qc-A3H" id="EMv-wc-Whq"/>
                 <outlet property="name" destination="UbF-C4-9kh" id="ccP-pm-6jD"/>
                 <outlet property="rating" destination="4Be-aN-Kbo" id="yFl-N4-QMN"/>
             </connections>

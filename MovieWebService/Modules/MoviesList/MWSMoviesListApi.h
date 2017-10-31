@@ -7,11 +7,13 @@
 //
 
 #import "MWSDisplayDataProtocol.h"
-#import "MWSFilm.h"
 #import "MWSInteractorProtocol.h"
 #import "MWSPresenterProtocol.h"
 #import "MWSRouterProtocol.h"
 #import "MWSViewProtocol.h"
+
+@class MWSFilm;
+@class MWSMoviesListItemModel;
 
 typedef void (^MWSFetchMoviesCallback)(NSArray<MWSFilm *> *);
 
@@ -32,7 +34,8 @@ typedef void (^MWSFetchMoviesCallback)(NSArray<MWSFilm *> *);
 
 @property(nonatomic, readonly) NSInteger moviesCount;
 
-- (MWSFilm *)getMovieAtIndex:(NSInteger)index;
+- (MWSMoviesListItemModel *)getItemAtIndex:(NSInteger)index;
+- (void)itemSelectedAtIndex:(NSInteger)index;
 
 @end
 

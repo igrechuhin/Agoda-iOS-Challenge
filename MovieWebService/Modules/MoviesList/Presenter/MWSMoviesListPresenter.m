@@ -9,7 +9,9 @@
 #import "MWSMoviesListPresenter.h"
 #import "MWSFilm.h"
 #import "MWSMoviesListInteractor.h"
+#import "MWSMoviesListItemModel.h"
 #import "MWSView.h"
+#import "MovieWebService-Swift.h"
 
 @interface MoviesListPresenter ()
 
@@ -38,15 +40,51 @@
   }];
 }
 
-#pragma mark - MWSMoviesListPresenterApi
-
-- (NSInteger)moviesCount { return [self.movies count]; }
-
-- (MWSFilm *)getMovieAtIndex:(NSInteger)index
+- (MWSFilm *)movieAtIndex:(NSInteger)index
 {
   NSArray<MWSFilm *> * movies = self.movies;
   NSAssert(index >= 0 && index < movies.count, @"Invalid movie index");
   return movies[index];
+}
+
+#pragma mark - MWSMoviesListPresenterApi
+
+- (NSInteger)moviesCount { return [self.movies count]; }
+
+- (MWSMoviesListItemModel *)getItemAtIndex:(NSInteger)index
+{
+  MWSFilm * movie = [self movieAtIndex:index];
+
+  NSDateFormatter * dateFormatter = [[NSDateFormatter alloc] init];
+  dateFormatter.dateStyle = NSDateFormatterMediumStyle;
+  dateFormatter.timeStyle = NSDateFormatterNoStyle;
+  NSString * releaseDate = [dateFormatter stringFromDate:movie.releaseDate];
+
+  NSString * mpaaRating = @"";
+  switch (movie.mpaa)
+  {
+  case MWSMpaaG: mpaaRating = @"G"; break;
+  case MWSMpaaPG: mpaaRating = @"PG"; break;
+  case MWSMpaaPG13: mpaaRating = @"PG13"; break;
+  case MWSMpaaR: mpaaRating = @"R"; break;
+  case MWSMpaaNC17: mpaaRating = @"NC17"; break;
+  default: NSAssert(false, @"Unsupported MPAA rating"); break;
+  }
+
+  NSString * rating = [[NSNumber numberWithFloat:movie.imdbRating] stringValue];
+
+  return [[MWSMoviesListItemModel alloc] initWithFilmName:movie.name
+                                              releaseDate:releaseDate
+                                               mpaaRating:mpaaRating
+                                                   rating:rating];
+}
+
+- (void)itemSelectedAtIndex:(NSInteger)index
+{
+  MWSFilm * movie = [self movieAtIndex:index];
+
+  MWSModule * details = [DetailsModule buildWithMovie:movie];
+  [details.router showFrom:self.view embedInNavController:NO];
 }
 
 #pragma mark - MWSPresenterProtocol

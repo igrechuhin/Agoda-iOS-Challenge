@@ -71,9 +71,7 @@
 {
   [tableView deselectRowAtIndexPath:indexPath animated:YES];
   MWSPresenter<MWSMoviesListPresenterApi> * presenter = self.moviesListPresenter;
-  MWSFilm * film = [presenter getMovieAtIndex:indexPath.row];
-  MWSModule * details = [DetailsModule buildWithMovie:film];
-  [details.router showFrom:self embedInNavController:NO];
+  [presenter itemSelectedAtIndex:indexPath.row];
 }
 
 #pragma mark - UITableViewDataSource
@@ -82,30 +80,12 @@
          cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
   MWSPresenter<MWSMoviesListPresenterApi> * presenter = self.moviesListPresenter;
-  MWSFilm * film = [presenter getMovieAtIndex:indexPath.row];
   MWSMoviesListCell * cell =
       (MWSMoviesListCell *)[tableView dequeueReusableCellWithCellClass:[MWSMoviesListCell class]
                                                              indexPath:indexPath];
+  MWSMoviesListItemModel * itemModel = [presenter getItemAtIndex:indexPath.row];
 
-  cell.name.text = film.name;
-
-  NSDateFormatter * dateFormatter = [[NSDateFormatter alloc] init];
-  dateFormatter.dateStyle = NSDateFormatterMediumStyle;
-  dateFormatter.timeStyle = NSDateFormatterNoStyle;
-  cell.date.text = [dateFormatter stringFromDate:film.releaseDate];
-
-  NSString * filmRatingText;
-  switch (film.mpaa)
-  {
-  case MWSMpaaG: filmRatingText = @"G"; break;
-  case MWSMpaaPG: filmRatingText = @"PG"; break;
-  case MWSMpaaPG13: filmRatingText = @"PG13"; break;
-  case MWSMpaaR: filmRatingText = @"R"; break;
-  case MWSMpaaNC17: filmRatingText = @"NC17"; break;
-  default: break;
-  }
-  cell.filmRating.text = filmRatingText;
-  cell.rating.text = [[NSNumber numberWithFloat:film.imdbRating] stringValue];
+  [cell configWithModel:itemModel];
 
   return cell;
 }

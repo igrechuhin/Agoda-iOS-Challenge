@@ -6,11 +6,10 @@
 //  Copyright © 2017 TestCompany. All rights reserved.
 //
 
+@class MWSMoviesListItemModel;
+
 @interface MWSMoviesListCell : UITableViewCell
 
-@property(weak, nonatomic) IBOutlet UILabel * name;
-@property(weak, nonatomic) IBOutlet UILabel * date;
-@property(weak, nonatomic) IBOutlet UILabel * filmRating;
-@property(weak, nonatomic) IBOutlet UILabel * rating;
+- (void)configWithModel:(MWSMoviesListItemModel *)model;
 
 @end

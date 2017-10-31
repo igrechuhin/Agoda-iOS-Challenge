@@ -21,6 +21,7 @@
 		3439167D1FA745780062748D /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3439167C1FA745780062748D /* Common.swift */; };
 		343916801FA745A90062748D /* UITableView+Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3439167F1FA745A90062748D /* UITableView+Cells.swift */; };
 		343916821FA745CB0062748D /* UINib+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343916811FA745CB0062748D /* UINib+Init.swift */; };
+		344634601FA8A11B0023B0A2 /* MWSMoviesListItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3446345F1FA8A11B0023B0A2 /* MWSMoviesListItemModel.m */; };
 		346CCBDC1FA77916000447D8 /* DetailsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346CCBDB1FA77916000447D8 /* DetailsApi.swift */; };
 		3484AC041FA3323C00AB3B67 /* MWSDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = 3484ABFC1FA3323C00AB3B67 /* MWSDirector.m */; };
 		3484AC051FA3323C00AB3B67 /* MWSFilm.m in Sources */ = {isa = PBXBuildFile; fileRef = 3484AC001FA3323C00AB3B67 /* MWSFilm.m */; };
@@ -91,6 +92,8 @@
 		3439167C1FA745780062748D /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		3439167F1FA745A90062748D /* UITableView+Cells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Cells.swift"; sourceTree = "<group>"; };
 		343916811FA745CB0062748D /* UINib+Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINib+Init.swift"; sourceTree = "<group>"; };
+		3446345E1FA8A11B0023B0A2 /* MWSMoviesListItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWSMoviesListItemModel.h; sourceTree = "<group>"; };
+		3446345F1FA8A11B0023B0A2 /* MWSMoviesListItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MWSMoviesListItemModel.m; sourceTree = "<group>"; };
 		346CCBDB1FA77916000447D8 /* DetailsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsApi.swift; sourceTree = "<group>"; };
 		3484ABFA1FA3323C00AB3B67 /* MWSMpaa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWSMpaa.h; sourceTree = "<group>"; };
 		3484ABFC1FA3323C00AB3B67 /* MWSDirector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWSDirector.m; sourceTree = "<group>"; };
@@ -562,6 +565,8 @@
 			isa = PBXGroup;
 			children = (
 				34FC3E811FA35AF200A7F596 /* Cells */,
+				3446345E1FA8A11B0023B0A2 /* MWSMoviesListItemModel.h */,
+				3446345F1FA8A11B0023B0A2 /* MWSMoviesListItemModel.m */,
 				F604268277E96743D1053B4E /* MWSMoviesListView.h */,
 				4921FCC65F429A0DF58F70D4 /* MWSMoviesListView.m */,
 			);
@@ -896,6 +901,7 @@
 				34349A0F1FA86DA0006A3377 /* DetailsRouter.swift in Sources */,
 				3484AC071FA3323C00AB3B67 /* MWSActor.m in Sources */,
 				346CCBDC1FA77916000447D8 /* DetailsApi.swift in Sources */,
+				344634601FA8A11B0023B0A2 /* MWSMoviesListItemModel.m in Sources */,
 				3439167D1FA745780062748D /* Common.swift in Sources */,
 				343916801FA745A90062748D /* UITableView+Cells.swift in Sources */,
 				3484AC041FA3323C00AB3B67 /* MWSDirector.m in Sources */,
