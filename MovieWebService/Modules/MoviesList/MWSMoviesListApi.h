@@ -12,10 +12,10 @@
 #import "MWSRouterProtocol.h"
 #import "MWSViewProtocol.h"
 
-@class MWSFilm;
+@class MWSMovie;
 @class MWSMoviesListItemModel;
 
-typedef void (^MWSFetchMoviesCallback)(NSArray<MWSFilm *> *);
+typedef void (^MWSFetchMoviesCallback)(NSArray<MWSMovie *> *);
 
 @protocol MWSMoviesListViewApi<MWSViewProtocol>
 

@@ -7,17 +7,17 @@
 //
 
 #import "MWSMoviesListInteractor.h"
-#import "MWSDefaultFilmsProvider.h"
+#import "MWSDefaultMoviesProvider.h"
 
 @implementation MoviesListInteractor
 
 - (void)getMoviesWithCallback:(MWSFetchMoviesCallback)callback
 {
-  [MWSDefaultFilmsProvider getFilm:0
-                      withCallback:^(MWSFilm * film) {
-                        NSArray<MWSFilm *> * movies = @[film];
-                        callback(movies);
-                      }];
+  [MWSDefaultMoviesProvider getMovieWithID:0
+                              withCallback:^(MWSMovie * movie) {
+                                NSArray<MWSMovie *> * movies = @[movie];
+                                callback(movies);
+                              }];
 }
 
 @end

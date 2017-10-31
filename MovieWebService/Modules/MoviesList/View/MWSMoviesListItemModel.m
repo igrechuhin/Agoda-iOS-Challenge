@@ -10,15 +10,15 @@
 
 @implementation MWSMoviesListItemModel
 
-- (instancetype)initWithFilmName:(NSString *)filmName
-                     releaseDate:(NSString *)releaseDate
-                      mpaaRating:(NSString *)mpaaRating
-                          rating:(NSString *)rating
+- (instancetype)initWithMovieName:(NSString *)movieName
+                      releaseDate:(NSString *)releaseDate
+                       mpaaRating:(NSString *)mpaaRating
+                           rating:(NSString *)rating
 {
   self = [super init];
   if (self)
   {
-    _filmName = filmName;
+    _movieName = movieName;
     _releaseDate = releaseDate;
     _mpaaRating = mpaaRating;
     _rating = rating;

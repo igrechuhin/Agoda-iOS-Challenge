@@ -22,7 +22,7 @@
 
 - (void)configWithModel:(MWSMoviesListItemModel *)model
 {
-  self.name.text = model.filmName;
+  self.name.text = model.movieName;
   self.date.text = model.releaseDate;
   self.mpaaRating.text = model.mpaaRating;
   self.rating.text = model.rating;

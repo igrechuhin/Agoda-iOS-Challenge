@@ -1,16 +1,16 @@
 //
-//  MWSFilm.m
+//  MWSMovie.m
 //  MovieWebService
 //
 //  Created by testDev on 4/11/17.
 //  Copyright © 2017 TestCompany. All rights reserved.
 //
 
-#import "MWSFilm.h"
+#import "MWSMovie.h"
 #import "MWSActor.h"
 #import "MWSDirector.h"
 
-@interface MWSFilm ()
+@interface MWSMovie ()
 
 @property(copy, nonatomic, readwrite) NSArray<MWSActor *> * actors;
 @property(copy, nonatomic, readwrite) NSArray<NSString *> * languages;
@@ -23,7 +23,7 @@
 
 @end
 
-@implementation MWSFilm
+@implementation MWSMovie
 
 - (instancetype)initWithData:(NSDictionary *)data
 {
@@ -53,7 +53,7 @@
     for (NSDictionary * actorData in actorsData)
     {
       NSAssert([actorData isKindOfClass:[NSDictionary class]], @"Invalid actor data type");
-      MWSActor * actor = [[MWSActor alloc] initWithData:actorData film:self];
+      MWSActor * actor = [[MWSActor alloc] initWithData:actorData movie:self];
       [actors addObject:actor];
     }
   }
@@ -98,7 +98,7 @@
   NSAssert(director != nil, @"Director data is missing");
   NSAssert([director isKindOfClass:[NSDictionary class]], @"Invalid director data type");
   if (director)
-    self.director = [[MWSDirector alloc] initWithData:director film:self];
+    self.director = [[MWSDirector alloc] initWithData:director movie:self];
 }
 
 - (void)parseMPAA:(NSDictionary *)data

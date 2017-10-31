@@ -1,19 +1,19 @@
 //
-//  MWSDefaultFilmsProvider.m
+//  MWSDefaultMoviesProvider.m
 //  MovieWebService
 //
 //  Created by Ilya Grechuhin on 27.10.2017.
 //  Copyright © 2017 TestCompany. All rights reserved.
 //
 
-#import "MWSDefaultFilmsProvider.h"
-#import "MWSFilm.h"
+#import "MWSDefaultMoviesProvider.h"
+#import "MWSMovie.h"
 
-@implementation MWSDefaultFilmsProvider
+@implementation MWSDefaultMoviesProvider
 
-+ (void)getFilm:(NSInteger)filmID withCallback:(MWSFilmCallback)callback
++ (void)getMovieWithID:(NSInteger)movieID withCallback:(MWSMovieCallback)callback
 {
-  // filmID is ignored, but for real case we need to specify "which film" we want to get.
+  // movieID is ignored, but for real case we need to specify "which movie" we want to get.
 
   dispatch_async(dispatch_get_global_queue(QOS_CLASS_UTILITY, 0), ^{
     NSDictionary * data = @{
@@ -40,9 +40,8 @@
       }
     };
 
-    MWSFilm * film = [[MWSFilm alloc] initWithData:data];
-
-    callback(film);
+    MWSMovie * movie = [[MWSMovie alloc] initWithData:data];
+    callback(movie);
   });
 }
 

@@ -7,9 +7,9 @@
 //
 
 final class DetailsInteractor: MWSInteractor, DetailsInteractorApi {
-  private let movie: MWSFilm
+  private let movie: MWSMovie
 
-  init(movie: MWSFilm) {
+  init(movie: MWSMovie) {
     self.movie = movie
     super.init()
   }

@@ -16,9 +16,9 @@
 
 @implementation MWSActor
 
-- (instancetype)initWithData:(NSDictionary *)data film:(MWSFilm *)film
+- (instancetype)initWithData:(NSDictionary *)data movie:(MWSMovie *)movie
 {
-  self = [super initWithData:data film:film];
+  self = [super initWithData:data movie:movie];
   if (self)
     [self parseScreenName:data];
   return self;

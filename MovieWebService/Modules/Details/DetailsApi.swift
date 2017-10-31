@@ -12,7 +12,7 @@ struct DetailsViewModel {
   let actorScreenName: String
 }
 
-typealias FetchMovieCallback = ((MWSFilm) -> Void)
+typealias FetchMovieCallback = ((MWSMovie) -> Void)
 
 protocol DetailsViewApi: MWSViewProtocol {
   func setup()

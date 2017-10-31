@@ -1,5 +1,5 @@
 //
-//  MWSFilm.h
+//  MWSMovie.h
 //  MovieWebService
 //
 //  Created by testDev on 4/11/17.
@@ -11,7 +11,7 @@
 @class MWSDirector;
 @class MWSActor;
 
-@interface MWSFilm : NSObject
+@interface MWSMovie : NSObject
 
 @property(copy, nonatomic, readonly) NSArray<MWSActor *> * actors;
 @property(copy, nonatomic, readonly) NSArray<NSString *> * languages;

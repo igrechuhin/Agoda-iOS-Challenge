@@ -14,13 +14,13 @@
 @property(copy, nonatomic, readwrite) NSString * name;
 @property(nonatomic, readwrite) BOOL nominated;
 @property(nonatomic, readwrite) NSDate * dateOfBirth;
-@property(weak, nonatomic, readwrite) MWSFilm * film;
+@property(weak, nonatomic, readwrite) MWSMovie * movie;
 
 @end
 
 @implementation MWSGenericRole
 
-- (instancetype)initWithData:(NSDictionary *)data film:(MWSFilm *)film
+- (instancetype)initWithData:(NSDictionary *)data movie:(MWSMovie *)movie
 {
   self = [super init];
   if (self)

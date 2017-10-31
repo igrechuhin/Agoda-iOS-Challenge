@@ -7,7 +7,7 @@
 //
 
 #import "MWSMoviesListPresenter.h"
-#import "MWSFilm.h"
+#import "MWSMovie.h"
 #import "MWSMoviesListInteractor.h"
 #import "MWSMoviesListItemModel.h"
 #import "MWSView.h"
@@ -15,7 +15,7 @@
 
 @interface MoviesListPresenter ()
 
-@property(copy, nonatomic) NSArray<MWSFilm *> * movies;
+@property(copy, nonatomic) NSArray<MWSMovie *> * movies;
 
 @end
 
@@ -27,7 +27,7 @@
 {
   MWSInteractor<MWSMoviesListInteractorApi> * interactor = self.moviesListInteractor;
   __weak typeof(self) wSelf = self;
-  [interactor getMoviesWithCallback:^(NSArray<MWSFilm *> * movies) {
+  [interactor getMoviesWithCallback:^(NSArray<MWSMovie *> * movies) {
     dispatch_async(dispatch_get_main_queue(), ^{
       __strong typeof(wSelf) sSelf = wSelf;
       if (!sSelf)
@@ -40,9 +40,9 @@
   }];
 }
 
-- (MWSFilm *)movieAtIndex:(NSInteger)index
+- (MWSMovie *)movieAtIndex:(NSInteger)index
 {
-  NSArray<MWSFilm *> * movies = self.movies;
+  NSArray<MWSMovie *> * movies = self.movies;
   NSAssert(index >= 0 && index < movies.count, @"Invalid movie index");
   return movies[index];
 }
@@ -53,7 +53,7 @@
 
 - (MWSMoviesListItemModel *)getItemAtIndex:(NSInteger)index
 {
-  MWSFilm * movie = [self movieAtIndex:index];
+  MWSMovie * movie = [self movieAtIndex:index];
 
   NSDateFormatter * dateFormatter = [[NSDateFormatter alloc] init];
   dateFormatter.dateStyle = NSDateFormatterMediumStyle;
@@ -73,15 +73,15 @@
 
   NSString * rating = [[NSNumber numberWithFloat:movie.imdbRating] stringValue];
 
-  return [[MWSMoviesListItemModel alloc] initWithFilmName:movie.name
-                                              releaseDate:releaseDate
-                                               mpaaRating:mpaaRating
-                                                   rating:rating];
+  return [[MWSMoviesListItemModel alloc] initWithMovieName:movie.name
+                                               releaseDate:releaseDate
+                                                mpaaRating:mpaaRating
+                                                    rating:rating];
 }
 
 - (void)itemSelectedAtIndex:(NSInteger)index
 {
-  MWSFilm * movie = [self movieAtIndex:index];
+  MWSMovie * movie = [self movieAtIndex:index];
 
   MWSModule * details = [DetailsModule buildWithMovie:movie];
   [details.router showFrom:self.view embedInNavController:NO];

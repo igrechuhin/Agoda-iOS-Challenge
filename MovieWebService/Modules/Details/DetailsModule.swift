@@ -7,7 +7,7 @@
 //
 
 @objc class DetailsModule: MWSModule {
-  @objc static func build(movie: MWSFilm) -> MWSModule {
+  @objc static func build(movie: MWSMovie) -> MWSModule {
     return build(with: DetailsView(),
                  interactor: DetailsInteractor(movie: movie),
                  presenter: DetailsPresenter(),
