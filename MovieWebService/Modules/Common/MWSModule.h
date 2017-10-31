@@ -10,7 +10,7 @@
 @class MWSInteractor;
 @class MWSPresenter;
 @class MWSRouter;
-@protocol MWSDisplayDataProtocol;
+@class MWSDisplayData;
 
 @interface MWSModule : NSObject
 
@@ -18,12 +18,12 @@
 @property(nonatomic, readonly) MWSInteractor * interactor;
 @property(nonatomic, readonly) MWSPresenter * presenter;
 @property(nonatomic, readonly) MWSRouter * router;
-@property(nonatomic, readonly) id<MWSDisplayDataProtocol> displayData;
+@property(nonatomic, readonly) MWSDisplayData * displayData;
 
 + (MWSModule *)buildWithView:(MWSView *)view
                   interactor:(MWSInteractor *)interactor
                    presenter:(MWSPresenter *)presenter
                       router:(MWSRouter *)router
-                 displayData:(id<MWSDisplayDataProtocol>)displayData;
+                 displayData:(MWSDisplayData *)displayData;
 
 @end

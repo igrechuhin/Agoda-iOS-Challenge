@@ -2,7 +2,7 @@
 
 #import "MWSActor.h"
 #import "MWSDirector.h"
-#import "MWSDisplayDataProtocol.h"
+#import "MWSDisplayData.h"
 #import "MWSInteractor.h"
 #import "MWSModule.h"
 #import "MWSMovie.h"

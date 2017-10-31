@@ -7,11 +7,11 @@
 //
 
 @class MWSPresenter;
-@protocol MWSDisplayDataProtocol;
+@class MWSDisplayData;
 
 @protocol MWSViewProtocol<NSObject>
 
 @property(nonatomic) MWSPresenter * presenter;
-@property(nonatomic) id<MWSDisplayDataProtocol> displayData;
+@property(nonatomic) MWSDisplayData * displayData;
 
 @end

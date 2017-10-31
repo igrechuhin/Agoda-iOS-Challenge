@@ -6,7 +6,7 @@
 //  Copyright © 2017 TestCompany. All rights reserved.
 //
 
-final class DetailsDisplayData: NSObject, DetailsDisplayDataApi {
+final class DetailsDisplayData: MWSDisplayData, DetailsDisplayDataApi {
   let backgroundColor = UIColor.white
   let directorNameTitle = "Director Name"
   let actorNameTitle = "Actor Name"

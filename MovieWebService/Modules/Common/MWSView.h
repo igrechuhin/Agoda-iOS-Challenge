@@ -11,6 +11,6 @@
 @interface MWSView : UIViewController<MWSViewProtocol>
 
 @property(nonatomic) MWSPresenter * presenter;
-@property(nonatomic) id<MWSDisplayDataProtocol> displayData;
+@property(nonatomic) MWSDisplayData * displayData;
 
 @end

@@ -7,8 +7,9 @@
 //
 
 #import "MWSMoviesListApi.h"
+#import "MWSDisplayData.h"
 
-@interface MWSMoviesListDisplayData : NSObject<MWSMoviesListDisplayDataApi>
+@interface MWSMoviesListDisplayData : MWSDisplayData<MWSMoviesListDisplayDataApi>
 
 @property(copy, nonatomic, readonly) NSString * title;
 @property(nonatomic, readonly) UIColor * backgroundColor;

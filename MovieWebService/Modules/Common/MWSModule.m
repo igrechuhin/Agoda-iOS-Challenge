@@ -7,7 +7,7 @@
 //
 
 #import "MWSModule.h"
-#import "MWSDisplayDataProtocol.h"
+#import "MWSDisplayData.h"
 #import "MWSInteractor.h"
 #import "MWSPresenter.h"
 #import "MWSRouter.h"
@@ -19,7 +19,7 @@
 @property(nonatomic, readwrite) MWSInteractor * interactor;
 @property(nonatomic, readwrite) MWSPresenter * presenter;
 @property(nonatomic, readwrite) MWSRouter * router;
-@property(nonatomic, readwrite) id<MWSDisplayDataProtocol> displayData;
+@property(nonatomic, readwrite) MWSDisplayData * displayData;
 
 @end
 
@@ -29,7 +29,7 @@
                   interactor:(MWSInteractor *)interactor
                    presenter:(MWSPresenter *)presenter
                       router:(MWSRouter *)router
-                 displayData:(id<MWSDisplayDataProtocol>)displayData
+                 displayData:(MWSDisplayData *)displayData
 {
   MWSModule * module = [[MWSModule alloc] init];
 

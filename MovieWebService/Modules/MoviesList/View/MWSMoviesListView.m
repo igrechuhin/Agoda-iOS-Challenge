@@ -124,7 +124,7 @@
 
 - (id<MWSMoviesListDisplayDataApi>)moviesListDisplayData
 {
-  id<MWSDisplayDataProtocol> displayData = super.displayData;
+  MWSDisplayData * displayData = super.displayData;
   NSAssert([displayData conformsToProtocol:@protocol(MWSMoviesListDisplayDataApi)],
            @"Invalid display data type");
   return (id<MWSMoviesListDisplayDataApi>)(displayData);
