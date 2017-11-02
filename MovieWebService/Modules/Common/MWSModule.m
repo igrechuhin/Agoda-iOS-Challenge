@@ -54,3 +54,46 @@
 }
 
 @end
+
+@implementation MWSModule (Mock)
+
+- (void)injectMockView:(MWSView *)view
+{
+  self.view = view;
+  view.presenter = self.presenter;
+  view.displayData = self.displayData;
+  self.presenter.view = view;
+}
+
+- (void)injectMockInteractor:(MWSInteractor *)interactor
+{
+  self.interactor = interactor;
+  interactor.presenter = self.presenter;
+  self.presenter.interactor = interactor;
+}
+
+- (void)injectMockPresenter:(MWSPresenter *)presenter
+{
+  self.presenter = presenter;
+  presenter.view = self.view;
+  presenter.interactor = self.interactor;
+  presenter.router = self.router;
+  self.view.presenter = presenter;
+  self.interactor.presenter = presenter;
+  self.router.presenter = presenter;
+}
+
+- (void)injectMockRouter:(MWSRouter *)router
+{
+  self.router = router;
+  router.presenter = self.presenter;
+  self.presenter.router = router;
+}
+
+- (void)injectMockDisplayData:(MWSDisplayData *)displayData
+{
+  self.displayData = displayData;
+  self.view.displayData = displayData;
+}
+
+@end

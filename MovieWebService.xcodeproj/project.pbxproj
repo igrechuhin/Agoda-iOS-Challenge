@@ -93,6 +93,7 @@
 		3439167C1FA745780062748D /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		3439167F1FA745A90062748D /* UITableView+Cells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Cells.swift"; sourceTree = "<group>"; };
 		343916811FA745CB0062748D /* UINib+Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINib+Init.swift"; sourceTree = "<group>"; };
+		343B0C391FAB1A2300DD3711 /* MWSModule+Mock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MWSModule+Mock.h"; sourceTree = "<group>"; };
 		344255CF1FA8B32500DF689D /* MWSDisplayData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWSDisplayData.h; sourceTree = "<group>"; };
 		344255D01FA8B32500DF689D /* MWSDisplayData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MWSDisplayData.m; sourceTree = "<group>"; };
 		3446345E1FA8A11B0023B0A2 /* MWSMoviesListItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWSMoviesListItemModel.h; sourceTree = "<group>"; };
@@ -356,6 +357,7 @@
 				34FC3EA01FA3789100A7F596 /* MWSInteractorProtocol.h */,
 				34FC3EAA1FA384EA00A7F596 /* MWSModule.h */,
 				34FC3EAB1FA384EA00A7F596 /* MWSModule.m */,
+				343B0C391FAB1A2300DD3711 /* MWSModule+Mock.h */,
 				34FC3E9D1FA3787C00A7F596 /* MWSPresenter.h */,
 				34FC3E9E1FA3787C00A7F596 /* MWSPresenter.m */,
 				34FC3EA11FA378BA00A7F596 /* MWSPresenterProtocol.h */,

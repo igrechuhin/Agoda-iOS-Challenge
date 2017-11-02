@@ -4,6 +4,7 @@
 #import "MWSDirector.h"
 #import "MWSDisplayData.h"
 #import "MWSInteractor.h"
+#import "MWSModule+Mock.h"
 #import "MWSModule.h"
 #import "MWSMovie.h"
 #import "MWSPresenter.h"
