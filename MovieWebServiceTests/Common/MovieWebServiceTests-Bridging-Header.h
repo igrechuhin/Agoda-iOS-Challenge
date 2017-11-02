@@ -3,3 +3,10 @@
 //
 
 #import "Movie-Bridging-Header.h"
+
+#import "MWSMoviesListDisplayData.h"
+#import "MWSMoviesListInteractor.h"
+#import "MWSMoviesListModule.h"
+#import "MWSMoviesListPresenter.h"
+#import "MWSMoviesListRouter.h"
+#import "MWSMoviesListView.h"
