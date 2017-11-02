@@ -4,8 +4,10 @@
 
 #import "Movie-Bridging-Header.h"
 
+#import "MWSMoviesListCell.h"
 #import "MWSMoviesListDisplayData.h"
 #import "MWSMoviesListInteractor.h"
+#import "MWSMoviesListItemModel.h"
 #import "MWSMoviesListModule.h"
 #import "MWSMoviesListPresenter.h"
 #import "MWSMoviesListRouter.h"
