@@ -10,8 +10,8 @@
 #import "MWSMovie.h"
 #import "MWSMoviesListInteractor.h"
 #import "MWSMoviesListItemModel.h"
+#import "MWSMoviesListRouter.h"
 #import "MWSView.h"
-#import "MovieWebService-Swift.h"
 
 @interface MoviesListPresenter ()
 
@@ -81,10 +81,10 @@
 
 - (void)itemSelectedAtIndex:(NSInteger)index
 {
+  MWSRouter<MWSMoviesListRouterApi> * router = self.moviesListRouter;
   MWSMovie * movie = [self movieAtIndex:index];
 
-  MWSModule * details = [DetailsModule buildWithMovie:movie];
-  [details.router showFrom:self.view embedInNavController:NO];
+  [router showDetailsForMovie:movie];
 }
 
 #pragma mark - MWSPresenterProtocol
@@ -111,6 +111,13 @@
   NSAssert([interactor conformsToProtocol:@protocol(MWSMoviesListInteractorApi)],
            @"Invalid interactor type");
   return (MWSInteractor<MWSMoviesListInteractorApi> *)(interactor);
+}
+
+- (MWSRouter<MWSMoviesListRouterApi> *)moviesListRouter
+{
+  MWSRouter * router = super.router;
+  NSAssert([router conformsToProtocol:@protocol(MWSMoviesListRouterApi)], @"Invalid router type");
+  return (MWSRouter<MWSMoviesListRouterApi> *)(router);
 }
 
 @end

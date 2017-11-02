@@ -7,7 +7,15 @@
 //
 
 #import "MWSMoviesListRouter.h"
+#import "MWSModule.h"
+#import "MovieWebService-Swift.h"
 
 @implementation MoviesListRouter
+
+- (void)showDetailsForMovie:(MWSMovie *)movie
+{
+  MWSModule * details = [DetailsModule buildWithMovie:movie];
+  [details.router showFrom:self.presenter.view embedInNavController:NO];
+}
 
 @end

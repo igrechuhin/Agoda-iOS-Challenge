@@ -41,6 +41,8 @@ typedef void (^MWSFetchMoviesCallback)(NSArray<MWSMovie *> *);
 
 @protocol MWSMoviesListRouterApi<MWSRouterProtocol>
 
+- (void)showDetailsForMovie:(MWSMovie *)movie;
+
 @end
 
 @protocol MWSMoviesListDisplayDataApi<MWSDisplayDataProtocol>
