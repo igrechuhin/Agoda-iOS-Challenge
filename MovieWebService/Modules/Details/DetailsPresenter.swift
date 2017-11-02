@@ -21,13 +21,13 @@ final class DetailsPresenter: MWSPresenter, DetailsPresenterApi {
     let interactor = detailsInteractor
 
     interactor.getMovie { [weak self] movie in
-      guard let director = movie.director,
+      guard let `self` = self,
+        let director = movie.director,
         let actor = movie.actors.first else { return }
       let model = DetailsViewModel(directorName: director.name, actorName: actor.name, actorScreenName: actor.screenName)
 
+      let view = self.detailsView
       DispatchQueue.main.async {
-        guard let `self` = self else { return }
-        let view = self.detailsView
         view.dataUpdated(model: model)
       }
     }
