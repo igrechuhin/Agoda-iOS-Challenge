@@ -19,6 +19,7 @@
 		343916801FA745A90062748D /* UITableView+Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3439167F1FA745A90062748D /* UITableView+Cells.swift */; };
 		343916821FA745CB0062748D /* UINib+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343916811FA745CB0062748D /* UINib+Init.swift */; };
 		343B0C3E1FAB1D0D00DD3711 /* ModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343B0C3D1FAB1D0D00DD3711 /* ModuleTests.swift */; };
+		343B0C421FAB26CA00DD3711 /* PresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343B0C411FAB26CA00DD3711 /* PresenterTests.swift */; };
 		344255D11FA8B32500DF689D /* MWSDisplayData.m in Sources */ = {isa = PBXBuildFile; fileRef = 344255D01FA8B32500DF689D /* MWSDisplayData.m */; };
 		344634601FA8A11B0023B0A2 /* MWSMoviesListItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3446345F1FA8A11B0023B0A2 /* MWSMoviesListItemModel.m */; };
 		346CCBDC1FA77916000447D8 /* DetailsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346CCBDB1FA77916000447D8 /* DetailsApi.swift */; };
@@ -83,6 +84,7 @@
 		343B0C391FAB1A2300DD3711 /* MWSModule+Mock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MWSModule+Mock.h"; sourceTree = "<group>"; };
 		343B0C3D1FAB1D0D00DD3711 /* ModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleTests.swift; sourceTree = "<group>"; };
 		343B0C401FAB1E5000DD3711 /* MovieWebServiceTests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MovieWebServiceTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		343B0C411FAB26CA00DD3711 /* PresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterTests.swift; sourceTree = "<group>"; };
 		344255CF1FA8B32500DF689D /* MWSDisplayData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWSDisplayData.h; sourceTree = "<group>"; };
 		344255D01FA8B32500DF689D /* MWSDisplayData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MWSDisplayData.m; sourceTree = "<group>"; };
 		3446345E1FA8A11B0023B0A2 /* MWSMoviesListItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWSMoviesListItemModel.h; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				343B0C3D1FAB1D0D00DD3711 /* ModuleTests.swift */,
+				343B0C411FAB26CA00DD3711 /* PresenterTests.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -832,6 +835,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				343B0C421FAB26CA00DD3711 /* PresenterTests.swift in Sources */,
 				343B0C3E1FAB1D0D00DD3711 /* ModuleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
