@@ -9,15 +9,29 @@
 #import "MWSMoviesListInteractor.h"
 #import "MWSDefaultMoviesProvider.h"
 
+@interface MoviesListInteractor ()
+
+@property(nonatomic) id<MWSMoviesProvider> moviesProvider;
+
+@end
+
 @implementation MoviesListInteractor
+
+- (instancetype)initWithMoviesProvider:(id<MWSMoviesProvider>)provider
+{
+  self = [super init];
+  if (self)
+    _moviesProvider = provider;
+  return self;
+}
 
 - (void)getMoviesWithCallback:(MWSFetchMoviesCallback)callback
 {
-  [MWSDefaultMoviesProvider getMovieWithID:0
-                              withCallback:^(MWSMovie * movie) {
-                                NSArray<MWSMovie *> * movies = @[movie];
-                                callback(movies);
-                              }];
+  [self.moviesProvider getMovieWithID:0
+                         withCallback:^(MWSMovie * movie) {
+                           NSArray<MWSMovie *> * movies = @[movie];
+                           callback(movies);
+                         }];
 }
 
 @end

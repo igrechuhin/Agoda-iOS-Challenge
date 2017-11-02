@@ -4,6 +4,7 @@
 
 #import "Movie-Bridging-Header.h"
 
+#import "MWSDefaultMoviesProvider.h"
 #import "MWSMoviesListCell.h"
 #import "MWSMoviesListDisplayData.h"
 #import "MWSMoviesListInteractor.h"

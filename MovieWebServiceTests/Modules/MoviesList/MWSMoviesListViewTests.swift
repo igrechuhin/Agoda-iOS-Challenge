@@ -44,7 +44,7 @@ private class MockDisplayData: MWSDisplayData, MWSMoviesListDisplayDataApi {
 
 class MWSMoviesListViewTests: XCTestCase {
   private func createModule() -> MWSModule {
-    let module = MWSMoviesListModule.build()!
+    let module = MWSMoviesListModule.build(with: MWSDefaultMoviesProvider())!
     let mockPresenter = MockPresenter()
     let mockDisplayData = MockDisplayData()
 

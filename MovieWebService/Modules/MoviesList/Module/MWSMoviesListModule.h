@@ -8,8 +8,10 @@
 
 #import "MWSModule.h"
 
+@protocol MWSMoviesProvider;
+
 @interface MWSMoviesListModule : MWSModule
 
-+ (MWSModule *)build;
++ (MWSModule *)buildWithMoviesProvider:(id<MWSMoviesProvider>)moviesProvider;
 
 @end

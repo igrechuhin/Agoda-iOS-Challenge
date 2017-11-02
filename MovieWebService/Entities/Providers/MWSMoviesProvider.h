@@ -12,6 +12,6 @@ typedef void (^MWSMovieCallback)(MWSMovie *);
 
 @protocol MWSMoviesProvider<NSObject>
 
-+ (void)getMovieWithID:(NSInteger)movieID withCallback:(MWSMovieCallback)callback;
+- (void)getMovieWithID:(NSInteger)movieID withCallback:(MWSMovieCallback)callback;
 
 @end

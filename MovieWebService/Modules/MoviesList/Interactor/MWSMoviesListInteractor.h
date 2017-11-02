@@ -9,6 +9,10 @@
 #import "MWSInteractor.h"
 #import "MWSMoviesListApi.h"
 
+@protocol MWSMoviesProvider;
+
 @interface MoviesListInteractor : MWSInteractor<MWSMoviesListInteractorApi>
+
+- (instancetype)initWithMoviesProvider:(id<MWSMoviesProvider>)provider;
 
 @end

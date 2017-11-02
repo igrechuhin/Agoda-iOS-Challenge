@@ -10,7 +10,7 @@ import XCTest
 
 class MWSMoviesListModuleTests: XCTestCase {
   func testModuleComponentsType() {
-    if let module = MWSMoviesListModule.build() {
+    if let module = MWSMoviesListModule.build(with: MWSDefaultMoviesProvider()) {
       XCTAssert(module.view is MWSMoviesListView)
       XCTAssert(module.interactor is MoviesListInteractor)
       XCTAssert(module.presenter is MoviesListPresenter)

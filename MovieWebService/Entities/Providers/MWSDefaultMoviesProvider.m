@@ -11,7 +11,7 @@
 
 @implementation MWSDefaultMoviesProvider
 
-+ (void)getMovieWithID:(NSInteger)movieID withCallback:(MWSMovieCallback)callback
+- (void)getMovieWithID:(NSInteger)movieID withCallback:(MWSMovieCallback)callback
 {
   // movieID is ignored, but for real case we need to specify "which movie" we want to get.
 

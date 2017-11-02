@@ -15,10 +15,10 @@
 
 @implementation MWSMoviesListModule
 
-+ (MWSModule *)build
++ (MWSModule *)buildWithMoviesProvider:(id<MWSMoviesProvider>)moviesProvider
 {
   return [self buildWithView:[[MWSMoviesListView alloc] init]
-                  interactor:[[MoviesListInteractor alloc] init]
+                  interactor:[[MoviesListInteractor alloc] initWithMoviesProvider:moviesProvider]
                    presenter:[[MoviesListPresenter alloc] init]
                       router:[[MoviesListRouter alloc] init]
                  displayData:[[MWSMoviesListDisplayData alloc] init]];
