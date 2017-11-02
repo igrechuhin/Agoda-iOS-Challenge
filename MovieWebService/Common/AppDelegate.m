@@ -15,6 +15,9 @@
 - (BOOL)application:(UIApplication *)application
     didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  if ([NSProcessInfo processInfo].environment[@"XCInjectBundleInto"] != nil)
+    return NO;
+
   [self showMainWindow];
   return YES;
 }
