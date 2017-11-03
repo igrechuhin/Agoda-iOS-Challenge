@@ -325,10 +325,10 @@
 				3484AC031FA3323C00AB3B67 /* MWSActor.m */,
 				3484AC011FA3323C00AB3B67 /* MWSDirector.h */,
 				3484ABFC1FA3323C00AB3B67 /* MWSDirector.m */,
-				3484ABFD1FA3323C00AB3B67 /* MWSMovie.h */,
-				3484AC001FA3323C00AB3B67 /* MWSMovie.m */,
 				3484ABFE1FA3323C00AB3B67 /* MWSGenericRole.h */,
 				3484AC021FA3323C00AB3B67 /* MWSGenericRole.m */,
+				3484ABFD1FA3323C00AB3B67 /* MWSMovie.h */,
+				3484AC001FA3323C00AB3B67 /* MWSMovie.m */,
 			);
 			path = Instances;
 			sourceTree = "<group>";
@@ -368,10 +368,10 @@
 			children = (
 				34FC3E7B1FA3593F00A7F596 /* AppDelegate.h */,
 				34FC3E7D1FA3593F00A7F596 /* AppDelegate.m */,
+				3439167C1FA745780062748D /* Common.swift */,
 				34FC3E7C1FA3593F00A7F596 /* main.m */,
 				34FC3E7E1FA3593F00A7F596 /* Movie-Bridging-Header.h */,
 				34FC3E7A1FA3593F00A7F596 /* MovieWebService.pch */,
-				3439167C1FA745780062748D /* Common.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -455,10 +455,10 @@
 		742C63E71E9C750600B8E327 /* MovieWebService */ = {
 			isa = PBXGroup;
 			children = (
-				3439167E1FA7459B0062748D /* Extensions */,
 				34FC3E791FA3593F00A7F596 /* Common */,
 				34B8DDD51FA0D3420073842E /* Components */,
 				3484ABF81FA3323C00AB3B67 /* Entities */,
+				3439167E1FA7459B0062748D /* Extensions */,
 				578A72838BE61473B4DFA550 /* Modules */,
 				3484AC151FA3565B00AB3B67 /* Resources */,
 			);
@@ -469,8 +469,8 @@
 			isa = PBXGroup;
 			children = (
 				343B0C3F1FAB1E5000DD3711 /* Common */,
-				343B0C3A1FAB1CDB00DD3711 /* Modules */,
 				742C64041E9C750700B8E327 /* Info.plist */,
+				343B0C3A1FAB1CDB00DD3711 /* Modules */,
 			);
 			path = MovieWebServiceTests;
 			sourceTree = "<group>";
@@ -478,8 +478,8 @@
 		742C640C1E9C750700B8E327 /* MovieWebServiceUITests */ = {
 			isa = PBXGroup;
 			children = (
-				742C640D1E9C750700B8E327 /* MovieWebServiceUITests.m */,
 				742C640F1E9C750700B8E327 /* Info.plist */,
+				742C640D1E9C750700B8E327 /* MovieWebServiceUITests.m */,
 			);
 			path = MovieWebServiceUITests;
 			sourceTree = "<group>";
