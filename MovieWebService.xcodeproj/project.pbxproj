@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0F821A4287C29BEC9B54E253 /* MWSMoviesListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4921FCC65F429A0DF58F70D4 /* MWSMoviesListView.m */; };
 		3429C2861FAC66690010D4A0 /* DetailsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3429C2851FAC66690010D4A0 /* DetailsViewTests.swift */; };
+		3429C28A1FAC7A2D0010D4A0 /* MWSTappableLabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3429C2891FAC7A2D0010D4A0 /* MWSTappableLabelTests.swift */; };
 		34349A0C1FA86DA0006A3377 /* DetailsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34349A071FA86DA0006A3377 /* DetailsModule.swift */; };
 		34349A0D1FA86DA0006A3377 /* DetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34349A081FA86DA0006A3377 /* DetailsInteractor.swift */; };
 		34349A0E1FA86DA0006A3377 /* DetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34349A091FA86DA0006A3377 /* DetailsPresenter.swift */; };
@@ -81,6 +82,7 @@
 /* Begin PBXFileReference section */
 		15A77123BE1C7D757A21CCDA /* MWSMoviesListPresenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MWSMoviesListPresenter.h; sourceTree = "<group>"; };
 		3429C2851FAC66690010D4A0 /* DetailsViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewTests.swift; sourceTree = "<group>"; };
+		3429C2891FAC7A2D0010D4A0 /* MWSTappableLabelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MWSTappableLabelTests.swift; sourceTree = "<group>"; };
 		34349A071FA86DA0006A3377 /* DetailsModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsModule.swift; sourceTree = "<group>"; };
 		34349A081FA86DA0006A3377 /* DetailsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsInteractor.swift; sourceTree = "<group>"; };
 		34349A091FA86DA0006A3377 /* DetailsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsPresenter.swift; sourceTree = "<group>"; };
@@ -228,6 +230,14 @@
 				F04B81BB8E069391AC58935D /* MWSMoviesListInteractor.m */,
 			);
 			path = Interactor;
+			sourceTree = "<group>";
+		};
+		3429C2881FAC7A150010D4A0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3429C2891FAC7A2D0010D4A0 /* MWSTappableLabelTests.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		343916761FA72C2F0062748D /* DisplayData */ = {
@@ -468,6 +478,7 @@
 		742C64011E9C750700B8E327 /* MovieWebServiceTests */ = {
 			isa = PBXGroup;
 			children = (
+				3429C2881FAC7A150010D4A0 /* Components */,
 				343B0C3F1FAB1E5000DD3711 /* Common */,
 				742C64041E9C750700B8E327 /* Info.plist */,
 				343B0C3A1FAB1CDB00DD3711 /* Modules */,
@@ -885,6 +896,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				343B0C5B1FAB6E0A00DD3711 /* DetailsInteractorTests.swift in Sources */,
+				3429C28A1FAC7A2D0010D4A0 /* MWSTappableLabelTests.swift in Sources */,
 				343B0C481FAB391500DD3711 /* MWSMoviesListModuleTests.swift in Sources */,
 				343B0C591FAB6D3D00DD3711 /* DetailsDisplayDataTests.swift in Sources */,
 				3429C2861FAC66690010D4A0 /* DetailsViewTests.swift in Sources */,
