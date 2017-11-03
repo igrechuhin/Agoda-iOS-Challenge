@@ -8,6 +8,7 @@
 
 final class DetailsDisplayData: MWSDisplayData, DetailsDisplayDataApi {
   let backgroundColor = UIColor.white
+  let title = "Details"
   let directorNameTitle = "Director Name"
   let actorNameTitle = "Actor Name"
   let actorScreenNameTitle = "Actor Screen Name"

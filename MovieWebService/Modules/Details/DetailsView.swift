@@ -78,6 +78,7 @@ final class DetailsView: MWSView, DetailsViewApi {
     let displayData = detailsDisplayData
 
     view.backgroundColor = displayData.backgroundColor
+    title = displayData.title
     directorTitle.text = displayData.directorNameTitle
     actorNameTitle.text = displayData.actorNameTitle
     actorScreenNameTitle.text = displayData.actorScreenNameTitle

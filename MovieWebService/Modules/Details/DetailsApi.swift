@@ -31,6 +31,7 @@ protocol DetailsRouterApi: MWSRouterProtocol {
 
 protocol DetailsDisplayDataApi: MWSDisplayDataProtocol {
   var backgroundColor: UIColor { get }
+  var title: String { get }
   var directorNameTitle: String { get }
   var actorNameTitle: String { get }
   var actorScreenNameTitle: String { get }
