@@ -8,13 +8,22 @@
 
 #import "MWSTappableLabel.h"
 
+@interface MWSTappableLabel ()
+
+@property(weak, nonatomic) id<MWSTappableLabelDelegate> delegate;
+
+@end
+
 @implementation MWSTappableLabel
 
-- (instancetype)initWithFrame:(CGRect)frame
+- (instancetype)initWithFrame:(CGRect)frame delegate:(id<MWSTappableLabelDelegate>)delegate
 {
   self = [super initWithFrame:frame];
   if (self)
+  {
     self.userInteractionEnabled = YES;
+    self.delegate = delegate;
+  }
   return self;
 }
 

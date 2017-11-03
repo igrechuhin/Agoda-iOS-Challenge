@@ -20,11 +20,7 @@ final class DetailsView: MWSView, DetailsViewApi {
     return label
   }()
 
-  private lazy var tapToShowMore: MWSTappableLabel = {
-    let label = MWSTappableLabel(frame: CGRect(origin: CGPoint(x: Config.xOffset, y: 180), size: Config.boxSize))
-    label.delegate = self
-    return label
-  }()
+  private lazy var tapToShowMore = MWSTappableLabel(frame: CGRect(origin: CGPoint(x: Config.xOffset, y: 180), size: Config.boxSize), delegate: self)!
 
   private let actorNameTitle = UILabel(frame: CGRect(origin: CGPoint(x: Config.xOffset, y: 220), size: Config.boxSize))
   private let actorName: UILabel = {

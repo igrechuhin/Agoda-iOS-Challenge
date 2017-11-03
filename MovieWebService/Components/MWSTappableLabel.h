@@ -10,6 +10,6 @@
 
 @interface MWSTappableLabel : UILabel
 
-@property(weak, nonatomic) id<MWSTappableLabelDelegate> delegate;
+- (instancetype)initWithFrame:(CGRect)frame delegate:(id<MWSTappableLabelDelegate>)delegate;
 
 @end
