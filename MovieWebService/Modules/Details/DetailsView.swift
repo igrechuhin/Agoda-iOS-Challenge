@@ -64,12 +64,23 @@ final class DetailsView: MWSView, DetailsViewApi {
     view.addSubview(actorScreenName)
   }
 
+  private func addAccessibilityIdentifiers() {
+    directorTitle.accessibilityIdentifier = "directorTitle"
+    directorName.accessibilityIdentifier = "directorName"
+    tapToShowMore.accessibilityIdentifier = "tapToShowMore"
+    actorNameTitle.accessibilityIdentifier = "actorNameTitle"
+    actorName.accessibilityIdentifier = "actorName"
+    actorScreenNameTitle.accessibilityIdentifier = "actorScreenNameTitle"
+    actorScreenName.accessibilityIdentifier = "actorScreenName"
+  }
+
   // MARK: - Life cycle
 
   override func viewDidLoad() {
     super.viewDidLoad()
 
     addSubviews()
+    addAccessibilityIdentifiers()
   }
 
   // MARK: - DetailsViewApi
