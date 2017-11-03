@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F821A4287C29BEC9B54E253 /* MWSMoviesListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4921FCC65F429A0DF58F70D4 /* MWSMoviesListView.m */; };
+		3429C2861FAC66690010D4A0 /* DetailsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3429C2851FAC66690010D4A0 /* DetailsViewTests.swift */; };
 		34349A0C1FA86DA0006A3377 /* DetailsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34349A071FA86DA0006A3377 /* DetailsModule.swift */; };
 		34349A0D1FA86DA0006A3377 /* DetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34349A081FA86DA0006A3377 /* DetailsInteractor.swift */; };
 		34349A0E1FA86DA0006A3377 /* DetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34349A091FA86DA0006A3377 /* DetailsPresenter.swift */; };
@@ -79,6 +80,7 @@
 
 /* Begin PBXFileReference section */
 		15A77123BE1C7D757A21CCDA /* MWSMoviesListPresenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MWSMoviesListPresenter.h; sourceTree = "<group>"; };
+		3429C2851FAC66690010D4A0 /* DetailsViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewTests.swift; sourceTree = "<group>"; };
 		34349A071FA86DA0006A3377 /* DetailsModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsModule.swift; sourceTree = "<group>"; };
 		34349A081FA86DA0006A3377 /* DetailsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsInteractor.swift; sourceTree = "<group>"; };
 		34349A091FA86DA0006A3377 /* DetailsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsPresenter.swift; sourceTree = "<group>"; };
@@ -293,6 +295,7 @@
 				343B0C5A1FAB6E0A00DD3711 /* DetailsInteractorTests.swift */,
 				343B0C561FAB6C6B00DD3711 /* DetailsModuleTests.swift */,
 				343B0C5C1FAB6FB900DD3711 /* DetailsPresenterTests.swift */,
+				3429C2851FAC66690010D4A0 /* DetailsViewTests.swift */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -884,6 +887,7 @@
 				343B0C5B1FAB6E0A00DD3711 /* DetailsInteractorTests.swift in Sources */,
 				343B0C481FAB391500DD3711 /* MWSMoviesListModuleTests.swift in Sources */,
 				343B0C591FAB6D3D00DD3711 /* DetailsDisplayDataTests.swift in Sources */,
+				3429C2861FAC66690010D4A0 /* DetailsViewTests.swift in Sources */,
 				343B0C421FAB26CA00DD3711 /* PresenterTests.swift in Sources */,
 				343B0C501FAB5A9300DD3711 /* MWSMoviesListPresenterTests.swift in Sources */,
 				343B0C4A1FAB3C7A00DD3711 /* MWSMoviesListViewTests.swift in Sources */,
