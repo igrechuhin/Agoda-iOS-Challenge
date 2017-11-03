@@ -15,6 +15,7 @@ class DetailsDisplayDataTests: XCTestCase {
     let data = DetailsDisplayData()
 
     XCTAssertEqual(data.backgroundColor, UIColor.white)
+    XCTAssertEqual(data.title, "Details")
     XCTAssertEqual(data.directorNameTitle, "Director Name")
     XCTAssertEqual(data.actorNameTitle, "Actor Name")
     XCTAssertEqual(data.actorScreenNameTitle, "Actor Screen Name")

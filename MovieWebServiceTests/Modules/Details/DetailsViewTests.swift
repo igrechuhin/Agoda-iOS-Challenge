@@ -12,6 +12,7 @@ import XCTest
 
 private class MockDisplayData: MWSDisplayData, DetailsDisplayDataApi {
   let backgroundColor = UIColor.white
+  let title = "Details"
   let directorNameTitle = "Director Name"
   let actorNameTitle = "Actor Name"
   let actorScreenNameTitle = "Actor Screen Name"
@@ -40,5 +41,6 @@ class DetailsViewTests: XCTestCase {
     let displayData = module.displayData as! DetailsDisplayDataApi
 
     XCTAssertEqual(module.view.view.backgroundColor, displayData.backgroundColor)
+    XCTAssertEqual(module.view.title, displayData.title)
   }
 }
